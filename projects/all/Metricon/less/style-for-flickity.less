@@ -1,0 +1,120 @@
+// out: ../css/style-for-flickity.css
+
+.slider-wrapper{
+    .main-carousel {
+        .carousel-cell {
+            min-height: 700px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .carousel-cell:nth-child(1) {
+            background-image: url(../img/slide1.png);
+        }
+        .carousel-cell:nth-child(2) {
+            background-image: url(../img/slide2.png);
+        }
+        .carousel-cell:nth-child(3) {
+            background-image: url(../img/slide3.png);
+        }
+    }
+}
+
+.main-carousel {
+    .flickity-page-dots {
+        position: absolute;
+        bottom: 25px;
+        .dot {
+            border-radius: 0;
+            opacity: 1;
+            -webkit-box-shadow: 0px 1px 7.36px 0.64px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 1px 7.36px 0.64px rgba(0, 0, 0, 0.6);
+            width: 20px;
+            height: 20px;
+            &.is-selected {
+                background: white;
+            }
+            &:hover {
+                background: rgb(242, 107, 8);
+            }
+        }
+    }
+}
+
+
+#head > div.slider-wrapper > div > button.flickity-button.flickity-prev-next-button.previous,
+#head > div.slider-wrapper > div > button.flickity-button.flickity-prev-next-button.next {
+    background: none;
+    height: 20%;
+    width: 20%;
+}
+
+#head > div.slider-wrapper > div > button.flickity-button.flickity-prev-next-button.previous > svg > path,
+#head > div.slider-wrapper > div > button.flickity-button.flickity-prev-next-button.next > svg > path {
+    color: rgb(171, 82, 17);
+    -webkit-box-shadow: 0px 3px 4.75px 0.25px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 3px 4.75px 0.25px rgba(0, 0, 0, 0.61);
+    width: 37px;
+    height: 58px;
+    &:hover {
+        color: rgb(242, 107, 8);
+    }
+}
+
+#head > div.slider-wrapper > div > button.flickity-button.flickity-prev-next-button.previous > svg,
+#head > div.slider-wrapper > div > button.flickity-button.flickity-prev-next-button.next > svg {
+    &:hover {
+        path {
+            color: rgb(242, 107, 8);
+        }
+    }
+}
+
+#head {
+    svg {
+        &:hover {
+            color: rgb(242, 107, 8);
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #head > div.slider-wrapper > div > button.flickity-button.flickity-prev-next-button.previous,
+    #head > div.slider-wrapper > div > button.flickity-button.flickity-prev-next-button.next {
+        display: none;
+    }
+    .main-carousel {
+        .flickity-page-dots {
+            .dot {
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+
+    .slider-wrapper{
+        .main-carousel {
+            .carousel-cell {
+                min-height: 100px;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 600px 300px;
+            }
+        }
+    }
+}
+@media (max-width: 420px) {
+    .slider-wrapper { 
+        .main-carousel {
+            .carousel-cell {
+                min-height: 300px;
+            }
+        }
+    }
+}
+
+
+
+

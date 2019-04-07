@@ -1,0 +1,387 @@
+// out: ../css/metricon.css
+
+// Generals styles
+html, body {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, ul, li, a, span, div, p, input {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	list-style: none;
+	text-decoration: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    font-family: "OpenSans";
+}
+h1, h2 {
+    font-family: "OpenSans Bold";
+}
+// Mixins
+@import (optional) "mixins";
+@header-color: rgb(32, 32, 31);;
+@header-border-color:rgb(255, 108, 0);
+@active-color: rgb(242, 107, 8);
+@dark-background: rgb(55, 57, 63);
+@white-text-color: rgb(255, 255, 255);
+@dark-orange-color:rgb(171, 82, 17);
+@orange-text-color: rgb(242, 107, 9);
+@advertising-color: rgb(231, 231, 231);
+        
+.text-mixin {
+    h2 {
+        font-size: 50px;
+        color: @orange-text-color;
+        line-height: 1.2;
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+        font-size: 23px;
+        color: #292929;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 18px;
+        text-align: left;
+        color: #292929;
+    }
+}     
+// global styles
+#header {
+    .h-and-w;
+    min-height: 100px;
+    background-color: @header-color;
+    border-bottom: 2px solid @header-border-color;
+}
+.header-wrapper {
+    .h-and-w;
+    position: relative;
+    .flex;
+    .flex-jc-space-evenly;
+    .flex-basis(300px);
+    .flex-wrap; 
+}
+.logo {
+    margin-top: 20px;
+    width: 265px;
+    height: 60px;
+    cursor: pointer;
+    -webkit-animation: rotate 1s infinite;
+    animation: rotate 1s infinite;
+    @-webkit-keyframes rotate {
+        0% {
+            -webkit-transform: rotate(-5deg);
+                    transform: rotate(-5deg);
+        }
+        50% {
+            -webkit-transform: rotate(5deg);
+                    transform: rotate(5deg);
+        }
+        100% {
+            -webkit-transform: rotate(-5deg);
+                    transform: rotate(-5deg);
+        }
+    }
+    @keyframes rotate {
+        0% {
+            -webkit-transform: rotate(-5deg);
+                    transform: rotate(-5deg);
+        }
+        50% {
+            -webkit-transform: rotate(5deg);
+                    transform: rotate(5deg);
+        }
+        100% {
+            -webkit-transform: rotate(-5deg);
+                    transform: rotate(-5deg);
+        }
+    }
+}
+.input-group {
+    margin-top: 30px;
+    input {
+        color: @white-text-color;
+        background-color: @header-color;
+        width: 180px;
+        height: 40px;
+        border: 1px solid rgb(82, 82, 82);;
+        font-size: 20px;
+        outline: none;
+        margin-right: 20px;
+        &:focus, &:hover {
+            border: 1px solid @active-color;
+        }
+    }
+    .btn {
+        height: 42px;
+        width: 100px;
+        margin: 0;
+        padding: 2px 0 0 0;
+    }
+}
+.btn {
+    font-family: "OpenSans";
+    cursor: pointer;
+    color: @white-text-color;
+    background-color: @dark-orange-color;
+    width: 180px;
+    height: 40px;
+    border: none;
+    outline: none; 
+    font-size: 20px;
+    &:hover {
+        background-color: @active-color;
+    }
+}
+#main-wrapper {
+    #head {
+        .h-and-w;
+    }
+    .slider-wrapper {
+        .text-wrapper {
+            min-height: 250px;
+            margin-top: 220px;
+            .flex;
+            .flex-col;
+            .flex-center-center;
+        }
+        h1,p {
+            color: @white-text-color;
+            line-height: 1.2;
+            text-align: center;
+            text-shadow: 0px 3px 3.84px rgba(0, 0, 0, 0.75);
+        }
+        h1 {
+            font-size: 70px;
+            font-weight: bold;
+        }
+        p {
+            padding-top: 15px;
+            font-size: 40px;
+        }
+        .btn {
+            margin: 60px auto;
+            .flex;
+            .flex-jc-center;
+            background: black;
+            color: white;
+            &:hover {
+                background: white;
+                color: black;
+            }
+        }
+    }
+    .about-ltd {
+        .h-and-w;
+        background-color: @dark-background;
+        min-height: 700px;
+        text-align: center;
+        overflow: hidden;
+        .text-wrapper:hover {
+            -webkit-box-shadow: 0px 15px 30px 10px @active-color;
+            -moz-box-shadow: 0px 15px 30px 10px @active-color;
+            box-shadow: 0px 15px 30px 10px @active-color;
+            .transition(@sec);
+            -webkit-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+            transform: translateY(30px);
+        }
+        .text {
+            max-width: 400px;
+            min-height: 550px;
+            img {
+                width: 180px;
+                height: 145px;
+                padding-top: 100px;
+            }
+            h2, p {
+                color: @white-text-color;
+            }
+            h2 {
+                padding-top: 45px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p {
+                padding: 10px 0 0 0;
+                font-size: 16px;
+                color: @white-text-color;
+                text-align: center;
+                text-align: left;
+            }
+        }
+        .btn {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .text:last-child {
+            margin-bottom: 100px;
+        }
+    }
+    #webmasters-and-advertisers {
+        .h-and-w;
+        min-height: 505px;
+        overflow: hidden;
+        .text-wrapper {
+            text-align: center;
+            img {
+                margin-top: 50px;
+            }
+            .text {
+                max-width: 600px;
+                .text-mixin;
+                h2 {
+                    margin-top: 40px;
+                }
+                p {
+                    padding: 0;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    #partners {
+        .h-and-w;
+        .flex;
+        .flex-center-center;
+        background-image: url("../img/partners1.png");
+        min-height: 505px;
+        .text {
+            .h-and-w;
+            .text-mixin;
+            max-width: 900px;
+            background-color: @white-text-color;
+            min-height: 370px;
+            h2 {
+                margin-top: 40px;
+            }
+            p {
+                margin: 0 80px 20px 80px;
+                text-align: center;
+            }
+        }
+    }
+    #ltd-metricon {
+        .h-and-w;
+        .flex;
+        .flex-center-center;
+        background-color: @white-text-color;
+        min-height: 550px;
+        .text {
+            .h-and-w;
+            .text-mixin;
+            max-width: 900px;
+            p {
+                text-align: center;
+                margin: 0 10px;
+            }
+        }
+    }
+    #advertising { 
+        .h-and-w;
+        min-height: 670px;
+        background-color: @advertising-color;
+        text-align: center;
+        .text-wrapper {
+            margin-top: 50px;
+            &.right {
+                margin-top: 72px;
+                margin-bottom: 50px;
+            }
+        }
+        .text {
+            margin-top: 50px;
+            max-width: 600px;
+            p {
+                font-size: 18px;
+                text-align: left;
+                color: #292929;
+            }
+        }
+    }
+    .same-wrapper {
+        .box-sizing;
+        .flex;
+        .flex-jc-center;
+        .flex-wrap; 
+        max-width: 1500px;
+        margin: 0 auto;
+        .text-wrapper {
+            .text {
+                p {
+                    margin: 0 50px;
+                }
+            }
+            .box-sizing;
+        }
+    }
+}
+footer {
+    .h-and-w;
+    .flex;
+    .flex-align-items-center;
+    .flex-jc-space-evenly;
+    .flex-wrap;
+    background-color: @dark-background;
+    min-height: 160px;
+    .left-bar {
+        padding-top: 15px;
+        .flex;
+        .flex-wrap;
+        .flex-jc-center;
+    }
+    .right-bar {
+        padding-bottom: 15px;
+
+    }
+    .links-wrapper {
+        .flex;
+        margin: 0 30px;
+        img {
+            display: block;
+            width: 72px;
+            height: 50px;
+            margin-right: 10px;
+        }
+    }
+    .links {
+        max-width: 170px;
+        margin-bottom: 30px;
+    }
+    a {
+        cursor: pointer;
+        white-space: nowrap;
+        padding: 2px;
+        &:hover {
+            color: @active-color;
+            border-bottom: 1px dashed @active-color;
+        }
+    }
+    a, h6 {
+        font-size: 18px;
+        font-family: "OpenSans";
+        color: rgba(255, 255, 255, 0.302);
+        text-align: left;
+    }
+    h6 {
+        span {
+            margin-right: 5px;
+        }
+    }
+}
+
+  
+
+// animation
+[data-aos="my-animation"] {
+    opacity: 0;
+    &.aos-animate {
+      opacity: 1;
+    }
+}
+
+
+

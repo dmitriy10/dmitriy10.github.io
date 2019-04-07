@@ -1,0 +1,53 @@
+@media (max-width: 700px) {
+  html {
+    font-size: 7px;
+  }
+  #plans h1 {
+    width: 200px;
+  }
+  #plans h1 i {
+    display: none;
+  }
+  .card-content {
+    min-height: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .logo img {
+    height: 70px;
+    width: 200px;
+  }
+  #plans {
+    min-height: 700px;
+  }
+  #plans h1 {
+    font-size: 3rem;
+    width: 100px;
+    margin: 0 auto;
+  }
+  #plans h1 i {
+    font-size: 3rem;
+    right: -10px;
+    top: -10px;
+  }
+  .nav {
+    margin: 0 0 0 0;
+  }
+  .nav .wrapper {
+    width: 160px;
+    padding-right: 10px;
+  }
+  .nav li {
+    width: 115px;
+    font-size: 1.5rem;
+  }
+  .nav li img {
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+  }
+  .main-cards-wrapper {
+    margin: 50px 0 0 0;
+    overflow: hidden;
+  }
+}

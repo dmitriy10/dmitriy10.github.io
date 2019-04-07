@@ -24,3 +24,4 @@ var flkty = new Flickity(elem, {
     wrapAround: true,
     fade: true
 });
+

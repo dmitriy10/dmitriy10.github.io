@@ -77,8 +77,6 @@
             -ms-transform: translateX(10px);
             transform: translateX(10px);
         }
-
-
         /* ================================= */
         /* :::::::::::::: TWO :::::::::::::: */
         /* ================================= */
@@ -164,10 +162,22 @@
         /* :::::::::::::: SIX :::::::::::::: */
         /* ================================= */
         .project-number.six {
-            top: -25px;
-            right: -70px;
+            top: -45px;
+            left: -30px;
         }
         .about-btn.six.active {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+        /* ================================= */
+        /* ::::::::::::: SEVEN ::::::::::::: */
+        /* ================================= */
+        .project-number.seven {
+            top: -35px;
+            right: -70px;
+        }
+        .about-btn.seven.active {
             -webkit-transform: translateX(10px);
             -ms-transform: translateX(10px);
             transform: translateX(10px);
@@ -275,6 +285,13 @@
         .project-number.six {
             top: -25px;
             left: -20px;
+        }
+        /* ================================= */
+        /* ::::::::::::: SEVEN ::::::::::::: */
+        /* ================================= */
+        .project-number.seven {
+            top: -25px;
+            right: -110px;
         }
     }
 }
@@ -412,6 +429,131 @@
         .about-btn.six.active {
             .transform-none;
         }
+        /* ================================= */
+        /* ::::::::::::: SEVEN ::::::::::::: */
+        /* ================================= */
+        .project-number.seven {
+            top: -25px;
+            right: -110px;
+        }
+        .about-btn.seven.active {
+            .transform-none;
+        }
     }
 }
 
+// menu
+@media (max-width: 800px) {
+    .elements-header {
+        .elements-logo {
+            left: calc(~"50% - 20px");;
+            margin-top: -47px;
+        }
+        .menu-mobile-container {
+            width: 50px;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 15px;
+            margin-top: 5px;
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 3px;
+                background-color: white;
+                margin: 6px 10px;
+                transition: 0.4s;
+            }
+            .bar1 {
+                margin-top: 10px;
+            }
+            
+            .bar1.change {
+                -webkit-transform-origin: 15% 120%;
+                -ms-transform-origin: 15% 120%;
+                transform-origin: 15% 120%;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            .bar2.change {opacity: 0;}
+            
+            .bar3.change {
+                -webkit-transform-origin: 15% -50%;
+                -ms-transform-origin: 15% -50%;
+                transform-origin: 15% -50%;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+        
+
+
+        .menu {
+            position: absolute;
+            top: 47px;
+            left: 0;
+            z-index: 10;
+            background-color: black;         
+            -webkit-transform: translateX(-1000px);
+            -ms-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+            margin-left: 0;
+            padding-left: 0;
+            padding-top: 30px;
+            padding-bottom: 100px;
+            width: 100%;   
+            transition: 0.4s;
+            text-align: center;
+            &.change {
+                transform: none;
+                transition: 0.4s;
+            }
+            li {
+                width: 100%;   
+                display: block;
+                margin-left: 0;
+                padding-left: 0;
+                &.change {
+                    background-color: white;
+                }
+                a {
+                    color: white;
+                    display: block;
+                    padding: 15px;
+                    white-space: nowrap;
+                    font-size: 25px;
+                    &.change {
+                        color: @color_black;
+                    }
+                    &:hover {
+                        background-color: white;
+                        color: @color_black;
+                    }
+                }
+                &:hover {
+                    ul {
+                        visibility: visible;
+                        z-index: 10;
+                    }
+                }
+            }
+            ul {
+                background-color: black;
+                z-index: 5;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                position: static;
+                li {
+                    a {
+                        font-size: 12px;
+                        border-bottom: 1px solid blue;
+                    }
+                    ul {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
