@@ -1,0 +1,8 @@
+@media (max-width: 1200px) {
+  .global-projects-wrapper {
+    display: none;
+  }
+  .global-projects-wrapper .main-project-wrapper {
+    display: none;
+  }
+}

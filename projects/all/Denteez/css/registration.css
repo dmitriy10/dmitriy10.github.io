@@ -1,0 +1,490 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Tahoma";
+  font-size: 14px;
+  font-weight: normal;
+}
+.width_and_height {
+  width: 100%;
+  height: 100%;
+}
+.min_width_and_height {
+  min-height: 510px;
+  min-width: 1440px;
+}
+.input_group_width {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.main-content {
+  width: 100%;
+  height: 100%;
+  min-width: 1440px;
+}
+.main-content .header-image-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 510px;
+  min-width: 1440px;
+  background-color: #1c2534;
+}
+.main-content .header-image-wrapper .header-image {
+  width: 100%;
+  height: 100%;
+  min-height: 510px;
+  min-width: 1440px;
+  background-image: url("../img-p2/main-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.11;
+}
+.main-content .background-image {
+  width: 100%;
+  height: 100%;
+  min-height: 510px;
+  min-width: 1440px;
+  background-image: url("../img-p2/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-content .background-image .input-group {
+  position: relative;
+  top: -100px;
+  margin-left: 23%;
+  margin-right: 23%;
+  width: 54%;
+  height: 744px;
+  background-color: white;
+  border-radius: 5px;
+}
+.main-content .background-image .input-group p {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: inline-block;
+  color: grey;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+.main-content .background-image .input-group label {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: inline-block;
+  color: black;
+  margin-top: 5px;
+}
+.main-content .background-image .input-group select {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  white-space: nowrap;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+.main-content .background-image .input-group input {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 50px;
+  margin-top: 10px;
+  white-space: nowrap;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+.main-content .background-image .input-group .label-short {
+  margin-top: 18px;
+  display: inline-block;
+  width: 43.6%;
+}
+.main-content .background-image .input-group .short {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 13px;
+  width: 43.6%;
+}
+.main-content .background-image .input-group .last-label {
+  float: left;
+  width: 43.6%;
+  margin-top: 15px;
+}
+.main-content .background-image .input-group .textarea {
+  width: 100px;
+  float: right;
+  margin-top: 15px;
+  margin-right: -14px;
+}
+.main-content .background-image .input-group textarea {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 150px;
+  margin-top: 10px;
+  white-space: nowrap;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 15px;
+  resize: none;
+}
+.main-content .background-image .input-group ::placeholder {
+  font-size: 11px;
+}
+.main-content .background-image .input-group .add-photo {
+  position: relative;
+  width: 150px;
+  height: 130px;
+  margin-top: 10px;
+  margin-left: 3%;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 1px;
+  margin-bottom: 30px;
+}
+.main-content .background-image .input-group .add-photo input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+.main-content .background-image .input-group .add-photo #myImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.main-content .background-image .input-group .add-photo .photo-text {
+  text-align: center;
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.main-content .background-image .input-group .add-photo .photo-text > h1 {
+  margin-top: 30px;
+  font-size: 16px;
+  color: white;
+}
+.main-content .background-image .input-group .add-photo .photo-text > p {
+  margin-top: 3px;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+}
+.main-content .background-image .input-group .add-photo .photo-text.active {
+  opacity: 0;
+  overflow: hidden;
+}
+.main-content .background-image .button-footer {
+  height: 50px;
+  width: 54%;
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-top: -80px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  background-color: #87b448;
+}
+.main-content .background-image .button-footer a {
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 10px 19px;
+  font-size: 20px;
+}
+.main-content .header-text {
+  position: absolute;
+  top: 150px;
+  left: 33%;
+  max-width: 500px;
+}
+.main-content .header-text h1 {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  padding-top: 30px;
+}
+.main-content .header-text p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+  line-height: 30px;
+}
+.main-content .logo {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+.main-content .button-page-two {
+  position: absolute;
+  top: 32px;
+  right: 45px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 13px;
+  display: block;
+  background-color: #87b448;
+}
+.main-content .button-page-two a {
+  width: 100%;
+  color: white;
+  display: block;
+  padding: 7px 19px;
+}
+.main-content .abz-registration-back {
+  position: absolute;
+  top: 32px;
+  right: 175px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 13px;
+  display: block;
+  background-color: #87b448;
+}
+.main-content .abz-registration-back a {
+  width: 100%;
+  color: white;
+  display: block;
+  padding: 7px 19px;
+}
+.main-content .content-bottom {
+  margin-top: 90px;
+  width: 100%;
+  height: 300px;
+}
+.main-content .content-bottom h1 {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+.main-content .content-bottom .text-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-content .content-bottom .text-wrapper .text-left {
+  max-width: 550px;
+  margin-top: 37px;
+}
+.main-content .content-bottom .text-wrapper .text-left p {
+  line-height: 24px;
+  color: grey;
+}
+.main-content .content-bottom .text-wrapper .text-right {
+  max-width: 550px;
+  margin-top: 37px;
+}
+.main-content .content-bottom .text-wrapper .text-right p {
+  line-height: 24px;
+  color: grey;
+}
+footer {
+  height: 120px;
+  width: 100%;
+  border-top: 1px solid grey;
+}
+footer .contact-us-footer {
+  height: 100px;
+  width: 100%;
+}
+footer .contact-us-footer .links-left {
+  margin-top: 20px;
+  float: left;
+  width: 200px;
+  margin-left: 5%;
+}
+footer .contact-us-footer .links-left a {
+  display: block;
+  color: grey;
+  padding: 10px;
+  font-size: 10px;
+}
+footer .contact-us-footer .links-right {
+  margin-top: 20px;
+  float: right;
+  width: 300px;
+}
+footer .contact-us-footer .links-right a {
+  display: inline-block;
+  color: grey;
+  padding: 10px;
+  font-size: 10px;
+}
+@media all and (max-width: 1200px) {
+  .min_width_and_height {
+    min-height: 510px;
+    min-width: 0px;
+  }
+  .input_group_width {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .main-content {
+    min-width: 340px;
+  }
+  .main-content .header-image-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 510px;
+    min-width: 0px;
+  }
+  .main-content .header-image-wrapper .header-image {
+    width: 100%;
+    height: 100%;
+    min-height: 510px;
+    min-width: 0px;
+  }
+  .main-content .background-image {
+    width: 100%;
+    height: 100%;
+    min-height: 510px;
+    min-width: 0px;
+  }
+  .main-content .background-image .input-group {
+    top: -50px;
+    margin-left: 23%;
+    margin-right: 23%;
+    width: 54%;
+    height: 100%;
+  }
+  .main-content .background-image .input-group .short {
+    margin-top: 8px;
+    margin-bottom: 13px;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .main-content .background-image .input-group .last-label {
+    width: 43.6%;
+    margin-top: 15px;
+  }
+  .main-content .background-image .button-footer {
+    height: 50px;
+    width: 54%;
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-top: -20px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+  }
+  .main-content .background-image .button-footer a {
+    padding: 10px 19px;
+    font-size: 20px;
+  }
+  .main-content .header-text {
+    top: 150px;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    max-width: 500px;
+    padding: 30px;
+  }
+  .main-content .header-text h1 {
+    font-size: 48px;
+    margin-top: -50px;
+  }
+  .main-content .header-text p {
+    font-size: 20px;
+    margin-top: 5px;
+    line-height: 30px;
+  }
+  .main-content .content-bottom {
+    margin-top: 30px;
+    padding-bottom: 70px;
+  }
+  .main-content .content-bottom .text-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px 0 30px;
+  }
+  .main-content .content-bottom .text-wrapper .text-left {
+    margin-top: 37px;
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .main-content .content-bottom .text-wrapper .text-left p {
+    line-height: 24px;
+  }
+  .main-content .content-bottom .text-wrapper .text-right {
+    margin-top: 37px;
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .main-content .content-bottom .text-wrapper .text-right p {
+    line-height: 24px;
+  }
+  .main-content .button-page-two {
+    position: absolute;
+    top: 52px;
+    right: 45px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 13px;
+    display: block;
+    background-color: #87b448;
+  }
+  .main-content .button-page-two a {
+    width: 100%;
+    color: white;
+    display: block;
+    padding: 7px 19px;
+  }
+  .main-content .abz-registration-back {
+    position: absolute;
+    top: 12px;
+    right: 65px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 13px;
+    display: block;
+    background-color: #87b448;
+  }
+  .main-content .abz-registration-back a {
+    width: 100%;
+    color: white;
+    display: block;
+    padding: 7px 19px;
+  }
+  footer .contact-us-footer .links-left {
+    width: 150px;
+    margin-left: 5%;
+  }
+  footer .contact-us-footer .links-right {
+    width: 300px;
+  }
+  footer .contact-us-footer .links-right a {
+    margin-left: 3%;
+  }
+}

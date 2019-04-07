@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Modal windows</title>
+    <link rel="icon" type="image/png" sizes="256x256" href="img/light-bulb.png">
+    <link rel="stylesheet" href="css/elements.css">
+</head>
+<body>
+    
+<div class="elements-header">
+        <div class="menu-mobile-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+        </div>
+        
+        <div class="elements-logo"><a class="transition" href="elements.html"><img src="img/apple.png" alt="apple"></a></div>
+        <!-- <div class="elements-logo-settings"><img src="img/settings.png" alt="apple"></div> -->
+        <ul class="menu">
+
+                <li><a data-menu="#m1" href="#">PSD->HTML</a>
+                        <ul>
+                                <li><a class="transition" href="../Projects/Boostfolia/boostfolia.html">Boostfolia</a></li>
+                                <li><a class="transition" href="../Projects/Avenue-Fashion/avenue-fashion.html">Avenue Fashion</a></li>
+                                <li><a class="transition" href="../Projects/Bino/bino.html">Bino</a></li>
+                                <li><a class="transition" href="../Projects/Test_1000GEEKS/Test_GEEKS/super-holiday.html">Super Holiday</a></li>
+                                <li><a class="transition" href="../Projects/Abz.agency/abz.html">Denteez</a></li>
+                        </ul>
+                </li>
+
+                <li><a data-menu="#m2" href="#">API / JSON</a>
+                        <ul>
+                                <li><a class="transition" href="weather-api.html">Weather API</a></li>
+                                <li><a class="transition" href="zip-code-api.html">Get zip-code</a></li>
+                        </ul>
+                </li>
+
+                <li><a data-menu="#m3" href="#">Cards</a>
+                        <ul>
+                                <li><a class="transition" href="cards.html">Just cards</a></li>
+                                <li><a class="transition" href="rotate-cards.html">Rotate cards</a></li>
+                        </ul>
+                </li>
+
+                <li><a data-menu="#m4" href="#">Menu</a>
+                        <ul>
+                                <li><a class="transition" href="menu-js.html">Menu-JS</a></li>
+                                <li><a class="transition" href="accordion.html">Accordion</a></li>                                                                        
+                        </ul>                                
+                </li>
+
+                <li><a data-menu="#m5" href="#">Plugins</a>
+                        <ul>
+                                <li><a class="transition" href="slick-slider.html">Slick-slider</a></li>
+                                <li><a class="transition" href="lightbox.html">Light-box</a></li>
+                                <li><a class="transition" href="fullpage/fullpage-vertical.html">Fullpage Vertical</a></li>
+                                <li><a class="transition" href="fullpage-horizontal/fullpage-horizontal.html">Fullpage Horizontal</a></li>
+                        </ul>
+                </li>
+                
+                <li><a data-menu="#m6" href="#">Others</a>
+                        <ul>
+                                <li><a class="transition" href="m-window.html">Modal images</a></li>
+                                <li><a class="transition" href="plugin-modal-slider.html">Modal windows</a></li>
+                                <li><a class="transition" href="progress.html">Progress bar</a></li>
+                                <li><a class="transition" href="round-progress.html">Round progress bar</a></li>
+                                <li><a class="transition" href="spinners.html">Spinners</a></li>
+                                <li><a class="transition" href="moving-box.html">Moving box</a></li>
+                        </ul>
+                </li>
+        </ul>
+</div>
+    
+
+<div class="elements-content">
+    <div class="left-bar">
+        <div class="cards-background">
+            <div class="modal-slider-wripper">
+                <div class="btn-container">
+                    <a class="btn" data-modal="#m1">Open modal 1</a>
+                    <a class="btn" data-modal="#m2">Open modal 2</a>
+                    <a class="btn" data-modal="#m3">Open modal 3</a>
+                    <a class="btn" data-modal="#m4">Open modal 4</a>
+                    <a class="btn" data-modal="#m5">Open modal 5</a>
+                    <a class="btn" data-modal="#m6">Open modal 6</a>
+                    <a class="btn" data-modal="#m7">Open modal 7</a>
+                    <a class="btn" data-modal="#m8">Open modal 8</a>
+                    <a class="btn" data-modal="#m9">Open modal 9</a>
+                    <a class="btn" data-modal="#m10">Open modal 10</a>
+                </div>
+
+                <div class="modal-container">
+
+                    <div id="m1" class="modal">
+                        <h3 class="modal-title">Some modal title 1</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/1.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="close">Close modal</a>
+                            <a class="btn" data-modal="#m2">Open modal 2</a>
+                        </div>
+                    </div>
+
+
+                    <div id="m2" class="modal">
+                        <h3 class="modal-title">Some modal title 2</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/2.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>             
+                            
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m1">Open modal 1</a>
+                            <a class="btn" data-modal="#m3">Open modal 3</a>
+                        </div>
+                    </div>
+
+                    <div id="m3" class="modal">
+                        <h3 class="modal-title">Some modal title 3</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/3.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                    deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                    vero, reiciendis, pariatur consequuntur?
+                                </p>                
+                            </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m2">Open modal 2</a>
+                            <a class="btn" data-modal="#m4">Open modal 4</a>
+                        </div>
+                    </div>
+
+                    <div id="m4" class="modal">
+                        <h3 class="modal-title">Some modal title 4</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/4.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                    deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                    vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m3">Open modal 3</a>
+                            <a class="btn" data-modal="#m5">Open modal 5</a>
+                        </div>
+                    </div>
+
+                    <div id="m5" class="modal">
+                        <h3 class="modal-title">Some modal title 5</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/5.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                    deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                    vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m4">Open modal 4</a>
+                            <a class="btn" data-modal="#m6">Open modal 6</a>
+                        </div>
+                    </div>
+
+                    <div id="m6" class="modal">
+                        <h3 class="modal-title">Some modal title 6</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/6.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                    deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                    vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m5">Open modal 5</a>
+                            <a class="btn" data-modal="#m7">Open modal 7</a>
+                        </div>
+                    </div>
+
+                    <div id="m7" class="modal">
+                        <h3 class="modal-title">Some modal title 7</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/7.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                    deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                    vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m6">Open modal 6</a>
+                            <a class="btn" data-modal="#m8">Open modal 8</a>
+                        </div>
+                    </div>
+
+                    <div id="m8" class="modal">
+                        <h3 class="modal-title">Some modal title 8</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/8.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                    deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                    vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m7">Open modal 7</a>
+                            <a class="btn" data-modal="#m9">Open modal 9</a>
+                        </div>
+                    </div>
+
+                    <div id="m9" class="modal">
+                        <h3 class="modal-title">Some modal title 9</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/9.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                    deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                    vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m8">Open modal 8</a>
+                            <a class="btn" data-modal="#m10">Open modal 10</a>
+                        </div>
+                    </div>
+
+                    <div id="m10" class="modal">
+                        <h3 class="modal-title">Some modal title 10</h3>
+                        <div class="modal-content">
+                            <img src="img/imgs-plugin-modal-slider/10.jpeg" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquid quisquam at quae beatae atque iste? Aliquam iure, 
+                                    deleniti earum suscipit id blanditiis odit atque eum incidunt 
+                                    vero, reiciendis, pariatur consequuntur?
+                            </p>                
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn" data-modal="#m9">Open modal 9</a>
+                            <a class="btn" data-modal="close">Close modal</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/elements.js"></script>
+<script src="js/plugin-modal-slider.js"></script>
+<script src="js/plugin-modal-slider-main.js"></script>
+</body>
+
+<footer>
+    <div class="elements-footer">
+        <div class="elements-footer-img">
+            <a href="cv.html"><img src="img/cv1.png" alt="CV"></a>
+        </div>
+    </div>
+</footer>
+</html>

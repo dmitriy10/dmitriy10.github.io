@@ -1,0 +1,417 @@
+// out: ../css/projects-media.css
+@white-color: #ffffff; 
+@color_black: black;
+@import (optional) "mixins";
+
+@media (max-width: 1200px) {
+    .global-projects-wrapper {
+        .main-project-wrapper {
+            height: 250px;
+            width: 450px;
+            margin: 100px auto;
+        }
+        .wrapper-for-overlay {
+            height: 250px;
+            width: 450px;
+        }
+        .project-number {
+            font-size: 75px;
+            height: 150px;
+            width: 150px;
+        }
+        .about {
+            h2 {
+                font-size: 25px;
+                font-weight: 900;
+                top: 170px;
+                left: 25px;
+            }
+        }
+        .about-btn {
+            height: 30px;
+            width: 100px;
+            top: 210px;
+            left: 20px;
+            font-size: 20px;
+        }
+        .info {
+            ul {
+                font-size: 15px;
+                li {
+                    font-size: 12px;
+                }
+                li:first-child {
+                    padding-top: 20px;
+                }
+            }
+            .list.first {
+                top: 50px;
+                left: 50px;
+            }
+            .list.second {
+                top: 50px;
+                left: 210px;
+            }
+            .list.third {
+                top: 50px;
+                left: 350px;
+            }
+        }
+        /* ================================= */
+        /* :::::::::::::: ONE :::::::::::::: */
+        /* ================================= */
+        .project-wrapper.one {
+            margin: 100px auto;
+            &.active {
+                -webkit-transform: translateX(-1000px);
+                -ms-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+            }
+        }
+        .project-number.one {
+            top: -35px;
+            right: -75px;
+        }
+        .about-btn.one.active {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+
+
+        /* ================================= */
+        /* :::::::::::::: TWO :::::::::::::: */
+        /* ================================= */
+        .project-wrapper.two {
+            &.active {
+                -webkit-transform: translateX(1000px);
+                -ms-transform: translateX(1000px);
+                transform: translateX(1000px);
+            }
+        }
+        .project-number.two {
+            top: -25px;
+            left: -20px;
+        }
+        .about-btn.two.active {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+        /* ================================= */
+        /* ::::::::::::: THREE ::::::::::::: */
+        /* ================================= */
+        .project-wrapper.three {
+            &.active {
+                -webkit-transform: scale(0) rotate(360deg);
+                -ms-transform: scale(0) rotate(360deg);
+                transform: scale(0) rotate(360deg);
+            }
+        }
+        .project-number.three {
+            top: -25px;
+            right: -70px;
+        }
+        .about-btn.three.active {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+        /* ================================= */
+        /* ::::::::::::: FOUR :::::::::::::: */
+        /* ================================= */
+        .project-wrapper.four {
+            &.active {
+                -webkit-transform: rotateY(90deg);
+                transform: rotateY(90deg);
+            }
+        }
+        .project-number.four {
+            top: -25px;
+            left: -25px;
+        }
+        .about-btn.four.active {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+        /* ================================= */
+        /* ::::::::::::: FIVE :::::::::::::: */
+        /* ================================= */
+        .project-wrapper.five {
+            &.active {
+                -webkit-transform: translateY(300px) scale(0);
+                -ms-transform: translateY(300px) scale(0);
+                transform: translateY(300px) scale(0);
+            }
+        }
+        .project-overlay.five {
+            -webkit-transform: translateY(-1000px);
+            -ms-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+            cursor: pointer;
+        }
+        .project-number.five {
+            top: -25px;
+            right: -70px;
+        }
+        .about-btn.five.active {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+        /* ================================= */
+        /* :::::::::::::: SIX :::::::::::::: */
+        /* ================================= */
+        .project-number.six {
+            top: -25px;
+            right: -70px;
+        }
+        .about-btn.six.active {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .global-projects-wrapper {
+        .main-project-wrapper {
+            height: 200px;
+            width: 400px;
+            margin: 50px auto;
+        }
+        .wrapper-for-overlay {
+            height: 200px;
+            width: 400px;
+        }
+        .project-number {
+            font-size: 50px;
+            height: 150px;
+            width: 150px;
+            background-image: -webkit-linear-gradient(@color_black 30px, @white-color 30px);
+            background-image: -o-linear-gradient(@color_black 30px, @white-color 30px);
+            background-image: linear-gradient(@color_black 30px, @white-color 30px);
+        }
+        .about {
+            h2 {
+                font-size: 20px;
+                font-weight: 900;
+                top: 120px;
+                left: 25px;
+            }
+        }
+        .about-btn {
+            height: 30px;
+            width: 100px;
+            top: 160px;
+            left: 20px;
+            font-size: 20px;
+        }
+        .info {
+            ul {
+                font-size: 12px;
+                li {
+                    font-size: 10px;
+                }
+                li:first-child {
+                    padding-top: 5px;
+                }
+            }
+            .list.first {
+                top: 20px;
+                left: 50px;
+            }
+            .list.second {
+                top: 20px;
+                left: 170px;
+            }
+            .list.third {
+                top: 20px;
+                left: 290px;
+            }
+        }
+        @-webkit-keyframes projectOne {
+            100% {
+                background-position: 0 -150px;
+                opacity: 1;
+                visibility: visible;
+                .transform-none;
+            }
+        }
+        @keyframes projectOne {
+            100% {
+                background-position: 0 -150px;
+                opacity: 1;
+                visibility: visible;
+                .transform-none;
+            }
+        }  
+        /* ================================= */
+        /* :::::::::::::: ONE :::::::::::::: */
+        /* ================================= */
+        .project-number.one {
+            top: -30px;
+            right: -100px;
+        }
+        /* ================================= */
+        /* ::::::::::::: THREE ::::::::::::: */
+        /* ================================= */
+        .project-number.three {
+            top: -25px;
+            right: -100px;
+        }
+        /* ================================= */
+        /* ::::::::::::: FIVE :::::::::::::: */
+        /* ================================= */
+        .project-number.five {
+            top: -25px;
+            right: -110px;
+        }
+        /* ================================= */
+        /* ::::::::::::: SIX :::::::::::::: */
+        /* ================================= */
+        .project-number.six {
+            top: -25px;
+            left: -20px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .global-projects-wrapper {
+        .main-project-wrapper {
+            height: 150px;
+            width: 300px;
+            margin: 50px auto;
+        }
+        .wrapper-for-overlay {
+            height: 150px;
+            width: 300px;
+        }
+        .project-number {
+            font-size: 40px;
+            height: 150px;
+            width: 150px;
+            background-image: -webkit-linear-gradient(@color_black 25px, @white-color 25px);
+            background-image: -o-linear-gradient(@color_black 25px, @white-color 25px);
+            background-image: linear-gradient(@color_black 25px, @white-color 25px);
+        }
+        .about {
+            h2 {
+                font-size: 12px;
+                font-weight: 900;
+                top: 125px;
+                left: 25px;
+            }
+        }
+        .about-btn {
+            height: 25px;
+            width: 70px;
+            top: 90px;
+            left: 20px;
+            font-size: 12px;
+        }
+        .info {
+            ul {
+                font-size: 12px;
+                li {
+                    font-size: 10px;
+                }
+                li:first-child {
+                    padding-top: 5px;
+                }
+            }
+            .list.first {
+                top: -10px;
+                left: 30px;
+            }
+            .list.second {
+                top: -10px;
+                left: 140px;
+            }
+            .list.third {
+                top: -10px;
+                left: 250px;
+            }
+        }
+        @-webkit-keyframes projectOne {
+            100% {
+                background-position: 0 -150px;
+                opacity: 1;
+                visibility: visible;
+                .transform-none;
+            }
+        }
+        @keyframes projectOne {
+            100% {
+                background-position: 0 -150px;
+                opacity: 1;
+                visibility: visible;
+                .transform-none;
+            }
+        }  
+        /* ================================= */
+        /* :::::::::::::: ONE :::::::::::::: */
+        /* ================================= */
+        .project-number.one {
+            top: -25px;
+            right: -100px;
+        }
+        .about-btn.one.active {
+            .transform-none;
+        }
+        /* ================================= */
+        /* :::::::::::::: TWO :::::::::::::: */
+        /* ================================= */
+        .project-number.two {
+            top: -25px;
+            left: -10px;
+        }
+        .about-btn.two.active {
+            .transform-none;
+        }
+        /* ================================= */
+        /* ::::::::::::: THREE ::::::::::::: */
+        /* ================================= */
+        .project-number.three {
+            top: -25px;
+            right: -110px;
+        }
+        .about-btn.three.active {
+            .transform-none;
+        }
+        /* ================================= */
+        /* ::::::::::::: FOUR :::::::::::::: */
+        /* ================================= */
+        .project-number.four {
+            top: -25px;
+            left: -10px;
+        }
+        .about-btn.four.active {
+            .transform-none;
+        }
+        /* ================================= */
+        /* ::::::::::::: FIVE :::::::::::::: */
+        /* ================================= */
+        .project-number.five {
+            top: -25px;
+            right: -110px;
+        }
+        .about-btn.five.active {
+            .transform-none;
+        }
+        /* ================================= */
+        /* ::::::::::::: SIX :::::::::::::: */
+        /* ================================= */
+        .project-number.six {
+            top: -25px;
+            left: -10px;
+        }
+        .about-btn.six.active {
+            .transform-none;
+        }
+    }
+}
+

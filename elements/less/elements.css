@@ -1,0 +1,387 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+#top {
+  width: 100px;
+  border: 1px solid #000000;
+  background: #000000;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 80px;
+  /* отступ кнопки от нижнего края страницы*/
+  right: 0;
+  cursor: pointer;
+  display: none;
+  color: white;
+  font-family: "Tahoma";
+  font-size: 15px;
+}
+#top img {
+  width: 30px;
+  height: 30px;
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+html,
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Tahoma";
+  font-size: 14px;
+  font-weight: normal;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes translateX {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+.elements-header {
+  background-color: #000000;
+  height: 47px;
+}
+.elements-header .elements-logo {
+  position: absolute;
+  left: calc(50% - 20px);
+  background-color: #000000;
+}
+.elements-header .elements-logo img {
+  background: white;
+  width: 40px;
+  height: 40px;
+  animation: bounce 2s ease infinite;
+}
+.elements-header .menu {
+  margin-left: 10px;
+  float: left;
+}
+.elements-header .menu li {
+  display: inline-block;
+  position: relative;
+}
+.elements-header .menu li a {
+  color: white;
+  display: block;
+  padding: 12px;
+  white-space: nowrap;
+}
+.elements-header .menu li a:hover {
+  background-color: white;
+  color: #000000;
+}
+.elements-header .menu li:hover ul {
+  visibility: visible;
+  z-index: 10;
+}
+.elements-header .menu li:hover ul a {
+  min-width: 120px;
+}
+.elements-header .menu ul {
+  opacity: 1;
+  visibility: hidden;
+  position: absolute;
+  background-color: #000000;
+  z-index: 5;
+}
+.elements-content {
+  overflow: auto;
+}
+.elements-content .parallax-wrapper {
+  height: 800px;
+}
+.elements-content .parallax-wrapper .parallax {
+  background-image: url("../img/parallax.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  position: relative;
+  height: 100%;
+}
+.elements-content .parallax-wrapper .parallax-text {
+  position: absolute;
+  top: 400px;
+  text-align: center;
+  width: 100%;
+}
+.elements-content .parallax-wrapper .parallax-text h1 {
+  color: white;
+  font-size: 30px;
+}
+.elements-content .left-bar {
+  width: 100%;
+}
+.elements-content .left-bar .card {
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+  margin-top: 150px;
+}
+.elements-content .left-bar .card .card-header:first-child {
+  margin-top: 30px;
+}
+.elements-content .left-bar .card .card-header {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1s ease;
+  margin-bottom: 30px;
+}
+.elements-content .left-bar .card .card-header:hover {
+  transform: scale(0.9);
+}
+.elements-content .left-bar .card .card-header a:hover {
+  border-bottom: 5px solid white;
+}
+.elements-content .left-bar .card .cards-background {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.elements-content .left-bar .card .cards-background .card-avatar {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 1000px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+.elements-content .left-bar .card .cards-background .card-avatar img {
+  width: 50%;
+  height: 50%;
+  margin: 25%;
+  display: block;
+  transition: all 1s ease-out;
+}
+.elements-content .left-bar .card .cards-background .card-avatar img:hover {
+  transform: scale(1.2);
+}
+.elements-content .left-bar .card a {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: white;
+  font-family: "Tahoma";
+  font-size: 30px;
+  font-weight: bold;
+}
+.elements-content .left-bar .card a:hover {
+  color: darkgrey;
+  transform: scale(1.1);
+}
+.elements-content .parallax-down {
+  background-image: url("../img/parallax-down.jpeg");
+  height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  position: relative;
+}
+footer {
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 30px;
+}
+.elements-footer {
+  background-color: #000000;
+  height: 50px;
+  margin-top: 30px;
+}
+.elements-footer .elements-footer-img {
+  display: inline-block;
+  width: 100%;
+}
+.elements-footer .elements-footer-img a {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+.elements-footer .elements-footer-img img {
+  box-sizing: border-box;
+  background: #000000;
+  text-align: center;
+  width: 50px;
+  height: 47px;
+  animation: translateX 5s linear infinite;
+}
+@media (min-width: 2500px) {
+  .left-bar .card .cards-background .card-avatar {
+    max-width: 2000px;
+    max-height: 2000px;
+  }
+}
+@media (max-width: 1000px) {
+  #top {
+    width: 70px;
+    padding: 10px;
+    bottom: 110px;
+    /* отступ кнопки от нижнего края страницы*/
+    font-size: 15px;
+  }
+  #top img {
+    width: 20px;
+    height: 20px;
+  }
+  .elements-header .elements-logo {
+    left: 80%;
+  }
+}
+@media (max-width: 800px) {
+  #top {
+    width: 50px;
+    padding: 10px;
+    bottom: 80px;
+    /* отступ кнопки от нижнего края страницы*/
+    font-size: 15px;
+  }
+  #top img {
+    width: 20px;
+    height: 20px;
+  }
+  .elements-header .elements-logo {
+    left: calc(50% - 20px);
+    margin-top: -47px;
+  }
+  .elements-header .menu-mobile-container {
+    width: 50px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  .elements-header .menu-mobile-container .bar1,
+  .elements-header .menu-mobile-container .bar2,
+  .elements-header .menu-mobile-container .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 10px;
+    transition: 0.4s;
+  }
+  .elements-header .menu-mobile-container .bar1 {
+    margin-top: 10px;
+  }
+  .elements-header .menu-mobile-container .bar1.change {
+    transform-origin: 15% 120%;
+    transform: rotate(45deg);
+  }
+  .elements-header .menu-mobile-container .bar2.change {
+    opacity: 0;
+  }
+  .elements-header .menu-mobile-container .bar3.change {
+    transform-origin: 15% -50%;
+    transform: rotate(-45deg);
+  }
+  .elements-header .menu {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    z-index: 10;
+    background-color: #000000;
+    transform: translateX(-1000px);
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    width: 100%;
+    transition: 0.4s;
+    text-align: center;
+  }
+  .elements-header .menu.change {
+    transform: none;
+    transition: 0.4s;
+  }
+  .elements-header .menu li {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .elements-header .menu li.change {
+    background-color: white;
+  }
+  .elements-header .menu li a {
+    color: white;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    font-size: 25px;
+  }
+  .elements-header .menu li a.change {
+    color: #000000;
+  }
+  .elements-header .menu li a:hover {
+    background-color: white;
+    color: #000000;
+  }
+  .elements-header .menu li:hover ul {
+    visibility: visible;
+    z-index: 10;
+  }
+  .elements-header .menu ul {
+    background-color: #000000;
+    z-index: 5;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+    position: static;
+  }
+  .elements-header .menu ul li a {
+    font-size: 12px;
+    border-bottom: 1px solid blue;
+  }
+  .elements-header .menu ul li ul {
+    display: inline-block;
+  }
+  .elements-content .left-bar .card .card-header:first-child {
+    margin-top: 40px;
+  }
+  .elements-content .left-bar .card .card-header a {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+}

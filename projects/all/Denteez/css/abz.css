@@ -1,0 +1,399 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Tahoma";
+  font-size: 14px;
+  font-weight: normal;
+}
+p {
+  color: gray;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+  color: black;
+}
+.site-header {
+  width: 100%;
+  min-width: 1200px;
+  height: 65px;
+  background-color: #87b448;
+  padding: 0;
+  border-bottom: 2px solid #71973c;
+  position: relative;
+}
+.site-header .site-header-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.site-header .site-header-content .site-logo {
+  position: absolute;
+  left: 200px;
+  top: 10px;
+}
+.site-header .site-header-content .input-group {
+  position: absolute;
+  top: 20px;
+  left: 365px;
+  width: 630px;
+  vertical-align: middle;
+}
+.site-header .site-header-content .input-group input {
+  border-radius: 3px;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 30px;
+  width: 395px;
+  color: white;
+  background-color: #73993d;
+  padding-left: 40px;
+}
+.site-header .site-header-content .input-group ::placeholder {
+  color: white;
+}
+.site-header .site-header-content .input-group a {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+.site-header .site-header-content .chat {
+  position: absolute;
+  top: 25px;
+  left: 800px;
+  margin-left: 30px;
+}
+.site-header .site-header-content .notifications {
+  position: absolute;
+  top: 23px;
+  left: 860px;
+  display: inline-block;
+  margin-left: 15px;
+}
+.site-header .site-header-content .maximillian {
+  position: absolute;
+  top: 20px;
+  left: 930px;
+  width: 230px;
+}
+.site-header .site-header-content .maximillian p {
+  position: absolute;
+  top: 5px;
+  display: inline-block;
+  left: 45px;
+  font-size: 16px;
+  color: white;
+}
+.site-header .site-header-content .abz-back {
+  margin-top: 15px;
+  margin-right: 50px;
+  display: inline-block;
+  float: right;
+}
+.site-header .site-header-content .abz-back a {
+  font-size: 30px;
+  color: white;
+}
+.site-content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.site-content .left-bar {
+  height: 1000px;
+  background-color: white;
+}
+.site-content .left-bar .left-bar-content {
+  float: left;
+  margin-top: 5px;
+  margin-left: 202px;
+  margin-right: 16px;
+  width: 210px;
+}
+.site-content .left-bar .left-bar-content .list {
+  border-bottom: 1px solid gray;
+}
+.site-content .left-bar .left-bar-content .list a {
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 9px;
+  margin-top: 13px;
+  margin-left: 0;
+  font-size: 16px;
+}
+.site-content .left-bar .left-bar-content .list a img {
+  margin-right: 30px;
+}
+.site-content .left-bar .left-bar-content .advertisement-left {
+  margin-top: 18px;
+  border-bottom: 1px solid gray;
+}
+.site-content .left-bar .left-bar-content .advertisement-left p {
+  margin-bottom: 17px;
+  font-size: 14px;
+}
+.site-content .left-bar .left-bar-content .advertisement-left p:last-child {
+  font-size: 11px;
+}
+.site-content .left-bar .left-bar-content .see-all {
+  margin-top: 18px;
+}
+.site-content .left-bar .left-bar-content .see-all p {
+  display: inline-block;
+}
+.site-content .left-bar .left-bar-content .see-all a {
+  vertical-align: middle;
+  display: inline-block;
+  float: right;
+}
+.site-content .left-bar .left-bar-content .cards-left-bar .cards-wrapper {
+  display: inline-block;
+  margin-top: 17px;
+  margin-bottom: 4px;
+}
+.site-content .left-bar .left-bar-content .cards-left-bar .cards-wrapper img {
+  float: left;
+  display: inline-block;
+  margin-right: 14px;
+}
+.site-content .left-bar .left-bar-content .cards-left-bar .cards-wrapper h3 {
+  margin-top: -7px;
+  font-size: 16px;
+  display: inline-block;
+}
+.site-content .left-bar .left-bar-content .cards-left-bar .cards-wrapper p {
+  margin-top: 2px;
+  font-size: 13px;
+  display: inline-block;
+}
+.site-content .left-bar .left-bar-content .cards-left-bar .cards-wrapper a {
+  margin-top: 5px;
+  font-size: 12px;
+  display: inline-block;
+}
+.site-content .left-bar .left-bar-content .cards-left-bar .cards-wrapper p:first-child {
+  padding-top: 10px;
+  border-top: 1px solid gray;
+  margin-bottom: 7px;
+}
+.site-content .left-bar .left-bar-content .cards-left-bar .cards-wrapper p:last-child {
+  margin-left: 10px;
+}
+.site-content .middle-bar {
+  flex-grow: 1;
+  height: 100%;
+  min-width: 495px;
+}
+.site-content .middle-bar .middle-bar-header {
+  width: 100%;
+  display: inline-block;
+}
+.site-content .middle-bar .middle-bar-header h1 {
+  margin-top: 8px;
+  margin-left: 3px;
+  font-size: 30px;
+  display: inline-block;
+}
+.site-content .middle-bar .middle-bar-header .button-middle-bar {
+  border-radius: 5px;
+  margin-top: 13px;
+  display: block;
+  float: right;
+  background-color: #87b448;
+}
+.site-content .middle-bar .middle-bar-header .button-middle-bar a {
+  color: white;
+  display: block;
+  padding: 6px 20px;
+}
+.site-content .middle-bar .middle-content {
+  border: 1px solid grey;
+  margin-top: 15px;
+  height: 100%;
+}
+.site-content .middle-bar .middle-content .middle-bar-card {
+  display: inline-block;
+  height: 138px;
+  width: 138px;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 40px;
+  border: 1px solid gray;
+}
+.site-content .middle-bar .middle-content .middle-bar-card img {
+  margin-top: 35px;
+  margin-left: 35px;
+  height: 70px;
+  width: 70px;
+}
+.site-content .middle-bar .middle-content .middle-bar-card p {
+  margin-top: 43px;
+  text-align: center;
+}
+.site-content .middle-bar .middle-content .middle-bar-card:hover {
+  background-color: #f4f7fb;
+}
+.site-content .right-bar {
+  background-color: white;
+}
+.site-content .right-bar .right-bar-content {
+  float: left;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 210px;
+}
+.site-content .right-bar .right-bar-content .see-all-right {
+  margin-bottom: 10px;
+}
+.site-content .right-bar .right-bar-content .see-all-right p {
+  display: inline-block;
+}
+.site-content .right-bar .right-bar-content .see-all-right a {
+  display: inline-block;
+  float: right;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right {
+  display: inline-block;
+  width: 100%;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right h3 {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right img {
+  float: left;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right p {
+  margin-top: 5px;
+  font-size: 13px;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right a {
+  margin-top: 1px;
+  font-size: 12px;
+}
+.site-content .right-bar .right-bar-content .see-all-right-two {
+  margin-top: 18px;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  margin-bottom: 8px;
+}
+.site-content .right-bar .right-bar-content .see-all-right-two p {
+  display: inline-block;
+}
+.site-content .right-bar .right-bar-content .see-all-right-two a {
+  display: inline-block;
+  float: right;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right-two {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 9px;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right-two h3 {
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right-two img {
+  float: left;
+  margin-top: 0;
+  margin-right: 10px;
+}
+.site-content .right-bar .right-bar-content .cards-wrapper-right-two p {
+  margin-top: 2px;
+  font-size: 13px;
+}
+.site-content .right-bar .right-bar-content .advertisement-right p:first-child {
+  padding-top: 25px;
+  border-top: 1px solid gray;
+  font-size: 15px;
+}
+.site-content .right-bar .right-bar-content .advertisement-right p {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+footer .site-footer {
+  min-width: 1200px;
+  margin-top: 300px;
+  width: 100%;
+  height: 65px;
+  background-color: #87b448;
+  padding: 0;
+  border-top: 2px solid #71973c;
+  text-align: center;
+}
+footer .site-footer a {
+  display: block;
+  margin-top: 15px;
+  font-size: 30px;
+  color: white;
+}
+@media all and (max-width: 1200px) {
+  .site-header {
+    min-width: 1000px;
+    width: 100%;
+  }
+  .site-header .site-header-content .site-logo {
+    left: 30px;
+  }
+  .site-header .site-header-content .input-group {
+    width: 260px;
+    left: 195px;
+  }
+  .site-header .site-header-content .input-group input {
+    width: 250px;
+  }
+  .site-header .site-header-content .chat {
+    left: 470px;
+  }
+  .site-header .site-header-content .notifications {
+    left: 530px;
+  }
+  .site-header .site-header-content .maximillian {
+    left: 600px;
+  }
+  .site-content .left-bar .left-bar-content {
+    margin-left: 30px;
+  }
+  .site-content .right-bar .right-bar-content {
+    margin-right: 30px;
+  }
+  footer .site-footer {
+    min-width: 1000px;
+    width: 100%;
+  }
+}

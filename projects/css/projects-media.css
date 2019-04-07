@@ -1,0 +1,517 @@
+html,
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Tahoma";
+  font-size: 14px;
+  font-weight: normal;
+}
+/* ================================= */
+/* :::::::::: Flex-Mixins :::::::::: */
+/* ================================= */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-center-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.flex-jc-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+.flex-jc-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.flex-jc-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.flex-jc-space-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.flex-jc-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.flex-jc-space-evenly {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+.h-and-w {
+  height: 100%;
+  width: 100%;
+}
+/* ================================= */
+/* :::::: Transition-Transform ::::: */
+/* ================================= */
+.transform-none {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+.box {
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+.box {
+  -webkit-transition: all ease 10s;
+  -o-transition: all ease 10s;
+  transition: all ease 10s;
+}
+@media (max-width: 1200px) {
+  .global-projects-wrapper {
+    /* ================================= */
+    /* :::::::::::::: ONE :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* :::::::::::::: TWO :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: THREE ::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: FOUR :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: FIVE :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* :::::::::::::: SIX :::::::::::::: */
+    /* ================================= */
+  }
+  .global-projects-wrapper .main-project-wrapper {
+    height: 250px;
+    width: 450px;
+    margin: 100px auto;
+  }
+  .global-projects-wrapper .wrapper-for-overlay {
+    height: 250px;
+    width: 450px;
+  }
+  .global-projects-wrapper .project-number {
+    font-size: 75px;
+    height: 150px;
+    width: 150px;
+  }
+  .global-projects-wrapper .about h2 {
+    font-size: 25px;
+    font-weight: 900;
+    top: 170px;
+    left: 25px;
+  }
+  .global-projects-wrapper .about-btn {
+    height: 30px;
+    width: 100px;
+    top: 210px;
+    left: 20px;
+    font-size: 20px;
+  }
+  .global-projects-wrapper .info ul {
+    font-size: 15px;
+  }
+  .global-projects-wrapper .info ul li {
+    font-size: 12px;
+  }
+  .global-projects-wrapper .info ul li:first-child {
+    padding-top: 20px;
+  }
+  .global-projects-wrapper .info .list.first {
+    top: 50px;
+    left: 50px;
+  }
+  .global-projects-wrapper .info .list.second {
+    top: 50px;
+    left: 210px;
+  }
+  .global-projects-wrapper .info .list.third {
+    top: 50px;
+    left: 350px;
+  }
+  .global-projects-wrapper .project-wrapper.one {
+    margin: 100px auto;
+  }
+  .global-projects-wrapper .project-wrapper.one.active {
+    -webkit-transform: translateX(-1000px);
+    -ms-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+  .global-projects-wrapper .project-number.one {
+    top: -35px;
+    right: -75px;
+  }
+  .global-projects-wrapper .about-btn.one.active {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  .global-projects-wrapper .project-wrapper.two.active {
+    -webkit-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
+    transform: translateX(1000px);
+  }
+  .global-projects-wrapper .project-number.two {
+    top: -25px;
+    left: -20px;
+  }
+  .global-projects-wrapper .about-btn.two.active {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  .global-projects-wrapper .project-wrapper.three.active {
+    -webkit-transform: scale(0) rotate(360deg);
+    -ms-transform: scale(0) rotate(360deg);
+    transform: scale(0) rotate(360deg);
+  }
+  .global-projects-wrapper .project-number.three {
+    top: -25px;
+    right: -70px;
+  }
+  .global-projects-wrapper .about-btn.three.active {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  .global-projects-wrapper .project-wrapper.four.active {
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  .global-projects-wrapper .project-number.four {
+    top: -25px;
+    left: -25px;
+  }
+  .global-projects-wrapper .about-btn.four.active {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  .global-projects-wrapper .project-wrapper.five.active {
+    -webkit-transform: translateY(300px) scale(0);
+    -ms-transform: translateY(300px) scale(0);
+    transform: translateY(300px) scale(0);
+  }
+  .global-projects-wrapper .project-overlay.five {
+    -webkit-transform: translateY(-1000px);
+    -ms-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    cursor: pointer;
+  }
+  .global-projects-wrapper .project-number.five {
+    top: -25px;
+    right: -70px;
+  }
+  .global-projects-wrapper .about-btn.five.active {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  .global-projects-wrapper .project-number.six {
+    top: -25px;
+    right: -70px;
+  }
+  .global-projects-wrapper .about-btn.six.active {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+@media (max-width: 600px) {
+  .global-projects-wrapper {
+    /* ================================= */
+    /* :::::::::::::: ONE :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: THREE ::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: FIVE :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: SIX :::::::::::::: */
+    /* ================================= */
+  }
+  .global-projects-wrapper .main-project-wrapper {
+    height: 200px;
+    width: 400px;
+    margin: 50px auto;
+  }
+  .global-projects-wrapper .wrapper-for-overlay {
+    height: 200px;
+    width: 400px;
+  }
+  .global-projects-wrapper .project-number {
+    font-size: 50px;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-linear-gradient(black 30px, #ffffff 30px);
+    background-image: -o-linear-gradient(black 30px, #ffffff 30px);
+    background-image: linear-gradient(black 30px, #ffffff 30px);
+  }
+  .global-projects-wrapper .about h2 {
+    font-size: 20px;
+    font-weight: 900;
+    top: 120px;
+    left: 25px;
+  }
+  .global-projects-wrapper .about-btn {
+    height: 30px;
+    width: 100px;
+    top: 160px;
+    left: 20px;
+    font-size: 20px;
+  }
+  .global-projects-wrapper .info ul {
+    font-size: 12px;
+  }
+  .global-projects-wrapper .info ul li {
+    font-size: 10px;
+  }
+  .global-projects-wrapper .info ul li:first-child {
+    padding-top: 5px;
+  }
+  .global-projects-wrapper .info .list.first {
+    top: 20px;
+    left: 50px;
+  }
+  .global-projects-wrapper .info .list.second {
+    top: 20px;
+    left: 170px;
+  }
+  .global-projects-wrapper .info .list.third {
+    top: 20px;
+    left: 290px;
+  }
+  @-webkit-keyframes projectOne {
+    100% {
+      background-position: 0 -150px;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes projectOne {
+    100% {
+      background-position: 0 -150px;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+  .global-projects-wrapper .project-number.one {
+    top: -30px;
+    right: -100px;
+  }
+  .global-projects-wrapper .project-number.three {
+    top: -25px;
+    right: -100px;
+  }
+  .global-projects-wrapper .project-number.five {
+    top: -25px;
+    right: -110px;
+  }
+  .global-projects-wrapper .project-number.six {
+    top: -25px;
+    left: -20px;
+  }
+}
+@media (max-width: 400px) {
+  .global-projects-wrapper {
+    /* ================================= */
+    /* :::::::::::::: ONE :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* :::::::::::::: TWO :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: THREE ::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: FOUR :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: FIVE :::::::::::::: */
+    /* ================================= */
+    /* ================================= */
+    /* ::::::::::::: SIX :::::::::::::: */
+    /* ================================= */
+  }
+  .global-projects-wrapper .main-project-wrapper {
+    height: 150px;
+    width: 300px;
+    margin: 50px auto;
+  }
+  .global-projects-wrapper .wrapper-for-overlay {
+    height: 150px;
+    width: 300px;
+  }
+  .global-projects-wrapper .project-number {
+    font-size: 40px;
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-linear-gradient(black 25px, #ffffff 25px);
+    background-image: -o-linear-gradient(black 25px, #ffffff 25px);
+    background-image: linear-gradient(black 25px, #ffffff 25px);
+  }
+  .global-projects-wrapper .about h2 {
+    font-size: 12px;
+    font-weight: 900;
+    top: 125px;
+    left: 25px;
+  }
+  .global-projects-wrapper .about-btn {
+    height: 25px;
+    width: 70px;
+    top: 90px;
+    left: 20px;
+    font-size: 12px;
+  }
+  .global-projects-wrapper .info ul {
+    font-size: 12px;
+  }
+  .global-projects-wrapper .info ul li {
+    font-size: 10px;
+  }
+  .global-projects-wrapper .info ul li:first-child {
+    padding-top: 5px;
+  }
+  .global-projects-wrapper .info .list.first {
+    top: -10px;
+    left: 30px;
+  }
+  .global-projects-wrapper .info .list.second {
+    top: -10px;
+    left: 140px;
+  }
+  .global-projects-wrapper .info .list.third {
+    top: -10px;
+    left: 250px;
+  }
+  @-webkit-keyframes projectOne {
+    100% {
+      background-position: 0 -150px;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes projectOne {
+    100% {
+      background-position: 0 -150px;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+  .global-projects-wrapper .project-number.one {
+    top: -25px;
+    right: -100px;
+  }
+  .global-projects-wrapper .about-btn.one.active {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .global-projects-wrapper .project-number.two {
+    top: -25px;
+    left: -10px;
+  }
+  .global-projects-wrapper .about-btn.two.active {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .global-projects-wrapper .project-number.three {
+    top: -25px;
+    right: -110px;
+  }
+  .global-projects-wrapper .about-btn.three.active {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .global-projects-wrapper .project-number.four {
+    top: -25px;
+    left: -10px;
+  }
+  .global-projects-wrapper .about-btn.four.active {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .global-projects-wrapper .project-number.five {
+    top: -25px;
+    right: -110px;
+  }
+  .global-projects-wrapper .about-btn.five.active {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .global-projects-wrapper .project-number.six {
+    top: -25px;
+    left: -10px;
+  }
+  .global-projects-wrapper .about-btn.six.active {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}

@@ -1,0 +1,97 @@
+
+@blue: #2980b9;
+@height_rounded_progress: 25px;
+// @background_color_black: #000000;
+// @color_white: white;
+// @color_black: #000000;
+// @background_color_white: white;
+// @body_background_color: #000000;
+@import (optional) "vars";
+
+.elements-content {
+	.left-bar {
+        .cards-background {
+            .rounded-progress {
+                margin: auto;
+                margin-top: 10%;
+                position: relative;
+                width: 300px;
+                height: 300px;
+                font-size: 30px;
+                color: @background_color_black;
+                margin-bottom: 700px;
+
+                .left-bar-rounded-progress {
+                    box-sizing: border-box;
+                    position: absolute;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 50%;
+                    border: @height_rounded_progress solid @blue;
+                    border-right: none;
+                    border-top-left-radius: 100% 50%;
+                    border-bottom-left-radius: 100% 50%;
+                    transform: rotate(360deg);
+                    transform-origin: 100% 50%;
+                }
+                .right-bar-rounded-progress {
+                    box-sizing: border-box;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 50%;
+                    border: @height_rounded_progress solid @blue;
+                    border-left: none;
+                    border-top-right-radius: 100% 50%;
+                    border-bottom-right-radius: 100% 50%;
+                    z-index: 1;
+                    opacity: 0;
+                }
+                .mask-rounded-progress {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 50%;
+                    background-color: @color_white;
+                    z-index: 2;
+                }
+                .value {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 3;
+                    font-family: "Tahoma";
+                    font-size: 35px;
+                    color: @color_black;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .elements-content {
+        .left-bar {
+            .cards-background {
+                .rounded-progress {
+                    margin: auto;
+                    margin-top: 30%;
+                    position: relative;
+                    width: 200px;
+                    height: 200px;
+                    font-size: 30px;
+                    color: @background_color_black;
+                    margin-bottom: 400px;
+                    .value {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

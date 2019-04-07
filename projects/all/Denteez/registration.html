@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABZ</title>
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+
+ 
+<body>
+    
+    <div class="main-content">
+
+        <div class="header-image-wrapper">
+            <div class="header-image"></div>
+        </div>
+
+        <div class="header-text">
+            <h1>Home of Dentistry</h1>
+            <p>Denteez was created by dentists for dentistry in order to
+                    make the life of everyone involved in dentistry easier.
+            </p>
+        </div>
+
+        <div class="logo">
+            <img src="img-p2/Logo.png" alt="no image">
+        </div>
+
+        <div class="button-page-two">
+            <a href="#">Log In Now</a>
+        </div>
+
+        <div class="abz-registration-back">
+            <a href="../../Site/elements.html">Back</a>
+        </div>
+        
+        <div class="background-image">
+                <div class="input-group">
+                    <p>Fields marked "*" are required</p>
+
+                    <label>Enquiry Type *</label>
+                    <select id="select" onchange="document.getElementById('inputOther').value=this.options[this.selectedIndex].innerText">
+                        <option value="1">Other 1</option>
+                        <option value="2">Other 2</option>
+                        <option value="3">Other 3</option>
+                        <option value="4">Other 4</option>
+                        <option value="5">Other 5</option>
+                        <option value="6">Other 6</option>
+                        <option value="7">Other 7</option>
+                        <option value="8">Other 8</option>
+                        <option value="9">Other 9</option>
+                        <option value="10">Other 10</option>
+                    </select>
+
+                    <input id="inputOther" type="text" placeholder="Other">
+
+                    <label class="label-short">Name *</label>
+                    <label class="label-short">Email *</label>
+                    <input class="short" type="text" placeholder="Dentist">
+                    <input class="short" type="text" placeholder="rachelm@gmail.com">
+
+                    <label>Subject *</label>
+                    <input type="text">
+
+
+                    <label class="last-label">Description *</label>
+                    <div class="textarea" id="div">(0/1000)</div>
+                    <textarea id="textarea_id"></textarea>
+
+                    <div class="add-photo">
+                        <input type='file'/>
+                        <img id="myImg" src="#"> 
+                        <div class="photo-text">
+                            <h1>Add photo</h1>
+                            <p>
+                                Minimum size of 300x300
+                               jpeg jpg png 5MB
+                            </p>
+                        </div>
+                    </div>	
+                    
+                </div>
+
+                <div class="button-footer">
+                    <a href="#">Submit</a>
+                </div>
+
+                
+
+        </div>
+
+        <div class="content-bottom">
+            <h1>About Denteez</h1>
+            <div class="text-wrapper">
+                <div class="text-left">
+                        <p>
+                            Why is it always so difficult to find what you are looking for 
+                            in dentistry? Whether it is the latest advancement in technology 
+                            or techniques or simply a review or understanding of the vast 
+                            amount of products? Perhaps finding someone to just fix your broken 
+                            equipment or simply hiring new staff or looking for that new job?
+                        </p>
+                </div>
+                <div class="text-right">
+                    <p>
+                        Our mission is to give every dental professional the possibility to 
+                        discuss and share all aspects of their profession, their practice and 
+                        their business. We aim to make the world of dentistry easy and accessible, 
+                        so every dental professional can find what they are looking for quickly and 
+                        easily all in one place.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main-js-abz.js"></script>
+</body>
+
+
+<footer>
+    <div class="contact-us-footer">
+
+        <div class="links-left">
+            <a href="#">Denteez Copyright 2018</a>
+        </div>
+
+        <div class="links-right">
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+        </div>
+
+    </div>
+</footer>
+
+
+
+</html>
+

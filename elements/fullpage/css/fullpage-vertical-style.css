@@ -1,0 +1,272 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Tahoma";
+  font-size: 15px;
+  font-weight: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+  position: relative;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 3px;
+  user-select: none;
+  font-size: 13px;
+}
+.site-header-fullpage-vertical {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  height: 50px;
+  z-index: 10;
+}
+.site-header-fullpage-vertical.collapsed {
+  transform: translateY(-100%);
+}
+.site-header-fullpage-vertical.blue {
+  background-color: #2980b9;
+}
+.site-header-fullpage-vertical.blue .menu > li > a {
+  color: #fff;
+}
+.site-header-fullpage-vertical.red {
+  background-color: #a32525;
+}
+.site-header-fullpage-vertical.red .menu-fullpage-vertical > li > a {
+  color: #fff;
+}
+.site-header-fullpage-vertical.yellow {
+  background-color: #575709;
+}
+.site-header-fullpage-vertical.yellow .menu > li > a {
+  color: #fff;
+}
+.site-header-fullpage-vertical.green {
+  background-color: green;
+}
+.site-header-fullpage-vertical.green .menu > li > a {
+  color: #fff;
+}
+.site-header-fullpage-vertical:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.site-header-fullpage-vertical .menu-fullpage-vertical {
+  margin-left: 10px;
+  float: left;
+  width: 100%;
+}
+.site-header-fullpage-vertical .menu-fullpage-vertical .back {
+  float: right;
+  margin-right: 50px;
+}
+.site-header-fullpage-vertical .menu-fullpage-vertical li {
+  display: inline-block;
+  position: relative;
+}
+.site-header-fullpage-vertical .menu-fullpage-vertical li a {
+  color: white;
+  display: block;
+  padding: 16px;
+  white-space: nowrap;
+}
+.site-header-fullpage-vertical .menu-fullpage-vertical li a:hover {
+  background-color: white;
+  color: #000000;
+}
+.site-header-fullpage-vertical .menu-fullpage-vertical li:hover ul {
+  visibility: visible;
+  z-index: 10;
+}
+.site-header-fullpage-vertical .menu-fullpage-vertical ul {
+  opacity: 1;
+  visibility: hidden;
+  position: absolute;
+  background-color: #000000;
+  z-index: 5;
+}
+.fullpage-container .section {
+  position: relative;
+  background-color: #000;
+}
+.fullpage-container .section .bg {
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.fullpage-container .section .content {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-15px);
+  transition: all 0.3s ease;
+}
+.fullpage-container .section .content.active {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.fullpage-container .section .content .title {
+  color: #fff;
+  text-align: center;
+}
+.fullpage-container .section .content p {
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 170%;
+}
+#fp-nav ul li a span {
+  background-color: #fff;
+}
+.fixed-btns {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 10;
+}
+@media (max-width: 800px) {
+  .site-header-fullpage-vertical .menu-mobile-container-fullpage-vertical {
+    width: 50px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  .site-header-fullpage-vertical .menu-mobile-container-fullpage-vertical .bar1,
+  .site-header-fullpage-vertical .menu-mobile-container-fullpage-vertical .bar2,
+  .site-header-fullpage-vertical .menu-mobile-container-fullpage-vertical .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 10px;
+    transition: 0.4s;
+  }
+  .site-header-fullpage-vertical .menu-mobile-container-fullpage-vertical .bar1 {
+    margin-top: 10px;
+  }
+  .site-header-fullpage-vertical .menu-mobile-container-fullpage-vertical .bar1.change {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .site-header-fullpage-vertical .menu-mobile-container-fullpage-vertical .bar2.change {
+    opacity: 0;
+  }
+  .site-header-fullpage-vertical .menu-mobile-container-fullpage-vertical .bar3.change {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    background-color: #000000;
+    transform: translateX(-1000px);
+    padding-left: 0;
+    width: 100%;
+    transition: 0.4s;
+    text-align: center;
+    height: 500px;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical .back {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical.change {
+    transform: none;
+    transition: 0.4s;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical li {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical li.change {
+    background-color: white;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical li a {
+    color: white;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    font-size: 25px;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical li a.change {
+    color: #000000;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical li a:hover {
+    background-color: white;
+    color: #000000;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical li:hover ul {
+    visibility: visible;
+    z-index: 10;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical ul {
+    background-color: #000000;
+    z-index: 5;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+    position: static;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical ul li a {
+    font-size: 12px;
+    border-bottom: 1px solid blue;
+  }
+  .site-header-fullpage-vertical .menu-fullpage-vertical ul li ul {
+    display: inline-block;
+  }
+  .fullpage-container .section {
+    padding: 150px 0;
+  }
+  .fixed-btns {
+    display: none;
+  }
+}

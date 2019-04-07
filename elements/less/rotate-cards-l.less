@@ -1,0 +1,136 @@
+
+.elements-content {
+	.left-bar {
+        .cards-background {
+            .rotate-card-wrapper {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .rotate-card {
+                    width: 300px;
+                    height: 300px;
+                    position: relative;
+                    margin: 20px 0;
+                    .card-wrap {
+                        .rotate-card-front {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 2;
+                            transition: all 2s;
+                            img {
+                                width: 300px;
+                                height: 300px;
+                                backface-visibility: hidden;
+                                z-index: 2;
+                            }
+
+
+                            // tyt
+                            .front .rotate-card-front {
+                                transform: rotateY(180deg);
+                            }
+                        }
+                        
+                        .rotate-card-back {
+
+                            p {
+                                display: block;
+                                box-sizing: border-box;
+                                width: 300px;
+                                height: 300px;
+                                color: #fff;
+                                padding: 10%;
+                            }
+
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-color: #000000;
+                            transform: rotateY(180deg);
+                            transition: all 2s;
+                            // tyt
+                            .back .rotate-card-back {
+                                transform: rotateY(0deg);
+                                z-index: 3;
+                            }
+
+                        }
+
+                        width: 300px;
+                        height: 300px;
+                        transition: all 2s;
+
+
+
+                        &:hover {
+                            .rotate-card-front {
+                                transform: rotateY(180deg);
+                            }
+                            .rotate-card-back {
+                                transform: rotateY(0deg);
+                                z-index: 3;
+                            }
+                        }
+                    
+                    }
+                    .card-wrap.front {
+                        .rotate-card-front {
+                            transform: rotateY(180deg);
+                        }
+                    }
+                    .card-wrap.back {
+                        .rotate-card-back {
+                            transform: rotateY(0deg);
+                            z-index: 3;
+                        }
+                    }
+
+
+                }
+        }
+    }
+
+    }
+}
+
+
+@media (max-width: 800px) {
+    .elements-content {
+        .left-bar {
+            .cards-background {
+                .rotate-card-wrapper {
+                    .rotate-card {
+                        width: 100px;
+                        height: 100px;
+                        .card-wrap {
+                            padding: 0;
+                            margin: 0;
+                            width: 100%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            .rotate-card-front {
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                            .rotate-card-back {
+                                p {
+                                    width: 100px;
+                                    height: 100px;
+                                    padding: 3%;
+                                    font-size: 6px;
+                                }
+    
+                            }
+                            // width: 300px;
+                            // height: 300px;
+                        
+                        }
+                    }
+                }   
+            }
+        }
+    } 
+}

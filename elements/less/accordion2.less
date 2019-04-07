@@ -1,0 +1,113 @@
+
+html, body {
+    // background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Tahoma";
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6, ul, li, p, a, div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: "Tahoma";
+    font-size: 14px;
+    font-weight: normal;
+}
+
+@after: rgb(0, 115, 255);
+@text-color: black;
+@white: white;
+
+//mixins
+.box-shadow {
+    -webkit-box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.5);
+}
+.border-accordion2 {
+    border-top: 2px solid rgb(239, 239, 239);
+}
+//global styles
+.elements-content {
+    .left-bar {
+        .cards-background {
+            .main-wrapper {
+                margin: 50px;
+                .accordion2-wrapper {
+                    border-radius: 5px;
+                    max-width: 820px;
+                    // width: 820px;
+                    margin: 50px auto;
+                    .box-shadow;
+                    .accordion2-btn {
+                        // width: 820px;
+                        cursor: pointer;
+                        h3 {
+                            font-size: 18px;
+                            color: rgb(31, 36, 41);
+                            font-weight: bold;
+                            font-family: "OpenSans";
+                            padding: 30px;
+                            &::before {
+                                content: '+';
+                                color: white;
+                                background: @after;
+                                border-radius: 100%;
+                                padding: 0 8px 1px 8px;
+                                margin-right: 15px;
+                            }
+                        }
+                        &.active {
+                            h3::before {
+                                content: '-';
+                                padding: 0 10px 1px 10px;
+                            }
+                        }
+                    }
+                    .accordion2-content {
+                        .border-accordion2; 
+                        p {
+                            font-size: 16px;
+                            font-family: "OpenSans";
+                            color: rgb(31, 36, 41);
+                            line-height: 1.5;
+                            padding: 10px 30px;
+                        }
+                        // width: 820px;
+                        display: none;
+                    }
+                }
+            }
+        }       
+    }
+}
+@media(max-width:600px) {
+    .main-wrapper {
+        .accordion2-wrapper {
+            margin: 20px auto;
+            .accordion2-btn {
+                h3 {
+                    font-size: 12px;
+                    padding: 10px;
+                    &::before {
+                        padding: 0 6px 1px 6px;
+                    }
+                }
+                &.active {
+                    h3::before {
+                        padding: 0 7px 1px 7px;
+                    }
+                }
+            }
+            .accordion2-content {
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,598 @@
+// out: ../css/super-holiday.css
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Tahoma";
+}
+h1, h2, h3, h4, h5, h6, ul, li, p, a, div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Tahoma";
+    font-size: 14px;
+    font-weight: normal;
+}
+//Mixins and Extebds
+@font-face {
+    font-family: 'glyphicons';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('eot'),
+    url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+    url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('../fonts/glyphicons-halflings-regular.svg') format('svg'),
+    url('../fonts/glyphicons-halflings-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;  
+}
+@font-face {
+    font-family: 'toonish-webfont';
+    src: url('../fonts/toonish-webfont.eot');
+    src: url('../fonts/toonish-webfont.eot?#iefix') format('eot'),
+    url('../fonts/toonish-webfont.woff') format('woff'),
+    url('../fonts/toonish-webfont.woff2') format('woff2'),
+    url('../fonts/toonish-webfont.otf') format('otf'),
+    url('../fonts/toonish-webfont.ttf') format('truetype'),
+    url('../fonts/toonish-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;  
+}
+.glyphicons {
+    font-family: 'glyphicons';
+} 
+.toonish-webfont {
+    font-family: 'toonish-webfont';
+}
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slide-wrapper-size {
+    min-height: 1500px;
+    position: relative;
+    height: 100%;
+}
+.slide-wrapper-after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: calc(~"50% - 30px");
+    text-align: center;
+    border: 30px solid transparent;
+    border-top: 40px solid;
+}
+@TextColorWhite: white;
+
+
+
+//Styles
+.super-holiday-wrapper {
+    .menu-wrapper {
+        position: fixed;
+        right: 30px;
+        top: 40%;
+        z-index: 5;
+        ul {
+            li {
+                padding: 20px;
+                text-align: right;
+                h6 {
+                    text-align: right;
+                    display: inline-block;
+                    padding-top: 3px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 20px;
+                    color: #8cd1ea;
+                    &.active {
+                        color: @TextColorWhite;
+                    }
+                }
+                p {
+                    float: right;
+                    display: inline-block;
+                    padding-top: 2px;
+                    background-color: #00b3e3;
+                    border: 1px solid @TextColorWhite;
+                    border-radius: 1000px;
+                    width: 30px;
+                    height: 30px;
+                    color: @TextColorWhite;
+                    text-align: center;
+                    margin-left: 10px;
+                    &.active {
+                        background-color: @TextColorWhite;
+                        color: #00b3e3;
+                        border-color: #00b3e3;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        border-left: 1px solid @TextColorWhite;
+                        right: 34px;
+                        margin-top: 26px;
+                        height: 39px;
+                        z-index: 5;
+                    }
+                    
+                }
+                &:last-child {
+                    p {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                    h6 {
+                        &.active {
+                            color: #00b3e3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #first {
+        .slide-wrapper-size;
+        background-image: url("../img/bgMain.jpg");
+        .background;
+        .first-slide-header {
+            text-align: center;
+            height: 100%;
+            border-bottom: 1px solid #97d9f1;
+            margin-right: -15px;
+            margin-left: -15px;
+            overflow: auto;
+            .logo {
+                float: left;
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                background-color: @TextColorWhite;
+            }
+            .header-text {
+                display: inline-block;
+                p {
+                    .toonish-webfont;
+                    font-size: 30px;
+                    color: @TextColorWhite;
+                    padding-top: 5px;
+                }
+            }
+            .super-holiday-back {
+                display: inline-block;
+                float: right;
+                padding-top: 5px;
+                padding-right: 30px;
+                a {
+                    .toonish-webfont;
+                    font-size: 30px;
+                    color: @TextColorWhite;
+                }
+            }
+        }
+        .first-slide-content {
+            .content-image {
+                padding-top: 8%;
+                text-align: center;
+                margin-left: 20%;
+                margin-right: 20%;
+                padding-bottom: 15%;
+            }
+            .content-boxes {
+                padding-bottom: 200px;
+                .box-wrapper {
+                    border: 2px solid #97d9f1;
+                    h1 {
+                        .toonish-webfont;
+                        font-size: 30px;
+                        color: #295369;
+                        padding: 15px;
+                    }
+                    h2 {
+                        .toonish-webfont;
+                        font-size: 25px;
+                        color: @TextColorWhite;
+                        padding: 15px;
+                    }
+                    h3 {
+                        .toonish-webfont;
+                        font-size: 15px;
+                        color: @TextColorWhite;
+                        padding: 15px;
+                    }
+                    .btn {
+                        width: 50%;
+                        margin-left: 25%;
+                        margin-right: 25%;
+                        margin-bottom: 30px;
+                        background: linear-gradient(#8ac63f, #39b54a);
+                        box-shadow: 5px 5px 5px rgba(0,0,0,0.5);;
+                        border: 2px solid #8cc63f;
+                        font-style: italic;
+                    }
+                }
+                .container {
+                    .equally {
+                        h6 {
+                            .toonish-webfont;
+                            color: @TextColorWhite;
+                            font-size: 100px;
+                            text-align: center;
+                            padding-top: 100px;
+                            padding-bottom: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        &::after {
+            .slide-wrapper-after;
+            border-top-color: #00b3e3;
+        }
+    }
+
+    #second {
+        .slide-wrapper-size;
+        background-image: url("../img/bg3QuizzSection.jpg");
+        .background;
+        .second-slide-header {
+            padding-top: 50px;
+            h6 {
+                .toonish-webfont;
+                color: @TextColorWhite;
+                font-size: 40px;
+                text-align: center;
+                padding-top: 100px;
+            }
+            p {
+                .toonish-webfont;
+                color: @TextColorWhite;
+                font-size: 12px;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 50px;
+            }
+        }
+        .second-slide-content {
+            .box-wrapper-second {
+                min-height: 350px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                h1 {
+                    .toonish-webfont;
+                    font-size: 30px;
+                    color: #295369;
+                    padding: 15px;
+                }
+                h3 {
+                    .toonish-webfont;
+                    font-size: 15px;
+                    color: @TextColorWhite;
+                    padding: 15px;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                h4 {
+                    .toonish-webfont;
+                    font-size: 25px;
+                    padding: 15px;
+                    color: @TextColorWhite;
+                    margin-top: 50px;
+                }
+            }
+            #boxFirst {
+                position: relative;
+                background: rgba(26, 181, 219, 0.3);
+                position: relative; 
+                h3 {
+                    background-color: #295369;
+                }
+                .btn {
+                    position: absolute;
+                    top: 87.5%;
+                    right: 0;
+                    left: 0;
+                    border-radius: 0px;
+                    // margin-top: 70px;
+                    width: 50%;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    font-size: 20px;
+                    background-color: #d4145a;
+                }
+                #arrowDown {
+                    position: absolute;
+                    top: 105%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    color: #d4145a;
+                    font-size: 40px;
+                }
+                .facebook {
+                    position: absolute;
+                    top: 120%;
+                    left: 0;
+                    right: 0;
+                    border: 1px solid #97d9f1;
+
+                    #fontAwesomeFacebook {
+                        display: inline-block;
+                        font-size: 50px;
+                        padding-right: 20px;
+                        color: @TextColorWhite;
+                        border-right: 1px solid @TextColorWhite;
+                        padding-left: 20px;
+                    }
+                    p {
+                        display: block;
+                        padding: 10px;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: normal;
+                        color: @TextColorWhite;
+                        display: inline-block;
+                    }
+                }
+            }
+            #boxSecond {
+                background-color: @TextColorWhite;
+                position: relative;
+                h1 {
+                    color: #00b3e3;
+                }
+                h3 {
+                    background-color: #00b3e3;
+                }
+                h4 {
+                    color: #295369;
+                }
+                .btn {
+                    position: absolute;
+                    top: 100%;
+                    border-radius: 0px;
+                    margin-top: -30px;
+                    width: 50%;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    font-size: 20px;
+                    background: linear-gradient(#8cc63f, #39b54a);
+                    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);;
+                    border: 2px solid #8cc63f;
+                    font-style: italic;
+                }
+            }
+            #boxThird {
+                position: relative;
+                background-color: #b6d6e0;
+                h3 {
+                    background-color: #295369;
+                }
+                .btn {
+                    position: absolute;
+                    top: 102%;
+                    border-radius: 0px;
+                    margin-top: -20px;
+                    width: 50%;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    font-size: 20px;
+                    background-color: #295369;
+                    border-color: #295369;
+                }
+            }
+        }
+        &::after {
+            .slide-wrapper-after;
+            border-top-color: #007093;
+        }
+    }
+
+    #third {
+        .slide-wrapper-size;
+        background-color: #d4145a;
+        .background;
+        .third-slide-header {
+            h6 {
+                .toonish-webfont;
+                color: @TextColorWhite;
+                font-size: 70px;
+                text-align: center;
+                padding-top: 150px;
+                padding-bottom: 50px;
+            }
+            p {
+                .toonish-webfont;
+                color: @TextColorWhite;
+                font-size: 30px;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 50px;
+            }
+        }
+        .third-slide-content {
+            #thirdSlideBoxOne {
+                h1 {
+                    .toonish-webfont;
+                    color: @TextColorWhite;
+                    font-size: 40px;
+                    text-align: left;
+                    padding-top: 100px;
+                }
+                h2 {
+                    .toonish-webfont;
+                    color: @TextColorWhite;
+                    font-size: 15px;
+                    text-align: left;
+                    margin-top: 10px;
+                    background-color: #295369;
+                    width: 205px;
+                    padding: 10px;
+                }
+                h3 {
+                    .toonish-webfont;
+                    color: @TextColorWhite;
+                    font-size: 12px;
+                    text-align: left;
+                    padding-top: 50px;
+                }
+                h4 {
+                    .toonish-webfont;
+                    color: @TextColorWhite;
+                    font-size: 16px;
+                    text-align: left;
+                    padding-top: 10px;
+                }
+            }
+            #thirdSlideBoxTwo {
+                .video {
+                    padding-top: 100px;
+                    height: 100%;
+                    width: 100%;
+                    video {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &::after {
+            .slide-wrapper-after;
+            border-top-color: #d4145a;
+        }
+    }
+
+    #fourth {
+        position: relative;
+        .slide-wrapper-size;
+        background-color: @TextColorWhite;
+        .background;
+        .fourth-slide-header {
+            text-align: center;
+            h6 {
+                .toonish-webfont;
+                color: #333333;
+                font-size: 40px;
+                text-align: center;
+                padding-top: 150px;
+            }
+            .btn {
+                .toonish-webfont;
+                text-align: center;
+                color: #295369;
+                font-size: 25px;
+                margin-top: 70px;
+                a {
+                    width: 100%;
+                }
+            }
+        }
+
+        .fourth-slide-content {
+            .container {
+                .row {
+                    margin-top: 100px;
+                    ::-webkit-scrollbar {width: 4px; height: 3px;}
+                    ::-webkit-scrollbar-track {  background-color: #ededed;}
+                    ::-webkit-scrollbar-thumb { height: 1px; background-color: #6c6c6c; border-radius: 2px;}
+                    ::-webkit-scrollbar-corner { background-color: #6c6c6c;}
+                    
+                    .p-italic {
+                        font-style: italic;
+                    }
+                    a {
+                        cursor: pointer;
+                        color: black;
+                        text-decoration: underline;
+                    }
+                    h3 {
+                        font-family: 'Impact';
+                        color: #295369;
+                        font-size: 19px;
+                        text-align: left;
+                        padding-top: 10px;
+                        .italic {
+                            font-style: italic;
+                            font-family: 'Tahoma';
+                            display: block;
+                        }
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                    #fourthSlideBoxOne {
+                        padding-right: 50px;
+                        max-height: 700px;
+                        overflow: auto;
+                        margin-bottom: 50px;
+                        h1 {
+                            .toonish-webfont;
+                            color: #00b3e3;
+                            font-size: 30px;
+                            text-align: left;
+                            margin-top: 30px;
+                        }
+                        h1:first-child {
+                            margin-top: 0;
+                        }
+                        h1:last-child {
+                            padding-top: 10px;
+                        }
+                        a {
+                            display: block;
+                            margin-top: 10px;
+                            cursor: pointer;
+                        } 
+                        .p-italic {
+                            font-style: italic;
+                            font-family: 'Tahoma';
+                            padding-top: 10px;
+                        }
+                    }
+                    #fourthSlideBoxTwo {
+                        margin-bottom: 50px;
+                        h1 {
+                            .toonish-webfont;
+                            color: #d4145a;
+                            font-size: 30px;
+                            text-align: left;
+                        }
+                        a {
+                            display: block;
+                            margin-top: 10px;
+                        } 
+                        .p-italic {
+                            font-style: italic;
+                            font-family: 'Tahoma';
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+            .logo-footer {
+                position: relative;
+                top: 90%;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .super-holiday-wrapper {
+        #fourth {
+            .fourth-slide-content {
+                .container {
+                    min-width: 1500px;
+                }
+            }
+        }
+    }
+}

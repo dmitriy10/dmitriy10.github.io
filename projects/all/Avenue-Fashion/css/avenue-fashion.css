@@ -1,0 +1,827 @@
+@font-face {
+  font-family: 'Montserrat-Black';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-Black.ttf');
+}
+.Montserrat-Black {
+  font-family: 'Montserrat-Black';
+}
+@font-face {
+  font-family: 'Montserrat-BlackItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-BlackItalic.ttf');
+}
+.Montserrat-BlackItalic {
+  font-family: 'Montserrat-BlackItalic';
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-Bold.ttf');
+}
+.Montserrat-Bold {
+  font-family: 'Montserrat-Bold';
+}
+@font-face {
+  font-family: 'Montserrat-BoldItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-BoldItalic.ttf');
+}
+.Montserrat-BoldItalic {
+  font-family: 'Montserrat-BoldItalic';
+}
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-ExtraBold.ttf');
+}
+.Montserrat-ExtraBold {
+  font-family: 'Montserrat-ExtraBold';
+}
+@font-face {
+  font-family: 'Montserrat-ExtraBoldItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-ExtraBoldItalic.ttf');
+}
+.Montserrat-ExtraBoldItalic {
+  font-family: 'Montserrat-ExtraBoldItalic';
+}
+@font-face {
+  font-family: 'Montserrat-ExtraLight';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-ExtraLight.ttf');
+}
+.Montserrat-ExtraLight {
+  font-family: 'Montserrat-ExtraLight';
+}
+@font-face {
+  font-family: 'Montserrat-ExtraLightItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-ExtraLightItalic.ttf');
+}
+.Montserrat-ExtraLightItalic {
+  font-family: 'Montserrat-ExtraLightItalic';
+}
+@font-face {
+  font-family: 'Montserrat-Italic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-Italic.ttf');
+}
+.Montserrat-Italic {
+  font-family: 'Montserrat-Italic';
+}
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-Light.ttf');
+}
+.Montserrat-Light {
+  font-family: 'Montserrat-Light';
+}
+@font-face {
+  font-family: 'Montserrat-LightItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-LightItalic.ttf');
+}
+.Montserrat-LightItalic {
+  font-family: 'Montserrat-LightItalic';
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-Medium.ttf');
+}
+.Montserrat-Medium {
+  font-family: 'Montserrat-Medium';
+}
+@font-face {
+  font-family: 'Montserrat-MediumItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-MediumItalic.ttf');
+}
+.Montserrat-MediumItalic {
+  font-family: 'Montserrat-MediumItalic';
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+.Montserrat-Regular {
+  font-family: 'Montserrat-Regular';
+}
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+.Montserrat-SemiBold {
+  font-family: 'Montserrat-SemiBold';
+}
+@font-face {
+  font-family: 'Montserrat-SemiBoldItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-SemiBoldItalic.ttf');
+}
+.Montserrat-SemiBoldItalic {
+  font-family: 'Montserrat-SemiBoldItalic';
+}
+@font-face {
+  font-family: 'Montserrat-Thin';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-Thin.ttf');
+}
+.Montserrat-Thin {
+  font-family: 'Montserrat-Thin';
+}
+@font-face {
+  font-family: 'Montserrat-ThinItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat-ThinItalic.ttf');
+}
+.Montserrat-ThinItalic {
+  font-family: 'Montserrat-ThinItalic';
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+}
+.mixin-a {
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+}
+.mixin-btn {
+  text-align: center;
+  border: 1px solid #454647;
+}
+.mixin-btn a {
+  font-size: 16px;
+  font-family: 'Montserrat-Regular';
+  color: #454647;
+  text-transform: uppercase;
+  padding: 10px;
+  display: block;
+}
+.mixin-btn:hover {
+  background-color: #00c8c8;
+}
+.avenue-fashion-wrapper header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.avenue-fashion-wrapper header .top-bar .container-fluid {
+  background-color: #333333;
+}
+.avenue-fashion-wrapper header .top-bar .container-fluid a {
+  color: #999999;
+  font-family: 'Montserrat-Regular';
+  padding: 10px 20px 10px 20px;
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.avenue-fashion-wrapper header .top-bar .container-fluid a:hover {
+  background-color: #00c8c8;
+  color: #ffffff;
+}
+.avenue-fashion-wrapper header .top-bar .container-fluid a:hover i {
+  color: #ffffff;
+}
+.avenue-fashion-wrapper header .top-bar .container-fluid .col-lg-4 {
+  display: flex;
+}
+.avenue-fashion-wrapper header .top-bar .container-fluid .col-lg-8 a {
+  width: 150px;
+}
+.avenue-fashion-wrapper header nav {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  min-height: 100px;
+}
+.avenue-fashion-wrapper header nav .logo {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 15;
+}
+.avenue-fashion-wrapper header nav .logo a {
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+  font-size: 30px;
+}
+.avenue-fashion-wrapper header nav .logo a span {
+  font-family: 'Montserrat-Regular';
+}
+.avenue-fashion-wrapper header nav .menu {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 10;
+}
+.avenue-fashion-wrapper header nav .menu > ul {
+  display: flex;
+  margin-right: 150px;
+  padding-top: 20px;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li {
+  margin-left: 50px;
+  position: relative;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li > a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Montserrat-Regular';
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #222222;
+  position: relative;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li > a:hover {
+  color: #00c8c8;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li > a:hover i {
+  color: #00c8c8;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li i {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: #ababab;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li .search-container {
+  height: 40px;
+  width: 200px;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li .search-container form {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  position: relative;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li .search-container form input {
+  width: 100%;
+  height: 100%;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li .search-container form button {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 14px;
+  right: 3%;
+  border: none;
+  background-color: #ffffff;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li .search-container form button i {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+}
+.avenue-fashion-wrapper header nav .menu > ul > li:first-child:hover .dropdown-menu-wrapper {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  min-height: 425px;
+  min-width: 550px;
+  box-shadow: 1px 1px 10px grey;
+  z-index: 555;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  max-width: 600px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  font-family: 'Montserrat-Light';
+  font-size: 15px;
+  color: #969696;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content ul li:first-child a {
+  padding-bottom: 20px;
+  font-family: 'Montserrat-Regular';
+  color: #6c6769;
+  text-transform: uppercase;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content ul li:hover a {
+  color: #00c8c8;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content .left-bar,
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content .right-bar {
+  width: 50%;
+  min-width: 100px;
+  min-height: 200px;
+  float: left;
+  padding: 0 10px 20px 10px;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content .footer {
+  width: 100%;
+  min-height: 150px;
+  background: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content .footer a {
+  color: #ffffff;
+  font-family: 'Montserrat-Bold';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content .footer a span {
+  font-family: 'Montserrat-Regular';
+}
+.avenue-fashion-wrapper header nav .menu .dropdown-menu-wrapper .dropdown-menu-content .footer a:hover {
+  color: #00c8c8;
+}
+.avenue-fashion-wrapper .slider-wrapper {
+  background-color: #f8f8f8;
+  padding-top: 38px;
+}
+.avenue-fashion-wrapper .slider-wrapper .slider .slide .slide-content {
+  display: flex;
+  position: relative;
+}
+.avenue-fashion-wrapper .slider-wrapper .slider .slide .slide-content h2 {
+  font-size: 30vw;
+  font-family: 'Montserrat-Bold';
+  color: #575153;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 185px;
+  left: 250px;
+  right: 0;
+  letter-spacing: 0.3em;
+}
+.avenue-fashion-wrapper .slider-wrapper .slider .slide .slide-content img {
+  margin: 0 0 0 250px;
+}
+.avenue-fashion-wrapper .slider-wrapper .slider .slide .slide-content .btn {
+  position: absolute;
+  top: 85%;
+  right: 30%;
+  text-align: center;
+  border: 1px solid #454647;
+  z-index: 100;
+}
+.avenue-fashion-wrapper .slider-wrapper .slider .slide .slide-content .btn a {
+  font-size: 16px;
+  font-family: 'Montserrat-Regular';
+  color: #454647;
+  text-transform: uppercase;
+  padding: 10px;
+  display: block;
+}
+.avenue-fashion-wrapper .slider-wrapper .slider .slide .slide-content .btn:hover {
+  background-color: #00c8c8;
+}
+.avenue-fashion-wrapper .border {
+  margin-left: 10px;
+  height: 1px;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.avenue-fashion-wrapper .content-wrapper {
+  padding: 50px;
+}
+.avenue-fashion-wrapper .content-wrapper .row {
+  padding-bottom: 30px;
+}
+.avenue-fashion-wrapper .content-wrapper .container-header ul {
+  display: flex;
+}
+.avenue-fashion-wrapper .content-wrapper .container-header ul li {
+  padding: 30px 10px;
+}
+.avenue-fashion-wrapper .content-wrapper .container-header ul li a {
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+  color: #999999;
+  font-size: 13px;
+}
+.avenue-fashion-wrapper .content-wrapper .container-header ul li:hover a {
+  color: #00c8c8;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar,
+.avenue-fashion-wrapper .content-wrapper .right-bar {
+  min-height: 200px;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content {
+  display: flex;
+  justify-content: center;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card {
+  padding: 10px;
+  position: relative;
+  transition: all ease 1s;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card img,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card img,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card img,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card img {
+  height: 100%;
+  width: 100%;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card p,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card p,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card p,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card p {
+  font-size: 21px;
+  font-family: 'Montserrat-Light';
+  color: #9a9a9a;
+  text-transform: uppercase;
+  vertical-align: super;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card p span,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card p span,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card p span,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card p span {
+  padding-right: 20px;
+  text-decoration: line-through;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card a,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card a,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card a,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card a {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 1s;
+  z-index: 999;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card a i,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card a i,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card a i,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card a i {
+  font-size: 50px;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .thumb-front,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .thumb-front,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .thumb-front,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .thumb-front,
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .thumb-back,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .thumb-back,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .thumb-back,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .thumb-back {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .thumb-front img,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .thumb-front img,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .thumb-front img,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .thumb-front img,
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .thumb-back img,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .thumb-back img,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .thumb-back img,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .thumb-back img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .thumb-front img:hover,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .thumb-front img:hover,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .thumb-front img:hover,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .thumb-front img:hover,
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .thumb-back img:hover,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .thumb-back img:hover,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .thumb-back img:hover,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .thumb-back img:hover {
+  border: 1px solid #333333;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .thumb-back,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .thumb-back,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .thumb-back,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .thumb-back {
+  top: 130px;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .card-footer,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .card-footer,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .card-footer,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .card-footer {
+  position: absolute;
+  top: 98%;
+  left: 0;
+  background: #ffffff;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 1s;
+  z-index: 999;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .card-footer h4,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .card-footer h4,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .card-footer h4,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .card-footer h4 {
+  padding: 10px;
+  font-size: 13px;
+  font-family: 'Montserrat-Regular';
+  color: #727272;
+  text-transform: uppercase;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .card-footer p,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .card-footer p,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .card-footer p,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .card-footer p {
+  padding: 20px;
+  font-size: 15px;
+  font-family: 'Montserrat-Regular';
+  color: #8e8c8c;
+  text-transform: none;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .card-footer .buttons,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .card-footer .buttons,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .card-footer .buttons,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .card-footer .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 0 0;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .card-footer .buttons .circle,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .card-footer .buttons .circle,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .card-footer .buttons .circle,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .card-footer .buttons .circle {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #999999;
+  border-radius: 5000px;
+  cursor: pointer;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .card-footer .buttons .circle i,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .card-footer .buttons .circle i,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .card-footer .buttons .circle i,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .card-footer .buttons .circle i {
+  color: #ffffff;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card .card-footer .buttons .circle:hover,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card .card-footer .buttons .circle:hover,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card .card-footer .buttons .circle:hover,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card .card-footer .buttons .circle:hover {
+  background-color: #00c8c8;
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card:hover,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card:hover,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card:hover,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card:hover {
+  box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.63);
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card:hover .card-footer,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card:hover .card-footer,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card:hover .card-footer,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card:hover .card-footer {
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.63);
+}
+.avenue-fashion-wrapper .content-wrapper .left-bar .left-bar-content .card:hover a,
+.avenue-fashion-wrapper .content-wrapper .right-bar .left-bar-content .card:hover a,
+.avenue-fashion-wrapper .content-wrapper .left-bar .right-bar-content .card:hover a,
+.avenue-fashion-wrapper .content-wrapper .right-bar .right-bar-content .card:hover a {
+  visibility: visible;
+  opacity: 1;
+}
+.avenue-fashion-wrapper .lookbook {
+  padding-bottom: 100px;
+}
+.avenue-fashion-wrapper .lookbook .row {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card {
+  background-color: #f8f8f8;
+  margin: 0 10px 0 0;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-left {
+  min-height: 400px;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-left img {
+  height: 100%;
+  width: 100%;
+  max-height: 485px;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-right {
+  min-height: 400px;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-right h2 {
+  font-family: 'Montserrat-Light';
+  font-size: 48px;
+  color: #575153;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 70px 30px 15px 15px;
+  line-height: 1.5;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-right h2 span {
+  font-family: 'Montserrat-Bold';
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-right p {
+  font-family: 'Montserrat-Regular';
+  font-size: 15px;
+  color: #727272;
+  text-align: right;
+  padding: 15px 30px 15px 15px;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-right .btn-wrapper {
+  padding: 40px 30px 50px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-right .btn-wrapper .btn {
+  text-align: center;
+  border: 1px solid #454647;
+  width: 150px;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-right .btn-wrapper .btn a {
+  font-size: 16px;
+  font-family: 'Montserrat-Regular';
+  color: #454647;
+  text-transform: uppercase;
+  padding: 10px;
+  display: block;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card .lookbook-card-right .btn-wrapper .btn:hover {
+  background-color: #00c8c8;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card:first-child {
+  padding-left: 0;
+}
+.avenue-fashion-wrapper .lookbook .row .lookbook-card:last-child {
+  padding-right: 0;
+}
+.avenue-fashion-wrapper .content-footer {
+  padding: 0 300px 0 300px;
+  background: #f8f8f8;
+}
+.avenue-fashion-wrapper .content-footer .info {
+  min-height: 300px;
+}
+.avenue-fashion-wrapper .content-footer .info h3 {
+  font-size: 13px;
+  font-family: 'Montserrat-Regular';
+  color: #575153;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 70px 0 0 0;
+}
+.avenue-fashion-wrapper .content-footer .info a,
+.avenue-fashion-wrapper .content-footer .info p {
+  display: block;
+  font-size: 14px;
+  font-family: 'Montserrat-Light';
+  color: #727272;
+  text-align: left;
+  margin: 15px 0 0 0;
+}
+.avenue-fashion-wrapper .content-footer .info a:hover,
+.avenue-fashion-wrapper .content-footer .info p:hover {
+  color: #00c8c8;
+}
+.avenue-fashion-wrapper .content-footer .banners {
+  padding: 50px 0 50px 0;
+}
+.avenue-fashion-wrapper .content-footer .banners .banner-left,
+.avenue-fashion-wrapper .content-footer .banners .banner-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 600px;
+}
+.avenue-fashion-wrapper .content-footer .banners .banner-left {
+  margin-right: 10px;
+  background-color: #333333;
+  flex-direction: column;
+}
+.avenue-fashion-wrapper .content-footer .banners .banner-left h4,
+.avenue-fashion-wrapper .content-footer .banners .banner-left h5 {
+  font-family: 'Montserrat-Bold';
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.avenue-fashion-wrapper .content-footer .banners .banner-left h5 {
+  font-family: 'Montserrat-Light';
+}
+.avenue-fashion-wrapper .content-footer .banners .banner-right {
+  margin-left: 10px;
+  background-color: #00c8c8;
+}
+.avenue-fashion-wrapper .content-footer .banners .banner-right a i {
+  font-size: 36px;
+  color: #ffffff;
+  padding: 0 30px;
+  transition: all ease 0.5s;
+}
+.avenue-fashion-wrapper .content-footer .banners .banner-right a i:hover {
+  transform: scale(1.5);
+}
+.avenue-fashion-wrapper footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.avenue-fashion-wrapper footer .container-fluid {
+  background-color: #333333;
+  min-height: 50px;
+}
+.avenue-fashion-wrapper footer .container-fluid p {
+  color: #999999;
+  font-family: 'Montserrat-Regular';
+  padding: 15px 0 10px 30px;
+  display: block;
+  white-space: nowrap;
+}
+.avenue-fashion-wrapper footer .container-fluid .col-lg-4 {
+  display: flex;
+}
+.avenue-fashion-wrapper footer .container-fluid .col-lg-8 a {
+  width: 150px;
+}

@@ -1,0 +1,435 @@
+// out: ../css/avenue-fashion-media.css
+.border {
+    border-bottom: 1px solid #333333;
+}
+.transition {
+    transition: all ease 1s;
+}
+//COLORS
+@Color-White: #ffffff;
+@Color-grey: #333333;
+@background-color: #f8f8f8;
+@header-text-color: #777777;
+@bar-hover-color: #00c8c8;
+@header-text-color: #222222;
+@bar-text-color: #999999;
+@drop-down-menu-text-color-first: #6c6769;
+@drop-down-menu-text-color: #969696;
+@dropdown-menu-color-black: #333333;
+
+@media (max-width: 2000px) {
+    .avenue-fashion-wrapper {
+        header {
+            nav {
+                .logo {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .slider-wrapper {
+            .slider {
+                .slide {
+                    .slide-content {
+                        h2 {
+                            left: 0;
+                        }
+                        img {
+                            margin: 0;
+                            width: 50vw;
+                            height: 50vw;
+                        }
+                    }
+                }
+        
+            }
+        }
+
+        .lookbook {
+            .row {
+                .lookbook-card {
+                    .lookbook-card-right {
+                        h2 {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .avenue-fashion-wrapper {
+        header {
+            nav {
+                .menu ul li {
+                    visibility: hidden;
+                    opacity: 0;
+                    .transition;
+                }
+                .menu-mobile-container {
+                    position: absolute;
+                    z-index: 1000;
+                    top: 10px;
+                    right: 50px;
+                    width: 50px;
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-left: 15px;
+                    margin-top: 5px;
+                    .bar1, .bar2, .bar3 {
+                        width: 35px;
+                        height: 3px;
+                        background-color: black;
+                        margin: 6px 10px;
+                        transition: 0.4s;
+                    }
+                    .bar1 {
+                        margin-top: 10px;
+                    }
+                    
+                    .bar1.change {
+                        transform-origin: 15% 120%;
+                        transform: rotate(45deg);
+                    }
+                    .bar2.change {opacity: 0;}
+                    
+                    .bar3.change {
+                        transform-origin: 15% -50%;
+                        transform: rotate(-45deg);
+                    }
+                }
+                .menu {
+                    width: 100%;
+                    &.change {
+                        transform: none;
+                        ul {
+                            flex-direction: column;
+                            width: 100%;
+                            height: 100vh;
+                            background-color: @background-color;
+                            padding: 0;
+                            margin: 0;
+                            li {
+                                visibility: visible;
+                                opacity: 1;
+                                .transition;
+                                text-align: right;
+                                margin: 0; 
+                                .dropdown-menu-wrapper {
+                                    top: 70%;
+                                    .dropdown-menu-content {
+                                        padding: 0;
+                                        .left-bar, .right-bar {
+                                            width: 100%;
+                                            padding: 0;
+                                        }
+                                        .left-bar {
+                                            ul {
+                                                height: 100%;
+                                            }
+                                        }
+                                        .right-bar {
+                                            ul {
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                                a {
+                                    width: 200px;
+                                    margin: auto;
+                                }
+                                i {
+                                    position: relative;
+                                    top: 0;
+                                    left: 0;
+                                    margin: 10px;
+                                    color: #ababab;
+                                }
+                            }
+                            li:first-child {
+                                margin-top: 100px;
+                            }
+                        }
+                        .search-container {
+                            text-align: center;
+                            margin: auto;
+                            form {
+                                button {
+                                    i {
+                                        top: -5px;
+                                    }
+                                }
+                            }
+                        }
+                        .dropdown-menu-wrapper {
+                            right: 0;
+                            margin: auto;
+                            min-height: 527px;
+                            .dropdown-menu-content {
+                                ul {
+                                    li:first-child {
+                                        margin-top: 0;
+                                        a {
+                                            padding-bottom: 5px;
+                                        }
+                                    } 
+                                }
+                                .left-bar, .right-bar {
+                                    min-height: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .slider-wrapper {
+            .slider {
+                .slide {
+                    .slide-content {
+                        h2 {
+                            top: 10vw;
+                            font-size: 20vw;
+                        }
+                    }
+                }
+        
+            }
+        }
+        .lookbook {
+            padding: 0;
+            margin: 0;
+            .row {
+                .lookbook-card {
+                    padding: 0;
+                    .lookbook-card-left {
+                        text-align: center;
+                        img {
+                            max-width: 250px;
+                        }
+                    }
+                    .lookbook-card-right {
+                        min-height: 400px;
+                        text-align: center;
+        
+                        h2 {
+                            text-align: center;
+                            font-size: 20px;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                        .btn-wrapper {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+        .content-footer {
+            padding: 0 50px 0 50px;
+            .info {
+                padding: 30px;
+                flex-basis: 300px;
+                align-items: center;
+                h3, a, p {
+                    text-align: center;
+                    white-space: nowrap;
+                }
+            }
+            .banners {
+                .banner-left, .banner-right { 
+                    margin: 0;
+                    flex-basis: 600px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .avenue-fashion-wrapper {
+        .lookbook {
+            .row {
+                flex-wrap: wrap;
+                margin: 0;
+                .lookbook-card {
+                    padding: 0;
+                    margin: 0;
+                    .container {
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 100%;
+                        min-width: 100%;
+                    }
+                    .lookbook-card-right {
+                        min-height: 0;
+                        h2 {
+                            padding: 40px 0 0 0;
+                        }
+                        .btn-wrapper {
+                            padding: 40px 0 30px 0;
+                        }
+                    }
+                }
+            }
+
+        }
+        .content-footer {
+            padding: 0;
+            .row {
+                padding: 0;
+                margin: 0;
+            }
+            .info {
+                padding: 0;
+                margin: 0;
+                flex-basis: 300px;
+                min-height: 0;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .border;
+                h3, a, p {
+                    padding: 0;
+                    margin: 0;
+                    white-space: nowrap;
+                }
+            }
+            .banners {
+                .banner-left, .banner-right { 
+                    margin: 0;
+                    flex-basis: 600px;
+                    h4 {
+                        font-size: 4vw;
+                    }
+                    h5 {
+                        font-size: 4vw;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 800px) {
+    .avenue-fashion-wrapper {
+        .slider-wrapper {
+            .slider {
+                .slide {
+                    .slide-content {
+                        display: flex;
+                        justify-content: center;
+                        h2 {
+                            top: 10vw;
+                        }
+                        .btn {
+                            right: 0;
+                            left: 0;
+                            top: 0;
+                            width: 250px;
+                            margin: 40vw auto;
+                            a {
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-wrapper {
+            .container-header {
+                ul {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    li {
+                        padding: 5px 0 5px 0;
+                    }
+                    li:first-child {
+                        padding-top: 30px;
+                    }
+                    li:last-child {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .avenue-fashion-wrapper {
+        header {
+            .top-bar {
+                .row {
+                    .left-menu-bar {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .right-menu-bar {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .slider-wrapper {
+            margin-top: 76px;
+            padding-top: 0;
+            .slider {
+                .slide {
+                    .slide-content {
+                        img {
+                        }
+                        .btn {
+                            margin: 35vw auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-wrapper {
+            .left-bar .left-bar-content {
+                .row {
+                    padding: 0;
+                    margin: 0;
+                }
+                .card {
+                    margin-bottom: 50px;
+                }
+            }
+            .right-bar .right-bar-content {
+                .row {
+                    padding: 0;
+                    margin: 0;
+                }
+                .card {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        .lookbook {
+            .row {
+                .lookbook-card {
+                    .lookbook-card-right {
+                        p {
+                            padding: 0 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

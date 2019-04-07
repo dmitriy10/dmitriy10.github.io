@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calc Vue</title>
+</head>
+<body>
+    
+    <div id="app">
+        <!-- <div class="text-wrapper">
+            <h1>{{ x }}</h1>
+        </div>
+        <div class="btn-wrapper">
+            <button @click="calcMethod"></button>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter title" v-model="a">
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter title" v-model="b">
+        </div> -->
+        <table>
+            <tr>
+                <th class="display" colspan="4">
+                    <h1>{{current || '0'}}</h1>
+                </th>
+            </tr>
+            <tr>
+                <td @click="clear" class="clear">AC</td>
+                <td @click="sign" class="sign">+-</td>
+                <td @click="percent" class="percent">%</td>
+                <td @click="devide" class="operator">/</td>
+            </tr>
+            <tr>
+                <td @click="append(7)">7</td>
+                <td @click="append(8)">8</td>
+                <td @click="append(9)">9</td>
+                <td @click="times" class="operator">x</td>
+            </tr>
+            <tr>
+                <td @click="append(4)">4</td>
+                <td @click="append(5)">5</td>
+                <td @click="append(6)">6</td>
+                <td @click="minus" class="operator">-</td>
+            </tr>
+            <tr>
+                <td @click="append(1)">1</td>
+                <td @click="append(2)">2</td>
+                <td @click="append(3)">3</td>
+                <td @click="plus" class="operator">+</td>
+            </tr>
+            <tr>
+                <td @click="append(0)" class="zero" colspan="2">0</td>
+                <td id="red" @click="comma">,</td>
+                <td id="red" @click="equal" class="operator bord">=</td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

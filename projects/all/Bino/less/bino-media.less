@@ -1,0 +1,1609 @@
+// out: ../css/bino-media.css
+
+@body_background_color: #f4f5f9; 
+@color_black: black;
+@color_active: #e74c3c;
+@color_active_dark: #d12c1a;
+@color_white: #f4f5f9;
+@color_grey: #e5e5e5;
+@color_dark_grey:#6a6a6a;
+.flex-without-justify-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.flex-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.flex-jc-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+}
+.flex-jc-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.flex-jc-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.flex-jc-space-around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.flex-jc-space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.flex-jc-space-evenly {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly
+}
+.circle {
+    .flex;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #4e4843a9;
+    border-radius: 5000px;
+}
+.h-and-w {
+    height: 100%;
+    width: 100%;
+}
+.box-sizing {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.border-with-circle {
+    height: 5px;
+    width: 5px;
+    border-radius: 5000px;
+    background-color: @color_active;
+    position: relative;
+    &::before {
+        content:'';
+        position: absolute;
+        top: 2.5px;
+        right: 200%;
+        display: inline-block;
+        .box-sizing;
+        width: 100%;
+        width: 100px;
+        height: 1px;
+        background:#9a9a9a; 
+        margin-right: 10px;
+    }
+    &::after {
+        content:'';
+        position: absolute;
+        top: 2.5px;
+        left: 200%;
+        display: inline-block;
+        .box-sizing;
+        width: 100%;
+        width: 100px;
+        height: 1px;
+        background:#9a9a9a; 
+        margin-left: 10px;
+    }
+}
+.btn {
+    a {
+        padding-top: 10px;
+        color: @color_white;
+        border: 1px solid @color_white;
+        border-radius: 3px;
+        text-align: center;
+        display: block;
+        .box-sizing;
+        width: 200px;
+        height: 40px;
+        text-transform: uppercase;
+        &:hover {
+            color: @color_white;
+            background-color: @color_active;
+            border: 1px solid @color_active;
+        }
+    }
+}
+.btn-dark {
+    a {
+        background-color: @color_active;
+        border: 1px solid @color_active;
+    }
+    &:hover{
+        a {
+            border: 1px solid #d12c1a;
+            background-color: #d12c1a;
+        }
+    }     
+
+}
+.header-text {
+    h3 {
+        padding: 100px 0 0 0;
+        .flex;
+        color: #6a6a6a;
+        font-size: 50px;
+        font-family: 'Source Sans Pro';
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p {
+        padding: 20px 0;
+        .flex;
+        color: #a0a0a0;
+        font-size: 12px;
+    }
+}
+.text {
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+.tab-bar-after {
+    content:'';
+    display: block;
+    .box-sizing;
+    position: absolute;
+    left: 5%;
+    height: 50px;
+    border-left: 5px solid #a6a6a6;
+}
+.transform-none {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+@sec:1s;
+.transition(@sec) {
+    -webkit-transition: all ease @sec;
+    -o-transition: all ease @sec;
+    transition: all ease @sec;
+}
+
+
+
+
+@media (max-width: 1900px) {
+    /* ================================= */
+    /* :::::::::: Box - Wr 1 ::::::::::: */
+    /* ================================= */
+    #home {
+        min-height: 1000px;
+        #home-header {
+            #logo {
+                margin-top: 20px;
+                margin-left: 10%;
+                a {
+                    img {
+                        width: 80px;
+                        height: 30px;
+                    }
+                }
+            }
+            .menu {
+                ul {
+                    margin-top: 20px;       
+                    margin-right: 50px;    
+                    li {
+                        a {
+                            margin: 15px;
+                            padding-bottom: 10px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        #home-content {      
+            h3 {
+                padding-top: 200px;
+            }
+            h1 {
+                padding-top: 50px;
+                font-size: 90px;
+            }
+            #border-wrapper {
+                margin-top: 40px;
+
+            }
+            p {
+                font-size: 14px;
+                color: @color_white;
+                text-align: center;
+                padding: 50px 100px 0 100px;
+            }
+        }
+        .slick-slider {
+            h3 {
+                padding-top: 200px;
+            }
+            h1 {
+                padding-top: 50px;
+                font-size: 90px;
+            }
+            #border-wrapper {
+                margin-top: 40px;
+
+            }
+            p {
+                font-size: 14px;
+                color: @color_white;
+                text-align: center;
+                padding: 50px 100px 0 100px;
+            }
+        }
+        #home-footer {
+            #btn {
+                margin: 50px 20px 0 20px;
+            }
+        }
+    }
+
+}
+@media (max-width: 1650px) {
+    /* ================================= */
+    /* :::::::::: Box - Wr 4 ::::::::::: */
+    /* ================================= */
+    #box-4-wrapper {
+        #box-4-content {
+            #box-4-left-bar {
+                h4 {
+                    padding-top: 40px;
+                }
+                p {
+                    padding-left: 50px;
+                    padding-bottom: 30px;
+                }
+            }
+            #box-4-middle-bar {
+                #box-4-middle-bar-circle-wrapper-1 {
+                    top: 25%;
+                }
+                #box-4-middle-bar-circle-wrapper-2 {
+                    top: 50%;
+                }
+                #box-4-middle-bar-circle-wrapper-3 {
+                    top: 70%;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width: 1350px) {
+    /* ================================= */
+    /* :::::::::: Box - Wr 4 ::::::::::: */
+    /* ================================= */
+    #box-4-wrapper {
+        #box-4-content {
+            #box-4-left-bar {
+                h4 {
+                    padding-top: 40px;
+                }
+                p {
+                    padding-left: 50px;
+                    padding-bottom: 30px;
+                }
+            }
+            #box-4-middle-bar {
+                #box-4-middle-bar-circle-wrapper-1 {
+                    top: 30%;
+                }
+                #box-4-middle-bar-circle-wrapper-2 {
+                    top: 59%;
+                }
+                #box-4-middle-bar-circle-wrapper-3 {
+                    top: 87%;
+                }
+
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 6 ::::::::::: */
+    /* ================================= */
+    #box-6-wrapper {
+        #box-6-content {
+            .flex;
+            .flex-col;
+            #left-bar {
+                #left-bar-content {
+                    .flex;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0;
+                    #card-box-6 {
+                        padding-top: 70px;
+                        padding-bottom: 50px;
+                        #card-box-6-content {
+                            padding: 20px 20px 0 20px;
+                        }
+                    }
+                }
+            }
+            #right-bar {
+                #right-bar-content {
+                    display: none;
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 7 ::::::::::: */
+    /* ================================= */
+    #box-7-wrapper {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+@media (max-width: 1000px) {
+    /* ================================= */
+    /* :::::::::: Class-Menu ::::::::::: */
+    /* ================================= */
+    .menu-mobile-container {
+        position: absolute;
+        right: 50px;
+        top: 15px;
+        width: 50px;
+        // margin-left: 20px;
+        display: inline-block;
+        cursor: pointer;
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 3px;
+            background-color: @color_white;
+            margin: 6px 10px;
+            transition: 0.4s;
+        }
+        .bar1 {
+            margin-top: 10px;
+        }
+        
+        .bar1.active {
+            transform-origin: 15% 120%;
+            transform: rotate(45deg);
+        }
+        .bar2.active {opacity: 0;}
+        
+        .bar3.active {
+            transform-origin: 15% -50%;
+            transform: rotate(-45deg);
+        }
+    }
+    .menu {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .menu ul li a {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .menu.active {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        visibility: visible;
+        opacity: 1;
+        ul {
+            padding-right: 0 !important;
+            margin-right: 0 !important;
+            width: 100%;
+            .flex-without-justify-content;
+            .flex-col;
+            background-color: @color_dark_grey;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: relative;
+            z-index: 5;
+            li {
+                margin-top: 10px;
+                a {
+                    visibility: visible;
+                    opacity: 1;
+                    .text;
+                    font-size: 30px !important; 
+                    &:hover {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    /* ================================= */
+    /* :::::::::: Box - Wr 1 ::::::::::: */
+    /* ================================= */
+    #home {
+        #home-content {
+            h3 {
+                padding-top: 70px;
+            }
+        }
+        .slick-slider {
+            h3 {
+                padding-top: 70px;
+            }
+        }
+    }
+
+    /* ================================= */
+    /* :::::::::: Box - Wr 2 ::::::::::: */
+    /* ================================= */
+    #about-us {
+        margin-top: 70px;
+        padding-bottom: 0;
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 3 ::::::::::: */
+    /* ================================= */
+    #box-3-wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        #box-3-content {
+            .flex;
+            .flex-col;
+            #box-3-left-bar {
+                text-align: center;
+                img {
+                    height: 70%;
+                    width: 70%;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                }
+            }
+            #box-3-right-bar {
+                .h-and-w;
+                width: 100%;
+                max-width: 100%;
+                h3 {
+                    margin-top: 30px;
+                    padding: 20px 50px 20px 130px;
+                    &::after {
+                        content:'';
+                        display: block;
+                        .box-sizing;
+                        position: absolute;
+                        left: 100px;
+                        top: 25%;
+                        height: 50%;
+                        border-left: 5px solid red;
+                    }
+                }
+                p {
+                    padding: 10px 100px 10px 100px;
+                }
+                #btn {
+                    margin-left: 100px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 4 ::::::::::: */
+    /* ================================= */
+    #box-4-wrapper {
+        #box-4-content {
+            #box-4-left-bar {
+                padding-bottom: 20px;
+                .tab-bar-after {
+                    content:'';
+                    display: block;
+                    .box-sizing;
+                    position: absolute;
+                    top: 140px;
+                    width: 50px;
+                    border: none;
+                    border-bottom: 5px solid #a6a6a6;
+                }
+
+                .tab-bar.b1 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 27.5%;
+                    }
+                }
+                .tab-bar.b2 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 47.5%;
+                    }
+                }
+                .tab-bar.b3 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 67.5%;
+                    }
+                }
+                .tab-bar.active {
+                    &::after {
+                        border: none;
+                        border-bottom: 5px solid @color_active;
+                        transition: all ease 1s;
+                    }
+                }
+
+                h3 {
+                    padding: 40px 0 0 0;
+                    text-align: center;
+                    &::after {
+                        content:'';
+                        display: block;
+                        .box-sizing;
+                        position: absolute;
+                        left: 120px;
+                        right: 120px;
+                        top: 50px;
+                        border: none;
+                        border-bottom: 3px solid @color_active;
+                    }
+                }
+                h4 {
+                    padding: 150px 0 0 0;
+                    text-align: center;
+                }
+                p {
+                    padding: 0 50px 0 50px;
+                    text-align: center;
+                }
+            }
+            #box-4-middle-bar {
+                #box-4-middle-bar-circle-wrapper-1 {
+                    top: 140px;
+                    left: 30%;
+                }
+                #box-4-middle-bar-circle-wrapper-2 {
+                    top: 140px;
+                    left: 50%;
+                }
+                #box-4-middle-bar-circle-wrapper-3 {
+                    top: 140px;
+                    left: 70%;
+                }
+            }
+            #box-4-right-bar {
+                display: none;
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 5 ::::::::::: */
+    /* ================================= */
+    #portfolio {
+        #portfolio-header {
+            height: 300px;
+            padding-bottom: 50px;
+            #text-wrapper {
+                .header-text;
+            }
+            #border-wrapper {
+            .flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+                #border {
+                    .border-with-circle;
+                }
+            }
+            #menu-wrapper {
+                #menu {
+                    ul {
+                        margin: 0;
+                        li a {
+                            font-size: 12px;
+                            &::after {
+                                margin: 0px 5px 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 7 ::::::::::: */
+    /* ================================= */
+    #box-7-wrapper {
+        flex-direction: column;
+        #card-wrapper {
+            padding: 20px 0 20px 0;
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 8 ::::::::::: */
+    /* ================================= */
+    #pricing {
+        #pricing-content {
+            .flex-col;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr10 ::::::::::: */
+    /* ================================= */
+    #box-10-wrapper {
+        #box-10-content {
+            padding-top: 100px;
+            .flex-without-justify-content;
+            .flex-wrap;
+            justify-content: space-around;
+            #card-wrapper {
+                -ms-flex-preferred-size: 300px;
+                flex-basis: 300px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr11 ::::::::::: */
+    /* ================================= */
+    #blog {
+        #blog-content {
+            #card-wrapper {
+                .flex;
+                .flex-col;
+                #card {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    img {
+                        height: 50%;
+                        width: 50%;
+                    }
+                    img:first-child {
+                        padding-top: 40px;
+                    }
+                    img:last-child {
+                        padding-bottom: 30px;
+                    }
+                    p {
+                        padding: 20px 50px 0 50px;
+                    }
+                    h3::after {
+                            top: 90%;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr12 ::::::::::: */
+    /* ================================= */
+    #contact {
+        #contact-content {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            .flex;
+            .flex-col;
+            #left-bar {
+                width: 100%;
+                padding-bottom: 30px;
+                text-align: center;
+                h4 {
+                    padding: 40px 30px 0 30px;
+                    .text;
+                    font-size: 25px;
+                    color: @color_active;
+                    text-transform: uppercase;
+                }
+                p {
+                    padding: 10px 30px 0 30px;
+                    .text;
+                    font-size: 15px;
+                    color: #b3b3b3;
+                }
+            }
+            #right-bar {
+                width: 100%;
+                margin: auto;
+                margin-top: 30px;
+                #input-group {
+                    .flex;
+                    form {
+                        .flex-without-justify-content;
+                        .flex-row;
+                        .flex-wrap;
+                        input,textarea {
+                            .box-sizing;
+                            padding: 20px;
+                            margin-bottom: 20px;
+                            width: 80%;
+                            margin: 20px auto;
+                            border: none;
+                            background-color: white;
+                            border-bottom: 1px solid @color_grey;
+                            outline: none;
+                        }
+                        input::placeholder {
+                            color: #999999;
+                        }
+                        textarea {
+                            resize: none;
+                        }
+                        .btn {
+                            padding: 10px 40px 10px 40px;
+                            margin-left: 10%;
+                            color: @color_grey;
+                            border: 1px solid @color_active;
+                            background-color: @color_active;
+                            border-radius: 3px;
+                            text-align: center;
+                            .box-sizing;
+                            text-transform: uppercase;
+                            &:hover {
+                                color: @color_white;
+                                border: 1px solid #d12c1a;
+                                background-color: #d12c1a;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    /* ================================= */
+    /* :::::::::: Box - Wr 1 ::::::::::: */
+    /* ================================= */
+    #home {
+        #home-footer {
+            .flex;
+            .flex-col;
+            #btn {
+                .flex;
+            }
+            #btn:first-child {
+                .btn-dark;
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 3 ::::::::::: */
+    /* ================================= */
+    #box-3-wrapper {
+        // .h-and-w;
+        // padding-top: 150px;
+        // padding-bottom: 150px;
+        #box-3-content {
+         
+            #box-3-right-bar {
+                width: 100%;
+                h3 {
+                    font-size: 15px;
+                    padding-left: 30px;
+                    &::after {
+                        left: 30px;
+                        top: 35%;
+                        width: 100px;
+                        border-left: none;
+                        border-bottom: 5px solid red;
+                    }
+                }
+                p {
+                    padding: 10px;
+                    padding-left: 30px;
+                    font-size: 10px;
+                }
+                #btn {
+                    margin-left: 30px;
+                    margin-top: 20px;
+                    .btn;
+                    .btn-dark;
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 5 ::::::::::: */
+    /* ================================= */
+    #portfolio {
+        #portfolio-header {
+            height: 300px;
+            padding-bottom: 50px;
+            #text-wrapper {
+                .header-text;
+            }
+            #border-wrapper {
+            .flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+                #border {
+                    .border-with-circle;
+                }
+            }
+            #menu-wrapper {
+                #menu {
+                    ul {
+                        margin: 0;
+                        li a {
+                            font-size: 12px;
+                            &::after {
+                                margin: 0px 5px 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #portfolio-content {
+            #portfolio-content-row1 {
+                .flex-without-justify-content;
+                .flex-col;
+            }
+            #portfolio-content-row2 {
+                .flex-without-justify-content;
+                .flex-col;
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 6 ::::::::::: */
+    /* ================================= */
+    #box-6-wrapper {
+        #box-6-content {
+            #left-bar {
+                #left-bar-content {
+                    min-width: 100%;
+                    #card-box-6 {
+                        #card-box-6-content {
+                            h6 {
+                                min-width: 0;
+                                font-size: 15px;
+                            }
+                            p {
+                                font-size: 10px;
+                                width: 80%;
+                                margin: auto;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* ================================= */
+/* :::::::::: Box - Wr 9 ::::::::::: */
+/* ================================= */
+#team {
+    #team-content {
+        height: 350px;
+        .cards-wrapper {
+            .flex-wrap;
+            .card {
+                min-width: 150px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+}
+@media (max-width: 550px) {
+    .header-text {
+        h3 {
+            padding: 50px 0 0 0;
+            .flex;
+            color: #6a6a6a;
+            font-size: 20px;
+            font-family: 'Source Sans Pro';
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p {
+            padding: 20px 10px;
+            .flex;
+            color: #a0a0a0;
+            font-size: 12px;
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 1 ::::::::::: */
+    /* ================================= */
+    #home {
+        min-height: 600px;
+        #home-content {
+            h3 {
+                font-size: 17px;
+                padding-top: 50px;
+            }
+            h1 {
+                padding-top: 30px;
+                font-size: 40px;
+            }
+            #border-wrapper {
+                margin-top: 30px;
+            }
+            p {
+                font-size: 12px;
+                padding: 30px 20px 0 20px;
+            }
+        }
+        .slick-slider {
+            h3 {
+                font-size: 17px;
+                padding-top: 50px;
+            }
+            h1 {
+                padding-top: 30px;
+                font-size: 40px;
+            }
+            #border-wrapper {
+                margin-top: 30px;
+            }
+            p {
+                font-size: 12px;
+                padding: 30px 20px 0 20px;
+            }
+        }
+        #home-footer {
+            #btn {
+                margin: 40px 10px 0 10px;
+            }
+        }
+    }
+
+    /* ================================= */
+    /* :::::::::: Box - Wr 4 ::::::::::: */
+    /* ================================= */
+    #box-4-wrapper {
+        #box-4-content {
+            #box-4-left-bar {
+                .tab-bar-after {
+                    content:'';
+                    display: block;
+                    .box-sizing;
+                    position: absolute;
+                    top: 140px;
+                    width: 50px;
+                    border: none;
+                    border-bottom: 5px solid #a6a6a6;
+                }
+                .tab-bar.b1 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 25%;
+                    }
+                }
+                .tab-bar.b2 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 45%;
+                    }
+                }
+                .tab-bar.b3 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 65%;
+                    }
+                }
+                .tab-bar.active {
+                    &::after {
+                        border: none;
+                        border-bottom: 5px solid @color_active;
+                        transition: all ease 1s;
+                    }
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 5 ::::::::::: */
+    /* ================================= */
+    #portfolio {
+        #portfolio-header {
+            #text-wrapper {
+                .header-text;
+            }
+            #menu-wrapper {
+                #menu {
+                    ul {
+                        li {
+                            padding: 0;
+                            a {
+                                font-size: 10px;
+                                &::after{
+                                    padding: 4px;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 6 ::::::::::: */
+    /* ================================= */
+    #box-6-wrapper {
+        #box-6-header {
+            .header-text;
+        }   
+        #box-6-content {
+            #left-bar {
+                .flex;
+                #left-bar-content {
+                    #card-box-6 {
+                        #card-box-6-content {
+                            h6 {
+                                font-size: 15px;
+                                &::after {
+                                    content:'';
+                                    display: inline-block;
+                                    .box-sizing;
+                                    width: 100%;
+                                    height: 2px;
+                                    background:#6a6a6a; 
+                                    border: 1px solid white;
+                                    border-width: 0 100px 0;
+                                }
+                            }
+                            p {
+                                font-size: 10px;
+                                width: 50%;
+                                margin: auto;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 8 ::::::::::: */
+    /* ================================= */
+    #pricing {
+        #pricing-header {
+            .header-text;
+            text-align: center;
+        }   
+        #pricing-content {
+            padding: 50px 30px 100px 30px;
+            #card-wrapper {
+                max-width: 100%;
+                #circle-wrapper {
+                    top: 150px;
+                    width: 100px;
+                    height: 100px;
+                    #circle-background {
+                        width: 90px;
+                        height: 90px;
+                        h3 {
+                            font-size: 12px;
+                        }
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+                #card-header {
+                    min-height: 150px;
+                    min-width: 100%;
+                    h4 {
+                        font-size: 15px;
+                    }
+                }
+                #card-content {
+                    min-height: 200px;
+                    min-width: 100%;
+                    p {
+                        padding: 10px 10px 10px 10px;
+                        font-size: 10px;
+                    }
+                    p:first-child {
+                        padding-top: 70px;
+                    }
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 9 ::::::::::: */
+    /* ================================= */
+    #team {
+        #team-header {
+            .header-text;
+            h3, p {
+                color: @color_white;
+            }
+        }   
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr10 ::::::::::: */
+    /* ================================= */
+    #box-10-wrapper {
+        #box-10-header {
+            .header-text;
+        }   
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr11 ::::::::::: */
+    /* ================================= */
+    #blog {
+        #blog-header {
+            .header-text;
+        } 
+        #blog-content {
+            #card-wrapper {
+                #card {
+                    p {
+                        padding: 10 20px 0 20px;
+                        font-size: 10px;
+                    }
+                    p:first-child {
+                        padding-top: 10px;
+                    }
+                    h3 {
+                        padding: 20px;
+                        font-size: 15px;
+                        &::after {
+                            height: 2px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr12 ::::::::::: */
+    /* ================================= */
+    #contact {
+        #contact-header {
+            .header-text;
+        } 
+        #contact-content {
+            #left-bar {
+                h4 {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 11px;
+                }
+            }
+        }  
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr13 ::::::::::: */
+    /* ================================= */
+    #started {
+        min-height: 100%;
+        h3 {
+            font-size: 15px;
+            padding: 30px 0 0 0;
+        }
+        p {
+            font-size: 12px;
+            padding: 20px 20px 0 20px;
+
+        }
+        #btn-wrapper {
+            #btn {
+                a {
+                    padding: 10px 10px 0 10px;
+                    width: 200px;
+                }
+            }
+            padding-bottom: 20px;
+        }
+    }
+    /* ================================= */
+    /* ::::::::::   Footer   ::::::::::: */
+    /* ================================= */
+    #footer {
+        height: 70px;
+        width: 100%;
+        background-color: #202020;
+        .flex-without-justify-content;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        position: relative;
+        #social-media {
+            padding: 10px 10px 10px 10px;
+            margin-left: 0;
+            img {
+                padding: 3px;
+            }
+        }
+        #to-top {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            height: 30px;
+            width: 30px;
+            border-radius: 5000px;
+            background: @color_active;
+            cursor: pointer;
+            .flex-center;
+            p {
+                transform: rotate(-90deg);
+                color: white;
+                .text;
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    /* ================================= */
+    /* :::::::::: Class-Menu ::::::::::: */
+    /* ================================= */
+    .menu.active {
+        ul {
+            li {
+                a {
+                    .text;
+                    font-size: 10px !important; 
+                }
+            }
+        }
+
+    }
+    .header-text {
+        h3 {
+            padding: 20px 0 0 0;
+            font-size: 14px;
+        }
+        p {
+            padding: 10px 10px;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 1 ::::::::::: */
+    /* ================================= */
+    #home {
+        min-height: 400px;
+        #home-content {
+            h3 {
+                font-size: 10px;
+                padding-top: 50px;
+            }
+            h1 {
+                padding-top: 10px;
+                font-size: 15px;
+            }
+            #border-wrapper {
+                margin-top: 30px;
+            }
+            p {
+                font-size: 9px;
+                padding: 30px 20px 0 20px;
+            }
+        }
+        .slick-slider {
+            h3 {
+                font-size: 10px;
+                padding-top: 50px;
+            }
+            h1 {
+                padding-top: 10px;
+                font-size: 15px;
+            }
+            #border-wrapper {
+                margin-top: 30px;
+            }
+            p {
+                font-size: 9px;
+                padding: 30px 20px 0 20px;
+            }
+        }
+        #home-footer {
+            #btn {
+                margin: 30px 10px 0 10px;
+                a {
+                    padding-top: 3px;
+                    width: 100px;
+                    height: 20px;
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 2 ::::::::::: */
+    /* ================================= */
+    #about-us {
+        #about-us-content {
+            .flex-col;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;;
+            #card-box-2 {
+                #card-about-us-img-wrapper {
+                    #card-about-us-img-border {
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+                #card-about-us-content {
+                    h6 {
+                        font-size: 14px;
+                        &::after {
+                            width: 100%;
+                            max-width: 100%;
+                            border-width: 0 100px 0;
+                        }
+                    }
+                    p {
+                        margin-top: 0px;
+                        font-size: 10px;
+                        padding: 20px 0 20px 0;
+                    }
+                }
+
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 4 ::::::::::: */
+    /* ================================= */
+    #box-4-wrapper {
+        #box-4-content {
+            #box-4-left-bar  {
+                .tab-bar-after {
+                    content:'';
+                    display: block;
+                    .box-sizing;
+                    position: absolute;
+                    top: 140px;
+                    width: 50px;
+                    border: none;
+                    border-bottom: 5px solid #a6a6a6;
+                }
+                .tab-bar.b1 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 23%;
+                    }
+                }
+                .tab-bar.b2 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 43%;
+                    }
+                }
+                .tab-bar.b3 {
+                    &::after {
+                        .tab-bar-after;
+                        left: 63%;
+                    }
+                }
+                .tab-bar.active {
+                    &::after {
+                        border: none;
+                        border-bottom: 5px solid @color_active;
+                        transition: all ease 1s;
+                    }
+                }
+                h3 {
+                    font-size: 14px;
+                }
+                h4 {
+                    font-size: 12px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 5 ::::::::::: */
+    /* ================================= */
+    #portfolio {
+        #portfolio-header {
+            padding-bottom: 0;
+            #text-wrapper {
+                .header-text;
+                padding-top: 70px;
+            }
+            #menu-wrapper {
+                #menu {
+                    ul {
+                        li {
+                            padding: 0;
+                            a {
+                                font-size: 8px;
+                                &::after{
+                                    padding: 3spx;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 6 ::::::::::: */
+    /* ================================= */
+    #box-6-wrapper {
+        #box-6-header {
+            .header-text;
+        }   
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 8 ::::::::::: */
+    /* ================================= */
+    #pricing {
+        #pricing-header {
+            .header-text;
+            text-align: center;
+        }   
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr 9 ::::::::::: */
+    /* ================================= */
+    #team {
+        #team-header {
+            .header-text;
+            h3, p {
+                color: @color_white;
+            }
+        }   
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr10 ::::::::::: */
+    /* ================================= */
+    #box-10-wrapper {
+        #box-10-header {
+            .header-text;
+        }   
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr11 ::::::::::: */
+    /* ================================= */
+    #blog {
+        #blog-header {
+            .header-text;
+        } 
+        #blog-content {
+            #card-wrapper {
+                #card {
+                    p {
+                        padding: 10 20px 0 20px;
+                        font-size: 10px;
+                    }
+                    p:first-child {
+                        padding-top: 10px;
+                    }
+                    h3 {
+                        padding: 20px;
+                        font-size: 15px;
+                        &::after {
+                            height: 2px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr12 ::::::::::: */
+    /* ================================= */
+    #contact {
+        #contact-header {
+            .header-text;
+        } 
+        #contact-content {
+            #left-bar {
+                h4 {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 11px;
+                }
+            }
+        }  
+    }
+    /* ================================= */
+    /* :::::::::: Box - Wr13 ::::::::::: */
+    /* ================================= */
+    #started {
+        min-height: 100%;
+        h3 {
+            font-size: 15px;
+            padding: 30px 0 0 0;
+        }
+        p {
+            font-size: 12px;
+            padding: 20px 20px 0 20px;
+
+        }
+    }
+    /* ================================= */
+    /* ::::::::::   Footer   ::::::::::: */
+    /* ================================= */
+    #footer {
+        height: 70px;
+        width: 100%;
+        background-color: #202020;
+        .flex-without-justify-content;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        position: relative;
+        #social-media {
+            padding: 10px 10px 10px 10px;
+            margin-left: 0;
+            img {
+                padding: 3px;
+            }
+        }
+        #to-top {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            height: 30px;
+            width: 30px;
+            border-radius: 5000px;
+            background: @color_active;
+            cursor: pointer;
+            .flex-center;
+            p {
+                transform: rotate(-90deg);
+                color: white;
+                .text;
+                font-size: 20px;
+            }
+        }
+    }
+
+}

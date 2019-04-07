@@ -1,0 +1,136 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.cards-background {
+	width: 100%;
+	height: 100%;
+	/* margin: 3%; */
+}
+.slider-wrapper {
+	width: 80%;
+	height: 80%;
+	margin: 10%;
+}
+.slider {
+	position: relative;
+}
+.slider .slide {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.slider .slide .image {
+	height: 500px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	background-image: url(../img/imgs-slick-slider/icons/arrow.svg);
+	background-color: red;
+	background-size: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	box-shadow: none;
+	border: none;
+	user-select: none;
+	outline: none;
+	font-size: 0px;
+	cursor: pointer;
+}
+.slider .slick-arrow.slick-prev {
+	left: 10px;
+	transform: translateY(-50%) rotate(180deg);
+}
+.slider .slick-arrow.slick-next {
+	right: 10px;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.slick-dots > li {
+	list-style: none;
+	display: inline-block;
+}
+.slick-dots > li > button {
+	box-shadow: none;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	border-radius: 100%;
+	cursor: pointer;
+	border: none;
+	display: inline-block;
+	font-size: 0px;
+	margin: 0 3px;
+	outline: none;
+}
+.slick-dots > li.slick-active > button {
+	background-color: rgb(24, 84, 212);
+}
+
+
+
+
+
+
+
+
+
+
+
+.slider-x {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.slider-x .slide {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.slider-x .slide .image {
+	height: 300px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.slider-x .slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	background-image: url(../img/imgs-slick-slider/icons/arrow.svg);
+	background-color: red;
+	background-size: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	box-shadow: none;
+	border: none;
+	user-select: none;
+	outline: none;
+	font-size: 0px;
+	cursor: pointer;
+}
+.slider-x .slick-arrow.slick-prev {
+	left: 10px;
+	transform: translateY(-50%) rotate(180deg);
+}
+.slider-x .slick-arrow.slick-next {
+	right: 10px;
+}

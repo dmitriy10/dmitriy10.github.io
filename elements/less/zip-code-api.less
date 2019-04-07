@@ -1,0 +1,210 @@
+
+@primary: #2980b9;
+@hover: #3ca1e4;
+@disabled: #08446b;
+// Generals styles
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma";
+}
+h1, h2, h3, h4, h5, h6, ul, li, a, span, div, p, input {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	color: #000;
+	font-family: "Tahoma";
+	font-weight: normal;
+	text-decoration: none;
+	box-shadow: none;
+	border: none;
+}
+body {
+	// padding: 20px 100px;
+}
+
+.elements-content {
+	.left-bar {
+		.cards-background {
+			// min-height: 1000px;
+			.wrapper {
+				width: 50%;
+				margin-top: 60px;
+				min-width: 500px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 30%;
+				.examples-wrapper {
+					h1 {
+						color: @primary;
+						margin-bottom: 20px;
+						font-size: 20px;
+					}
+					h2 {
+						margin-top: 20px;
+						margin-left: 30px;
+						font-size: 25px;
+					}
+					h3 {
+						margin-left: 30px;
+						margin-top: 10px;
+						font-size: 20px;
+					}
+					p {
+						margin-left: 30px;
+						margin-top: 5px;
+						font-size: 15px;
+						list-style: decimal;
+					}
+				}
+				.input-group {
+					margin-top: 50px;
+					form {
+						margin-bottom: 30px;
+						input, .btn, .btn-clear-last, .btn-clear-all {
+							white-space: nowrap;
+							border: 1px solid #ccc;
+							box-sizing: border-box;
+							-moz-box-sizing: border-box;
+							-webkit-box-sizing: border-box;
+							padding: 10px;
+							width: 100%;
+							border: 3px solid @primary;
+							&:hover {
+								border: 3px solid @hover;
+							}
+						}
+							
+						.btn, .btn-clear-last, .btn-clear-all {
+							margin-top: 20px;
+							width: 100%;
+							border-left: none;
+							border: 3px solid @primary;
+							background-color: @primary;
+							color: #fff;
+							cursor: pointer;
+							&:hover {
+								border: 3px solid @primary;
+								background-color: @hover;
+							}
+							&:disabled {
+								background-color: @disabled;
+								&:hover {
+									border: 3px solid @hover;
+								}
+							}
+						}
+					}
+					ul {
+						margin-left: 20px;
+						li {
+							font-size: 15px;
+							margin-top: 5px;
+							list-style: decimal;
+							&:hover {
+								color: @hover;
+							}
+						}
+
+					}
+
+				}
+			}
+		}
+	}
+}
+
+
+
+@media all and (max-width: 800px) {
+	.elements-content {
+		.left-bar {
+			.cards-background {
+				.wrapper {
+					min-width: 0;
+					width: 90%;
+					margin-left: auto;
+					margin-right: auto;
+					.examples-wrapper {
+						width: 90%;
+						margin-left: auto;
+						margin-right: auto;
+						h1 {
+							color: @primary;
+							margin-bottom: 20px;
+							font-size: 12px;
+						}
+						h2 {
+							margin-top: 20px;
+							font-size: 10px;
+						}
+						h3 {
+							margin-top: 10px;
+							font-size: 10px;
+						}
+						p {
+							margin-top: 5px;
+							font-size: 10px;
+							list-style: decimal;
+						}
+					}
+				}
+
+				.input-group {
+					width: 90%;
+					margin-left: auto;
+					margin-right: auto;
+					form {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// @media all and (max-width: 600px) {
+// 	.elements-content {
+// 		.left-bar {
+// 			.cards-background {
+// 				.wrapper {
+// 					margin-left: auto;
+// 					margin-right: auto;
+// 					.examples-wrapper {
+// 						width: 50%;
+// 						margin-left: auto;
+// 						margin-right: auto;
+// 						h1 {
+// 							color: @primary;
+// 							margin-bottom: 20px;
+// 							font-size: 12px;
+// 						}
+// 						h2 {
+// 							margin-top: 20px;
+// 							font-size: 10px;
+// 						}
+// 						h3 {
+// 							margin-top: 10px;
+// 							font-size: 10px;
+// 						}
+// 						p {
+// 							margin-top: 5px;
+// 							font-size: 10px;
+// 							list-style: decimal;
+// 						}
+// 					}
+// 				}
+// 				.input-group {
+// 					width: 60%;
+// 					margin-left: auto;
+// 					margin-right: auto;
+// 					form {
+// 						width: 100%;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+
+// }
