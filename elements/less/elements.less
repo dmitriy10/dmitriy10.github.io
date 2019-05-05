@@ -313,38 +313,26 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, div {
 
 
 footer {
-    padding: 0;
+    height: 80px;
+    width: 100%;
+    background: @color_black;
     position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: 30px;
-}
-.elements-footer {
-    background-color: @background_color_menu_and_footer;
-    height: 50px;
-    margin-top: 30px;
-
-    .elements-footer-img {
-        display: inline-block;
-        width: 100%;
-
-        a {
-            display: block;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        img {
-            box-sizing: border-box;
-            background: @background_color_menu_and_footer;
-            text-align: center;
-            width: 50px;
-            height: 47px;
-            animation: translateX 5s linear infinite;
-        }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    a {
+        margin: 0 30px;
+        font-size: 30px;
     }
-
+    i {
+        color: @color_white;
+    }
 }
 
 
@@ -405,6 +393,8 @@ footer {
     }
     .elements-header {
         .elements-logo {
+            position: absolute;
+            top: 55px;
             left: calc(~"50% - 20px");;
             margin-top: -47px;
         }
@@ -412,8 +402,9 @@ footer {
             width: 50px;
             display: inline-block;
             cursor: pointer;
-            margin-left: 15px;
-            margin-top: 5px;
+            position: absolute;
+            top: 3px;
+            right: 30px;
             .bar1, .bar2, .bar3 {
                 width: 35px;
                 height: 3px;

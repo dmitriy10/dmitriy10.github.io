@@ -218,34 +218,26 @@ div {
   position: relative;
 }
 footer {
-  padding: 0;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: 30px;
-}
-.elements-footer {
-  background-color: #000000;
-  height: 50px;
-  margin-top: 30px;
-}
-.elements-footer .elements-footer-img {
-  display: inline-block;
+  height: 80px;
   width: 100%;
-}
-.elements-footer .elements-footer-img a {
-  display: block;
-  box-sizing: border-box;
-  text-align: center;
-}
-.elements-footer .elements-footer-img img {
-  box-sizing: border-box;
   background: #000000;
-  text-align: center;
-  width: 50px;
-  height: 47px;
-  animation: translateX 5s linear infinite;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer a {
+  margin: 0 30px;
+  font-size: 30px;
+}
+footer i {
+  color: white;
 }
 @media (min-width: 2500px) {
   .left-bar .card .cards-background .card-avatar {
@@ -282,6 +274,8 @@ footer {
     height: 20px;
   }
   .elements-header .elements-logo {
+    position: absolute;
+    top: 55px;
     left: calc(50% - 20px);
     margin-top: -47px;
   }
@@ -289,8 +283,9 @@ footer {
     width: 50px;
     display: inline-block;
     cursor: pointer;
-    margin-left: 15px;
-    margin-top: 5px;
+    position: absolute;
+    top: 3px;
+    right: 30px;
   }
   .elements-header .menu-mobile-container .bar1,
   .elements-header .menu-mobile-container .bar2,
@@ -1691,6 +1686,28 @@ input {
   opacity: 1;
   visibility: visible;
 }
+.elements-content footer {
+  height: 80px;
+  width: 100%;
+  background: #000000;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.elements-content footer a {
+  margin: 0 30px;
+  font-size: 30px;
+}
+.elements-content footer i {
+  color: white;
+}
 @media (max-width: 600px) {
   .elements-content .left-bar .cards-background .div-menu {
     height: 150px;
@@ -2407,6 +2424,28 @@ input {
 }
 .elements-content .left-bar .cards-background .wrapper .input-group ul li:hover {
   color: #3ca1e4;
+}
+footer {
+  height: 80px;
+  width: 100%;
+  background: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer a {
+  margin: 0 30px;
+  font-size: 30px;
+}
+footer i {
+  color: white;
 }
 @media all and (max-width: 800px) {
   .elements-content .left-bar .cards-background .wrapper {

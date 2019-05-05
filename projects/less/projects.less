@@ -382,124 +382,6 @@ header {
     }
 }
 
-.animation-lines {
-    -webkit-animation: lines 3s;
-    -o-animation: lines 3s;
-    animation: lines 3s;
-    -webkit-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-.line {
-    position: fixed;
-    height: 40vh;
-    width: 20vw;
-    background: @color_black;
-    z-index: 999;
-}
-.line.t1,.line.t2,.line.t3,.line.t4,.line.t5 {
-    top: 0;
-    .hidden;
-    .translateY(-1000px);
-    &.active {
-        .visible;
-        .animation-lines;
-    }
-}
-.line.t1 {
-    left: 0;
-}
-.line.t2 {
-    left: 20vw;
-    &.active {
-        .animation-delay(0.25s);
-    }
-}
-.line.t3 {
-    left: 40vw;
-    &.active {
-        .animation-delay(0.5s);
-    }
-}
-.line.t4 {
-    left: 60vw;
-    &.active {
-        .animation-delay(0.75s);
-    }
-}
-.line.t5 {
-    left: 80vw;
-    &.active {
-        .animation-delay(1s);
-    }
-}
-.line.m1 {
-    top: 40vh;
-    left: 0;
-    height: 20vh;
-    width: 100vw;
-    .hidden;
-    .translateX(-2000px);
-    &.active {
-        .visible;
-        .animation-lines;
-        .animation-delay(3s);
-    }
-}
-.line.b1,.line.b2, .line.b3, .line.b4, .line.b5 {
-    .hidden;
-    bottom: 0;
-    .translateY(1000px);
-    &.active {
-        .visible;
-        .animation-lines;
-    }
-}
-.line.b1 {
-    left: 0;
-    &.active {
-        .animation-delay(1s);
-    }
-}
-.line.b2 {
-    left: 20vw;
-    &.active {
-        .animation-delay(1.25s);
-    }
-}
-.line.b3 {
-    left: 40vw;
-    &.active {
-        .animation-delay(1.50s);
-    }
-}
-.line.b4 {
-    left: 60vw;
-    &.active {
-        .animation-delay(1.75s);
-    }
-}
-.line.b5 {
-    left: 80vw;
-    &.active {
-        .animation-delay(2s) 
-    }
-}
-@-webkit-keyframes lines {
-    100% {
-        .transform-none;
-    }
-}
-@-o-keyframes lines {
-    100% {
-        .transform-none;
-    }
-}
-@keyframes lines {
-    100% {
-        .transform-none;
-    }
-}  
 
 
 
@@ -508,21 +390,40 @@ header {
 footer {
     height: 100px;
     width: 100%;
-    background: black;
+    background: @color_black;
     position: relative;
     .flex-center-center;
+    a {
+        margin: 0 30px;
+        font-size: 30px;
+    }
+    i {
+        color: @white-color;
+    }
 }
 
 
 
 // to top
-.top {
-    background: white;
-    margin: 0 auto;
-    height: 70px;
-    width: 70px;
-    border-radius: 5px;
+#top {
+    width:100px;
+    border:1px solid @color_black;
+    background: @color_black;
+    text-align:center;
+    padding: 10px;
+    position: fixed;
+    bottom: 100px; /* отступ кнопки от нижнего края страницы*/
+    // bottom: 110px;
+    right: 0;
     cursor: pointer;
+    display: none;
+    color: @white-color;
+    font-family: "Tahoma";
+    font-size: 15px;
+    img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 // MENU 

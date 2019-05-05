@@ -1,0 +1,182 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+span,
+div,
+p,
+input {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #000;
+  font-family: "Tahoma";
+  font-weight: normal;
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+}
+.elements-content .left-bar .cards-background .wrapper {
+  width: 50%;
+  margin-top: 60px;
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30%;
+}
+.elements-content .left-bar .cards-background .wrapper .examples-wrapper h1 {
+  color: #2980b9;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.elements-content .left-bar .cards-background .wrapper .examples-wrapper h2 {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+.elements-content .left-bar .cards-background .wrapper .examples-wrapper h3 {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.elements-content .left-bar .cards-background .wrapper .examples-wrapper p {
+  margin-left: 30px;
+  margin-top: 5px;
+  font-size: 15px;
+  list-style: decimal;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group {
+  margin-top: 50px;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group form {
+  margin-bottom: 30px;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group form input,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-last,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-all {
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  border: 3px solid #2980b9;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group form input:hover,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn:hover,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-last:hover,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-all:hover {
+  border: 3px solid #3ca1e4;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-last,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-all {
+  margin-top: 20px;
+  width: 100%;
+  border-left: none;
+  border: 3px solid #2980b9;
+  background-color: #2980b9;
+  color: #fff;
+  cursor: pointer;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn:hover,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-last:hover,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-all:hover {
+  border: 3px solid #2980b9;
+  background-color: #3ca1e4;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn:disabled,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-last:disabled,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-all:disabled {
+  background-color: #08446b;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn:disabled:hover,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-last:disabled:hover,
+.elements-content .left-bar .cards-background .wrapper .input-group form .btn-clear-all:disabled:hover {
+  border: 3px solid #3ca1e4;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group ul {
+  margin-left: 20px;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group ul li {
+  font-size: 15px;
+  margin-top: 5px;
+  list-style: decimal;
+}
+.elements-content .left-bar .cards-background .wrapper .input-group ul li:hover {
+  color: #3ca1e4;
+}
+footer {
+  height: 80px;
+  width: 100%;
+  background: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer a {
+  margin: 0 30px;
+  font-size: 30px;
+}
+footer i {
+  color: white;
+}
+@media all and (max-width: 800px) {
+  .elements-content .left-bar .cards-background .wrapper {
+    min-width: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .elements-content .left-bar .cards-background .wrapper .examples-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .elements-content .left-bar .cards-background .wrapper .examples-wrapper h1 {
+    color: #2980b9;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .elements-content .left-bar .cards-background .wrapper .examples-wrapper h2 {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  .elements-content .left-bar .cards-background .wrapper .examples-wrapper h3 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .elements-content .left-bar .cards-background .wrapper .examples-wrapper p {
+    margin-top: 5px;
+    font-size: 10px;
+    list-style: decimal;
+  }
+  .elements-content .left-bar .cards-background .input-group {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .elements-content .left-bar .cards-background .input-group form {
+    width: 100%;
+  }
+}

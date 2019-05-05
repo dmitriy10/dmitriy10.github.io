@@ -285,6 +285,19 @@ div {
     transform: translateX(10px);
   }
 }
+@media (max-width: 1000px) {
+  #top {
+    width: 70px;
+    padding: 10px;
+    bottom: 100px;
+    /* отступ кнопки от нижнего края страницы*/
+    font-size: 15px;
+  }
+  #top img {
+    width: 20px;
+    height: 20px;
+  }
+}
 @media (max-width: 600px) {
   .global-projects-wrapper {
     /* ================================= */
@@ -555,6 +568,17 @@ div {
   }
 }
 @media (max-width: 800px) {
+  #top {
+    width: 50px;
+    padding: 10px;
+    bottom: 100px;
+    /* отступ кнопки от нижнего края страницы*/
+    font-size: 15px;
+  }
+  #top img {
+    width: 20px;
+    height: 20px;
+  }
   .elements-header .elements-logo {
     left: calc(50% - 20px);
     margin-top: -47px;
@@ -563,8 +587,9 @@ div {
     width: 50px;
     display: inline-block;
     cursor: pointer;
-    margin-left: 15px;
-    margin-top: 5px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
   }
   .elements-header .menu-mobile-container .bar1,
   .elements-header .menu-mobile-container .bar2,

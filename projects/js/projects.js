@@ -51,9 +51,26 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 // To top
-document.querySelector('.top').onclick = function() {
-    scrollToTop(300);
-};
+// document.querySelector('.top').onclick = function() {
+//     scrollToTop(300);
+// };
+
+// Scroll button
+$(function() {
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+            $('#top').fadeIn();
+        } else {
+            $('#top').fadeOut();
+        }
+    });
+
+    $('#top').click(function() {
+        $('body,html').animate( {
+            scrollTop:0
+        },800);
+    });
+});
 function scrollToTop(scrollDuration) {
     var scrollStep = -window.scrollY / (scrollDuration / 15),
         scrollInterval = setInterval(function(){
@@ -62,31 +79,6 @@ function scrollToTop(scrollDuration) {
         }
         else clearInterval(scrollInterval); 
     },15);
-}
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-$('a.transition').click(function(event){
-    event.preventDefault();
-    linkLocation = this.href;
-    lines();
-    setTimeout(linesRemove, 5700);
-});
-function lines() {
-    let lines = document.querySelectorAll('.line');
-    for (var i = 0, len = lines.length; i < len; i++) {
-        lines[i].classList.add('active');
-    }
-    setTimeout(redirectPage, 5700);
-};
-function linesRemove() {
-    let lines = document.querySelectorAll('.line');
-    for (var i = 0, len = lines.length; i < len; i++) {
-        lines[i].classList.remove('active');
-    }
-}
-function redirectPage() {
-    window.location = linkLocation;
 }
 // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 

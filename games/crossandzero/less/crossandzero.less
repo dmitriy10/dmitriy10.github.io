@@ -1,0 +1,214 @@
+// out: ../css/crossandzero.css
+
+// Mixins
+@import (optional) "mixins";
+@color-green: green;
+@color-blue: blue;
+@color-red: red;
+@color-black: black;
+@color-grey: gainsboro;
+@color-white: white;
+// Table styles
+.table-wrapper {
+    .h-and-w;
+    .flex;
+    .flex-center-center;
+    margin-top: 50px;
+    position: relative;
+}
+#table {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+.row {
+    height: 100px;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.col {
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border: 3px @color-black solid;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    &:hover  {
+        background: @color-grey;
+    }
+}
+.gameInfo {
+    margin-top: 50px;
+    .flex;
+    .flex-col;
+    .flex-center-center;
+    height: 100px;
+    width: 100%;
+}
+h2,a {
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+a {
+    color: blue;
+}
+// Games score and btns 
+.newgame {
+    margin-top: 20px;
+    .flex;
+    .flex-center-center;
+    height: 100px;
+    width: 100%;
+}
+.btn-ng, .btn-rst {
+    border-radius: 3px;
+    margin: 10px;
+    font-size: 20px;
+    color: @color-white;
+    cursor: pointer;
+    padding: 10px;
+}
+.btn-ng {
+    background: @color-green;
+}
+.btn-rst {
+    background: @color-red;
+}
+.games {
+    color: @color-blue;
+}
+.wins {
+    color: @color-green;
+}
+.losses {
+    color: @color-red;
+}
+
+// Lines
+.line {
+    height: 3px;
+    width: 300px;
+    position: absolute;
+    left: calc(~"50% - 150px");
+    background: @color-red;
+    .hidden;
+    &.visible {
+        .visible;
+    }
+}
+.one {
+    top: 51.5px;
+}
+.two {
+    top: 151.5px;
+}
+.three {
+    top: 251.5px;
+}
+.four,.five,.six {
+    height: 300px;
+    width: 3px;
+    top: 1.5px;
+}
+.four {
+    left: calc(~"50% - 101.5px");
+}
+.five {
+    left: calc(~"50% - 1.5px");
+}
+.six {
+    left: calc(~"50% + 98.5px");
+}
+.seven,.eight {
+    width: 400px;
+    left: calc(~"50% - 200px");
+}
+.seven {
+    top: calc(~"50% - 0px");
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.eight {
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.m-window-win,.m-window-lose,.m-window-gameover {
+    height: 700px;
+    width: 700px;
+    position: fixed;
+    text-align: center;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid blue;
+    margin: 0 auto;
+    .transition(1s);
+    .hidden;
+    img {
+        .h-and-w;
+    }
+    &.active {
+        .visible;
+        .transform-none;
+    }
+}
+.m-window-win {
+    -webkit-transform: translateX(-1000px) rotate(-360deg);
+        -ms-transform: translateX(-1000px) rotate(-360deg);
+            transform: translateX(-1000px) rotate(-360deg);
+}
+.m-window-lose {
+    -webkit-transform: translateY(-1000px);
+        -ms-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+}
+.m-window-gameover {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+}
+
+
+
+@media (max-width: 700px) {
+    .m-window-win,.m-window-lose,.m-window-gameover {
+        height: 600px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 500px) {
+    .table-wrapper {
+        margin-top: 10px;
+    }
+    .gameInfo {
+        margin-top: 10px;
+    }
+    .newgame {
+        margin: 0;
+    }
+    .m-window-win,.m-window-lose,.m-window-gameover {
+        top: 120px;
+        height: 400px;
+        width: 400px;
+    }
+}
+@media (max-width: 400px) {
+    .m-window-win,.m-window-lose,.m-window-gameover {
+        top: 121px;
+        height: 300px;
+        width: 300px;
+    }
+}
