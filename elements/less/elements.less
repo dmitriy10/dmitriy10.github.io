@@ -1,28 +1,5 @@
-
+// out: ../css/elements.css
 @import (optional) "vars";
-
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-#top {
-    width:100px;
-    border:1px solid @color_black;
-    background: @background_color_black;
-    text-align:center;
-    padding: 10px;
-    position: fixed;
-    bottom: 80px; /* отступ кнопки от нижнего края страницы*/
-    // bottom: 110px;
-    right: 0;
-    cursor: pointer;
-    display: none;
-    color:@color_white;
-    font-family: "Tahoma";
-    font-size: 15px;
-    img {
-        width: 30px;
-        height: 30px;
-    }
-}
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 html, body {
     background-color: @body_background_color;
@@ -41,7 +18,6 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, div {
     font-size: 14px;
     font-weight: normal;
 }
-
 @keyframes bounce {
 	0%,20%,60%,100% {
 		transform: translateY(0);
@@ -56,72 +32,16 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, div {
 		transform: translateY(-10px);
 	}
 }
-
 @keyframes translateX {
 	0%{transform: translateX(-300px);}
     50%{transform: translateX(300px);}
     100%{transform: translateX(-300px);}
 }
-
-.elements-header {
-	background-color: @background_color_menu_and_footer;
-	height: 47px;
-	.elements-logo {
-        position: absolute;
-        left: calc(~"50% - 20px");;
-        background-color: @background_color_menu_and_footer;
-		img {
-			background: @background_color_white;
-			width: 40px;
-            height: 40px;
-			animation: bounce 2s ease infinite;
-		}
-    }
-    
-	.menu {
-		margin-left: 10px;
-		float: left;
-		li {
-			display: inline-block;
-            position: relative;
-			a {
-				color: @color_white;
-				display: block;
-                padding: 12px;
-                white-space: nowrap;
-                &:hover {
-                    background-color: @background_color_white;
-                    color: @color_black;
-                }
-            }
-            &:hover {
-                ul {
-                    visibility: visible;
-                    z-index: 10;
-                    a {
-                        min-width: 120px;
-                    }
-                }
-            }
-        }
-        ul {
-            opacity: 1;
-            visibility: hidden;
-            position: absolute;
-            background-color: @background_color_menu_and_footer;
-            z-index: 5;
-        }
-	}
-
-
-}
-
-
-
 .elements-content {
     overflow: auto;    
     .parallax-wrapper {
         height: 800px; 
+        background: black;
         .parallax { 
             background-image: url("../img/parallax.jpeg");
             background-attachment: fixed;
@@ -143,9 +63,9 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, div {
             }
         }
     }
-
     .left-bar {
         width: 100%;
+        background: black;
         .card {
             text-align: center;
             margin-bottom: 30px;
@@ -185,14 +105,12 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, div {
                         margin: 25%;
                         display: block;
                         transition: all 1s ease-out;
-                        // max-height: 1000px;
                         &:hover {
                             transform: scale(1.2);
                         }
                     }
                 }
             }
-            
             a {
                 padding-top: 30px;
                 padding-bottom: 15px;
@@ -205,137 +123,9 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, div {
                     transform: scale(1.1);
                 }
             }
-
-            // .card-footer {
-            //     margin-top: 5px;
-            //     overflow: auto;
-            //     margin-bottom: 30px;
-            //     .btn {
-            //         display: inline-block;
-            //         background-color:@background_color_black;
-            //         padding: 12px 20px;
-            //         border-radius: 5px;
-            //         color: @color_white;
-            //         cursor: pointer;
-            //         float: left;
-            //         border: solid 3px @color_white;
-
-            //         &:hover {
-            //             border: solid 3px @color_black;
-            //             background-color: @background_color_white;
-            //             color:@color_black;
-            //         }
-            //     }
-            // }
         }
     }
-    .parallax-down { 
-        background-image: url("../img/parallax-down.jpeg");
-        height: 1000px; 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 0.7;
-        position: relative;
-    }
 }
-
-
-
-
-// .banner {
-// 	position: fixed;
-// 	top: 150px;
-// 	right: 0px;
-// 	transform: translateX(270px);
-// 	width: 300px;
-// 	box-sizing: border-box;
-// 	padding: 30px;
-// 	border-radius: 3px;
-// 	background-color: @background_color_black;
-//     transition: all 0.3s ease;
-    
-//     &:hover {
-//         transform: none;
-//     }
-//     .banner-title {
-//         color: @color_white;
-//         text-transform: uppercase;
-//         font-size: 15px;
-//     }
-//     .banner-content {
-//         margin-top: 10px;
-//         p {
-//             line-height: 170%;
-//             color: @color_white;
-        
-//             font-size: 13px;
-//         }
-//     }
-// }
-
-// .banner-left {
-// 	position: fixed;
-// 	top: 450px;
-// 	left: 0px;
-// 	transform: translateX(-270px);
-// 	width: 300px;
-// 	box-sizing: border-box;
-// 	padding: 30px;
-// 	border-radius: 3px;
-// 	background-color: @background_color_black;
-//     transition: all 0.3s ease;
-//     z-index: 1;
-
-//     &:hover {
-//         transform: none;
-//     }
-
-//     .banner-title-l {
-//         color: @color_white;
-//         text-transform: uppercase;
-//         font-size: 15px;
-//     }
-
-//     .banner-content-l {
-//         margin-top: 10px;
-//         p {
-//             line-height: 170%;
-//             color: @color_white;
-
-//             font-size: 13px;
-//         }
-//     }
-// }
-
-
-
-
-footer {
-    height: 80px;
-    width: 100%;
-    background: @color_black;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    a {
-        margin: 0 30px;
-        font-size: 30px;
-    }
-    i {
-        color: @color_white;
-    }
-}
-
-
 @media (min-width: 2500px) {
     .left-bar {
         .card {
@@ -349,153 +139,7 @@ footer {
     }
 }
 
-@media (max-width: 1000px) {
-    #top {
-        width: 70px;
-        padding: 10px;
-        bottom: 110px; /* отступ кнопки от нижнего края страницы*/
-        font-size: 15px;
-        img {
-            width: 20px;
-            height: 20px;
-        }
-    }
-    .elements-header {
-        // background-color: @background_color_menu_and_footer;
-        // height: 47px;
-        .elements-logo {
-            // position: absolute;
-            // left: calc(~"50% - 20px");;
-            left: 80%;
-            // background-color: @background_color_menu_and_footer;
-            // img {
-            //     background: @background_color_white;
-            //     width: 40px;
-            //     height: 40px;
-            //     animation: bounce 2s ease infinite;
-            // }
-        }
-    }
-}
-
-
 @media (max-width: 800px) {
-    #top {
-        width: 50px;
-        padding: 10px;
-        bottom: 80px; /* отступ кнопки от нижнего края страницы*/
-        // bottom: 110px;
-        font-size: 15px;
-        img {
-            width: 20px;
-            height: 20px;
-        }
-    }
-    .elements-header {
-        .elements-logo {
-            position: absolute;
-            top: 55px;
-            left: calc(~"50% - 20px");;
-            margin-top: -47px;
-        }
-        .menu-mobile-container {
-            width: 50px;
-            display: inline-block;
-            cursor: pointer;
-            position: absolute;
-            top: 3px;
-            right: 30px;
-            .bar1, .bar2, .bar3 {
-                width: 35px;
-                height: 3px;
-                background-color: @color_white;
-                margin: 6px 10px;
-                transition: 0.4s;
-            }
-            .bar1 {
-                margin-top: 10px;
-            }
-            
-            .bar1.change {
-                transform-origin: 15% 120%;
-                transform: rotate(45deg);
-            }
-            .bar2.change {opacity: 0;}
-            
-            .bar3.change {
-                transform-origin: 15% -50%;
-                transform: rotate(-45deg);
-            }
-        }
-        
-
-
-        .menu {
-            position: absolute;
-            top: 47px;
-            left: 0;
-            z-index: 10;
-            background-color: @background_color_black;         
-            transform: translateX(-1000px);
-            margin-left: 0;
-            padding-left: 0;
-            padding-top: 30px;
-            padding-bottom: 100px;
-            width: 100%;   
-            transition: 0.4s;
-            text-align: center;
-            &.change {
-                transform: none;
-                transition: 0.4s;
-            }
-            li {
-                width: 100%;   
-                display: block;
-                margin-left: 0;
-                padding-left: 0;
-                &.change {
-                    background-color: @background_color_white;
-                }
-                a {
-                    color: @color_white;
-                    display: block;
-                    padding: 15px;
-                    white-space: nowrap;
-                    font-size: 25px;
-                    &.change {
-                        color: @color_black;
-                    }
-                    &:hover {
-                        background-color: @background_color_white;
-                        color: @color_black;
-                    }
-                }
-                &:hover {
-                    ul {
-                        visibility: visible;
-                        z-index: 10;
-                    }
-                }
-            }
-            ul {
-                background-color: @background_color_menu_and_footer;
-                z-index: 5;
-                opacity: 1;
-                visibility: visible;
-                display: none;
-                position: static;
-                li {
-                    a {
-                        font-size: 12px;
-                        border-bottom: 1px solid blue;
-                    }
-                    ul {
-                        display: inline-block;
-                    }
-                }
-            }
-        }
-    }
     .elements-content {
         .left-bar {
             .card {

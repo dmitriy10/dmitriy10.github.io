@@ -69,32 +69,32 @@ $('.menu-mobile-container').click(function() {
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 	
-	// $("body").css("display", "none");
+// 	// $("body").css("display", "none");
 
-    // $("body").fadeIn(1000);
+//     // $("body").fadeIn(1000);
     
-	$('a.transition').click(function(event){
-		event.preventDefault();
-		linkLocation = this.href;
-        $("body").fadeOut(1000, redirectPage);	
-	});
+// 	$('a.transition').click(function(event){
+// 		event.preventDefault();
+// 		linkLocation = this.href;
+//         $("body").fadeOut(1000, redirectPage);	
+// 	});
 		
-	function redirectPage() {
-        window.location = linkLocation;
-	}
-});
+// 	function redirectPage() {
+//         window.location = linkLocation;
+// 	}
+// });
 
 
 
-$bg = $('.parallax');
-$(window).scroll(function() {
-    var delta = $(window).scrollTop();
-    $bg.css({
-        'top':  delta / 6,
-    });
-});
+// $bg = $('.parallax');
+// $(window).scroll(function() {
+//     var delta = $(window).scrollTop();
+//     $bg.css({
+//         'top':  delta / 6,
+//     });
+// });
 
 
 

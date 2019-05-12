@@ -1,0 +1,82 @@
+.elements-content .left-bar .cards-background .modal-slider-wripper {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container {
+  z-index: 1;
+  max-width: 800px;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+  z-index: 0;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .modal {
+  padding: 30px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .modal .modal-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .modal .modal-content {
+  max-width: 700px;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .modal .modal-content p {
+  line-height: 170%;
+  color: #000000;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .modal .modal-content img {
+  max-width: 700px;
+  max-height: 700px;
+  width: 100%;
+  height: 100%;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container .modal .modal-footer {
+  margin-top: 15px;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .modal-container:last-child {
+  padding-bottom: 900px;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .btn {
+  display: inline-block;
+  background-color: #000000;
+  padding: 12px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  float: left;
+  border: solid 3px white;
+}
+.elements-content .left-bar .cards-background .modal-slider-wripper .btn:hover {
+  border: solid 3px #000000;
+  background-color: white;
+  color: #000000;
+}

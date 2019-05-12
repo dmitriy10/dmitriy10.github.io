@@ -1,0 +1,292 @@
+.elements-content .left-bar .cards-background .spinners-wrapper {
+  width: 100%;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner {
+  display: block;
+  margin-right: 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: #eee;
+  position: relative;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner:before,
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner:after {
+  content: "";
+  position: absolute;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v1:after {
+  border-radius: 100%;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 3px solid #2980b9;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: rotate 1.2s linear infinite;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v2:before,
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v2:after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2980b9;
+  border-radius: 100%;
+  animation: pulse 1.1s linear infinite;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v2:after {
+  animation-duration: 1.4s;
+  animation-delay: 0.33s;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v4 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  animation: rotate-new 2.5s linear infinite;
+}
+@keyframes rotate-new {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes translate {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(7px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v4:before {
+  bottom: -15px;
+  left: 40%;
+  height: 10px;
+  width: 10px;
+  background-color: #2980b9;
+  border-radius: 100%;
+  animation: translate 0.5s linear infinite;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner.v4:after {
+  top: -15px;
+  left: 40%;
+  height: 10px;
+  width: 10px;
+  background-color: #2980b9;
+  border-radius: 100%;
+  animation: translate 0.7s linear infinite;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner-v3 .spin {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  display: inline-block;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: #2980b9;
+  border-radius: 100%;
+  animation: jump-spin 1.1s linear infinite;
+}
+@keyframes jump-spin {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner-v3.v3 .x2 {
+  animation-delay: 0.4s;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .spinner-v3.v3 .x3 {
+  animation-delay: 0.8s;
+}
+@-webkit-keyframes rotate_pacman_half_up {
+  0% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+@keyframes rotate_pacman_half_up {
+  0% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+@-webkit-keyframes rotate_pacman_half_down {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate_pacman_half_down {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes pacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translate(-100px, -6.25px);
+    transform: translate(-100px, -6.25px);
+  }
+}
+@keyframes pacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translate(-100px, -6.25px);
+    transform: translate(-100px, -6.25px);
+  }
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman {
+  position: relative;
+  display: inline-block;
+  margin-top: 70px;
+  text-align: center;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(2) {
+  -webkit-animation: pacman-balls 1s -0.99s infinite linear;
+  animation: pacman-balls 1s -0.99s infinite linear;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(3) {
+  -webkit-animation: pacman-balls 1s -0.66s infinite linear;
+  animation: pacman-balls 1s -0.66s infinite linear;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(4) {
+  -webkit-animation: pacman-balls 1s -0.33s infinite linear;
+  animation: pacman-balls 1s -0.33s infinite linear;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(5) {
+  -webkit-animation: pacman-balls 1s 0s infinite linear;
+  animation: pacman-balls 1s 0s infinite linear;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #2980b9;
+  border-left: 25px solid #2980b9;
+  border-bottom: 25px solid #2980b9;
+  border-radius: 25px;
+  -webkit-animation: rotate_pacman_half_up 0.5s 0s infinite;
+  animation: rotate_pacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #2980b9;
+  border-left: 25px solid #2980b9;
+  border-bottom: 25px solid #2980b9;
+  border-radius: 25px;
+  -webkit-animation: rotate_pacman_half_down 0.5s 0s infinite;
+  animation: rotate_pacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(3),
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(4),
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(5),
+.elements-content .left-bar .cards-background .spinners-wrapper .pacman > div:nth-child(6) {
+  background-color: #2980b9;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  -webkit-transform: translate(0, -6.25px);
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}

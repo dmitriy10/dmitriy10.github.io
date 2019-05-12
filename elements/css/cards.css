@@ -1,0 +1,222 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Reset styles */
+html,
+body {
+  font-family: "Tahoma";
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+span,
+div,
+p {
+  font-family: "Tahoma";
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal;
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Components */
+.cards-background {
+  overflow: auto;
+  padding: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.cards-background .main-xcard-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper {
+  width: 350px;
+  box-sizing: border-box;
+  text-shadow: #000;
+  margin: 50px;
+  box-shadow: 0.05em 0.05em 50px rgba(122, 122, 122, 0.5);
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard {
+  box-sizing: border-box;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .avatar {
+  text-align: center;
+  width: 100%;
+  height: 250px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .avatar img {
+  width: 100%;
+  height: 100%;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content {
+  line-height: 200%;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100%;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .title-xcard1 {
+  color: #f17d4f;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .title-xcard2 {
+  color: #e6af39;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .title-xcard3 {
+  color: #35cc8d;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .line1 {
+  margin-top: -14px;
+  margin-left: 125px;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, #f17d4f, white);
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .line2 {
+  margin-top: -14px;
+  margin-left: 125px;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, #e6af39, white);
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .line3 {
+  margin-top: -14px;
+  margin-left: 125px;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, #35cc8d, white);
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .written {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  color: #837c7c;
+  font-family: "Tahoma";
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .content .author {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  color: black;
+  font-family: "Tahoma";
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .btn-container {
+  margin-top: 20px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .btn-container .btn {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #868585;
+  font-size: 10px;
+  border-radius: 40px;
+  border-color: #868585;
+  border: 1px solid #ccc;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .button {
+  margin-left: 150px;
+  margin-top: -25px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .button img {
+  width: 50px;
+  height: 50px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .xcard-header {
+  overflow: auto;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .xcard-header .menu img {
+  height: 20px;
+  width: 20px;
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .xcard-header p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #000;
+  font-family: "Tahoma";
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard .xcard-header .poisk img {
+  height: 20px;
+  width: 20px;
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard-footer {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard-footer img {
+  width: 15px;
+  height: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard-footer p {
+  display: inline-block;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-right: 25px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard-arrow {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard-arrow img {
+  width: 15px;
+  height: 15px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+}
+.cards-background .main-xcard-wrapper .xcard-wrapper .xcard-arrow p {
+  display: inline-block;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  margin-left: 250px;
+}
+@media (max-width: 1500px) {
+  .cards-background .main-xcard-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
