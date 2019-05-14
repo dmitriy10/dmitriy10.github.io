@@ -86,10 +86,9 @@ div {
   text-align: center;
   margin-bottom: 30px;
   overflow: hidden;
-  margin-top: 150px;
 }
 .elements-content .left-bar .card .card-header:first-child {
-  margin-top: 30px;
+  padding-top: 100px;
 }
 .elements-content .left-bar .card .card-header {
   max-width: 700px;
