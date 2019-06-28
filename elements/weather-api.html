@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/weather_api.css">
+	<link rel="stylesheet" href="css/weather-api.css">
 </head>
 <body>
 
@@ -75,90 +75,38 @@
         </ul>
 </div>	
 
-<div class="elements-content">
-	<div class="left-bar">	
-		<div class="cards-background">  
-			<div id="global-wrapper">
-				<div class="search-wrapper">
-					<div class="examples-wrapper">
-						<h1>API -- > openweathermap.org < -- API </h1>
-						<a href="#" class="cities-btn"><i class="fas fa-city"></i>Cities</a>
-						<a href="#" class="location"><i class="fas fa-location-arrow"></i>Current location</a>
-					</div>
-					<div class="how-to-use">
-						<h3>Enter city and country name. Example: "Odessa, ua"</h3>
-					</div>
-					<div class="input-group">
-						<form id="zip">
-								<input type="text" autocomplete="on" name="zip" id="input" onkeyup='btnIsDisabled()' placeholder="Enter here" maxlength='25'>
-								<button type="submit" class="btn" disabled>Click here</button>
-						</form>
-					</div>
-				</div>
-				
-				<div class="weather-forecast-wrapper"></div>
-				<!-- <div class="weather-forecast-wrapper active">
-					<div class="search-location"><i class="fas fa-search-location"></i></div>
-					<div class="header">
-						<div id="title">
-							<h2>Odessa, UA</h2>
-						</div>
-						<div id="temperature">
-							<h3>40 &deg C</h3>
-						</div>
-						<div id="weather-description">
-							<h2>Clouds</h2>
-						</div>
-					</div>
-					<div class="content">
-						<div class="weather-forecast">
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-							<div id="day"><h4>12-01-2019 20:10</h4><div id="small-icon"><img src="img/02d.png" alt="x"></div><p>-10 &deg C</p></div>
-						</div>
-					</div>
-					<div class="footer">
-						<div id="info"><i class="fas fa-info-circle"></i></div>
-					</div>
-					<table id="table">
-						<tr><td>Wind</td><td> 6.0 m/s, 10 deg</td></tr>
-						<tr><td>Cloudiness</td><td>80 %</td></tr>
-						<tr><td>Pressure</td><td> 1020 hpa</td></tr>
-						<tr><td>Humidity</td><td>30 %</td></tr>
-						<tr><td>Sunset</td><td>07:20</td></tr>
-						<tr><td>Sunrise</td><td>16:30</td></tr>
-						<tr><td>Geo coords</td><td>66, 21</td></tr>
-					</table>
-				</div> -->
-				<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-
-				<div class="cities"></div>
-
-			</div>
+<div id="global-wrapper">
+	<div class="search-wrapper">
+		<div class="examples-wrapper">
+			<h1>API -- > openweathermap.org < -- API </h1>
+			<a href="#" class="cities-btn"><i class="fas fa-city"></i>Cities</a>
+			<a href="#" class="location"><i class="fas fa-location-arrow"></i>Current location</a>
+		</div>
+		<div class="how-to-use">
+			<h3>Enter city and country name. Example: "Odessa, ua"</h3>
+		</div>
+		<div class="input-group">
+			<form id="zip">
+				<input type="text" autocomplete="on" name="city" id="input" placeholder="Enter here" maxlength='25'>
+				<button type="submit" class="btn" disabled>Click here</button>
+			</form>
 		</div>
 	</div>
+	<div class="loader">
+		<img src="http://map.bloomsky.com/img/loading_boys.gif" alt="">
+	</div>
+	<div class="weather-forecast-wrapper"></div>
+	<div class="cities"></div>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/elements.js"></script>
 <script src="js/weather-api.js"></script>
-<!-- <script src="js/slick.min.js"></script> -->
-<!-- <script src="js/main-for-slick.js"></script> -->
 </body>
 <footer>
-        <a href="http://linkedin.com/in/dmytro-nibit-84a97b169"><i class="fab fa-linkedin"></i></a> 
-        <a href="https://codepen.io/Dmitriy10"><i class="fab fa-codepen"></i></a>
-        <a href="skype:dnskype9?call"><i class="fab fa-skype"></i></a>
-        <a href="mailto:ndmitriy10@ukr.net"><i class="fas fa-at"></i></a>
+	<a href="http://linkedin.com/in/dmytro-nibit-84a97b169"><i class="fab fa-linkedin"></i></a> 
+	<a href="https://codepen.io/Dmitriy10"><i class="fab fa-codepen"></i></a>
+	<a href="skype:dnskype9?call"><i class="fab fa-skype"></i></a>
+	<a href="mailto:ndmitriy10@ukr.net"><i class="fas fa-at"></i></a>
 </footer>
 </html>
