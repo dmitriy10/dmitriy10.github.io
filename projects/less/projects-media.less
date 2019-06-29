@@ -472,11 +472,11 @@
             margin-top: -47px;
         }
         .menu-mobile-container {
-            width: 50px;
+            height: 45px;
+            width: 55px;
             display: inline-block;
             cursor: pointer;
-            // margin-left: 15px;
-            // margin-top: 5px;
+            padding: 0 10px;
             position: absolute;
             right: 30px;
             top: 10px;
@@ -485,13 +485,11 @@
                 height: 3px;
                 background-color: white;
                 margin: 6px 10px;
-                transition: 0.4s;
             }
             .bar1 {
                 margin-top: 10px;
             }
-            
-            .bar1.change {
+            .bar1.show {
                 -webkit-transform-origin: 15% 120%;
                 -ms-transform-origin: 15% 120%;
                 transform-origin: 15% 120%;
@@ -499,9 +497,9 @@
                 -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
             }
-            .bar2.change {opacity: 0;}
+            .bar2.show {opacity: 0;}
             
-            .bar3.change {
+            .bar3.show {
                 -webkit-transform-origin: 15% -50%;
                 -ms-transform-origin: 15% -50%;
                 transform-origin: 15% -50%;
@@ -510,12 +508,9 @@
                 transform: rotate(-45deg);
             }
         }
-        
-
-
         .menu {
             position: absolute;
-            top: 47px;
+            top:100px;
             left: 0;
             z-index: 10;
             background-color: black;         
@@ -529,7 +524,7 @@
             width: 100%;   
             transition: 0.4s;
             text-align: center;
-            &.change {
+            &.show {
                 transform: none;
                 transition: 0.4s;
             }
@@ -538,7 +533,7 @@
                 display: block;
                 margin-left: 0;
                 padding-left: 0;
-                &.change {
+                &.show {
                     background-color: white;
                 }
                 a {
@@ -547,7 +542,7 @@
                     padding: 15px;
                     white-space: nowrap;
                     font-size: 25px;
-                    &.change {
+                    &.show {
                         color: @color_black;
                     }
                     &:hover {
@@ -555,20 +550,13 @@
                         color: @color_black;
                     }
                 }
-                &:hover {
-                    ul {
-                        visibility: visible;
-                        z-index: 10;
-                    }
-                }
             }
             ul {
-                background-color: black;
+                background-color: rgb(8, 8, 8);
                 z-index: 5;
-                opacity: 1;
-                visibility: visible;
-                display: none;
-                position: static;
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
                 li {
                     a {
                         font-size: 12px;
@@ -578,6 +566,18 @@
                         display: inline-block;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .menu {
+        li:hover {
+            ul {
+                opacity: 1;
+                visibility: visible;
+                left: 0;
             }
         }
     }

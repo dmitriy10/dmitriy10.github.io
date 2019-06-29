@@ -584,9 +584,11 @@ div {
     margin-top: -47px;
   }
   .elements-header .menu-mobile-container {
-    width: 50px;
+    height: 45px;
+    width: 55px;
     display: inline-block;
     cursor: pointer;
+    padding: 0 10px;
     position: absolute;
     right: 30px;
     top: 10px;
@@ -598,12 +600,11 @@ div {
     height: 3px;
     background-color: white;
     margin: 6px 10px;
-    transition: 0.4s;
   }
   .elements-header .menu-mobile-container .bar1 {
     margin-top: 10px;
   }
-  .elements-header .menu-mobile-container .bar1.change {
+  .elements-header .menu-mobile-container .bar1.show {
     -webkit-transform-origin: 15% 120%;
     -ms-transform-origin: 15% 120%;
     transform-origin: 15% 120%;
@@ -611,10 +612,10 @@ div {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  .elements-header .menu-mobile-container .bar2.change {
+  .elements-header .menu-mobile-container .bar2.show {
     opacity: 0;
   }
-  .elements-header .menu-mobile-container .bar3.change {
+  .elements-header .menu-mobile-container .bar3.show {
     -webkit-transform-origin: 15% -50%;
     -ms-transform-origin: 15% -50%;
     transform-origin: 15% -50%;
@@ -624,7 +625,7 @@ div {
   }
   .elements-header .menu {
     position: absolute;
-    top: 47px;
+    top: 100px;
     left: 0;
     z-index: 10;
     background-color: black;
@@ -639,7 +640,7 @@ div {
     transition: 0.4s;
     text-align: center;
   }
-  .elements-header .menu.change {
+  .elements-header .menu.show {
     transform: none;
     transition: 0.4s;
   }
@@ -649,7 +650,7 @@ div {
     margin-left: 0;
     padding-left: 0;
   }
-  .elements-header .menu li.change {
+  .elements-header .menu li.show {
     background-color: white;
   }
   .elements-header .menu li a {
@@ -659,24 +660,19 @@ div {
     white-space: nowrap;
     font-size: 25px;
   }
-  .elements-header .menu li a.change {
+  .elements-header .menu li a.show {
     color: black;
   }
   .elements-header .menu li a:hover {
     background-color: white;
     color: black;
   }
-  .elements-header .menu li:hover ul {
-    visibility: visible;
-    z-index: 10;
-  }
   .elements-header .menu ul {
-    background-color: black;
+    background-color: #080808;
     z-index: 5;
-    opacity: 1;
-    visibility: visible;
-    display: none;
-    position: static;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
   }
   .elements-header .menu ul li a {
     font-size: 12px;
@@ -684,5 +680,12 @@ div {
   }
   .elements-header .menu ul li ul {
     display: inline-block;
+  }
+}
+@media (min-width: 800px) {
+  .menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
   }
 }

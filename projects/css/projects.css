@@ -588,17 +588,25 @@ footer i {
   background-color: white;
   color: black;
 }
-.elements-header .menu li:hover ul {
-  visibility: visible;
-  z-index: 10;
-}
-.elements-header .menu li:hover ul a {
-  min-width: 70px;
-}
 .elements-header .menu ul {
-  opacity: 1;
-  visibility: hidden;
   position: absolute;
+  top: 100%;
+  left: -1000px;
   background-color: black;
-  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.elements-header .menu ul.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  left: 0;
+}
+.elements-header .menu img {
+  height: 30px;
+  width: 30px;
+}
+.elements-header .menu-mobile-container {
+  display: none;
 }

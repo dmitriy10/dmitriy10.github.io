@@ -82,35 +82,6 @@ function scrollToTop(scrollDuration) {
 }
 // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// MENU
-speed = 250;
-$('[data-menu]').click(function() {
-    if ( $('[data-menu]').hasClass("change") ) {
-        $('.menu').children().children().children().hide(speed); 
-    }
-    
-    if ( $(this).parent().children().hasClass("change") ) {
-        $(this).parent().children().children().hide(speed); // hide menu items
-        $(this).parent().children().removeClass('change'); // del black color for active menu
-        $(this).parent().removeClass('change'); // del white background-color for active menu  
-    }
-    else {
-        $(this).parent().siblings().children().removeClass('change'); // del black color for other elements menu items (children)
-        $(this).parent().siblings().removeClass('change'); // del white background-color for other menu items (parents)
-        $(this).parent().children().show(speed); // show menu items (children)
-        $(this).parent().children().children().show(speed); // show menu items (children)
-        $(this).parent().children().addClass('change'); // add black color for active menu
-        $(this).parent().addClass('change'); // add white background-color for active menu  
-    }
-});
-
-$('.menu-mobile-container').click(function() {
-    $(this).children().toggleClass('change'); // bar 1-3 in menu-mobile-container
-    $('.menu').toggleClass('change'); // menu show/hidde
-});
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
 
 
 
