@@ -658,7 +658,7 @@ div {
     display: block;
     padding: 15px;
     white-space: nowrap;
-    font-size: 25px;
+    font-size: 30px;
   }
   .elements-header .menu li a.show {
     color: black;
@@ -675,7 +675,7 @@ div {
     position: absolute;
   }
   .elements-header .menu ul li a {
-    font-size: 12px;
+    font-size: 20px;
     border-bottom: 1px solid blue;
   }
   .elements-header .menu ul li ul {

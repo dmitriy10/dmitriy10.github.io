@@ -121,7 +121,7 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  font-family: "Tahoma";
+  font-family: 'Pacifico', cursive;
   position: relative;
 }
 h1,
@@ -140,7 +140,7 @@ div {
   list-style: none;
   text-decoration: none;
   color: black;
-  font-family: "Tahoma";
+  font-family: 'Pacifico', cursive;
   font-size: 14px;
   font-weight: normal;
 }
@@ -228,6 +228,7 @@ header {
 .global-projects-wrapper .main-project-wrapper:hover .about-text {
   visibility: visible;
   opacity: 1;
+  font-family: 'Pacifico', cursive;
 }
 .global-projects-wrapper .main-project-wrapper:hover .about-btn {
   visibility: visible;
@@ -330,11 +331,13 @@ header {
 }
 .global-projects-wrapper .info ul {
   font-size: 20px;
+  font-family: 'Pacifico', cursive;
 }
 .global-projects-wrapper .info ul li {
   font-size: 20px;
   color: black;
   list-style-type: square;
+  font-family: 'Pacifico', cursive;
 }
 .global-projects-wrapper .info ul li:first-child {
   padding-top: 20px;
@@ -562,7 +565,7 @@ footer i {
   cursor: pointer;
   display: none;
   color: #ffffff;
-  font-family: "Tahoma";
+  font-family: 'Pacifico', cursive;
   font-size: 15px;
 }
 #top img {
@@ -583,6 +586,7 @@ footer i {
   padding: 12px;
   white-space: nowrap;
   font-size: 20px;
+  font-family: 'Pacifico', cursive;
 }
 .elements-header .menu li a:hover {
   background-color: white;
