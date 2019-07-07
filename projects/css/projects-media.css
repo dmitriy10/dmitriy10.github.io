@@ -650,6 +650,9 @@ div {
     margin-left: 0;
     padding-left: 0;
   }
+  .elements-header .menu li img {
+    position: relative;
+  }
   .elements-header .menu li.show {
     background-color: white;
   }
