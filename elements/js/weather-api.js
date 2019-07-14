@@ -120,7 +120,8 @@ const weather = {
                 '50n' : 'https://media.giphy.com/media/Kd1L4b2SYH7SE/giphy.gif',
             }
             // Convert an epoch to human readable date:
-            const sunriseConvert = sunrise => { 
+            var sunriseConvert = timeConvertSunrise(sunrise);
+            function timeConvertSunrise(sunrise) {
                 const dt = new Date(sunrise*1000);
                 const hr = dt.getHours();
                 const m = "0" + dt.getMinutes();
