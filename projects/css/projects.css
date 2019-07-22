@@ -205,6 +205,9 @@ header {
   /* ================================= */
   /* ::::::::::::: SEVEN ::::::::::::: */
   /* ================================= */
+  /* ================================= */
+  /* ::::::::::::: EIGHT ::::::::::::: */
+  /* ================================= */
 }
 .global-projects-wrapper .main-project-wrapper {
   height: 500px;
@@ -526,6 +529,27 @@ header {
   right: -65px;
 }
 .global-projects-wrapper .about-btn.seven.active {
+  -webkit-transform: translateX(120px);
+  -ms-transform: translateX(120px);
+  transform: translateX(120px);
+}
+.global-projects-wrapper .project-wrapper.eight.active {
+  -webkit-transform: translateX(-1000px);
+  -ms-transform: translateX(-1000px);
+  transform: translateX(-1000px);
+  cursor: pointer;
+}
+.global-projects-wrapper .project-overlay.eight {
+  -webkit-transform: translateY(-1000px);
+  -ms-transform: translateY(-1000px);
+  transform: translateY(-1000px);
+  cursor: pointer;
+}
+.global-projects-wrapper .project-number.eight {
+  top: -55px;
+  right: -65px;
+}
+.global-projects-wrapper .about-btn.eight.active {
   -webkit-transform: translateX(120px);
   -ms-transform: translateX(120px);
   transform: translateX(120px);
