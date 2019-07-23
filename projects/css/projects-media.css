@@ -119,6 +119,9 @@ div {
 @media (max-width: 1200px) {
   .global-projects-wrapper {
     /* ================================= */
+    /* ::::::::::: ONE/SEVEN ::::::::::: */
+    /* ================================= */
+    /* ================================= */
     /* :::::::::::::: ONE :::::::::::::: */
     /* ================================= */
     /* ================================= */
@@ -187,6 +190,14 @@ div {
   .global-projects-wrapper .info .list.third {
     top: 50px;
     left: 350px;
+  }
+  .global-projects-wrapper .proj_number_right {
+    top: -35px;
+    right: -75px;
+  }
+  .global-projects-wrapper .proj_number_left {
+    top: -25px;
+    left: -20px;
   }
   .global-projects-wrapper .project-wrapper.one {
     margin: 100px auto;

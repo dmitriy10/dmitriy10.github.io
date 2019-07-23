@@ -185,7 +185,10 @@ header {
 .global-projects-wrapper {
   overflow: hidden;
   /* ================================= */
-  /* :::::::::::::: ONE/SEVEN :::::::::::::: */
+  /* ::::::::::: ONE/SEVEN ::::::::::: */
+  /* ================================= */
+  /* ================================= */
+  /* :::::::::::::: ONE :::::::::::::: */
   /* ================================= */
   /* ================================= */
   /* :::::::::::::: TWO :::::::::::::: */
@@ -231,7 +234,6 @@ header {
 .global-projects-wrapper .main-project-wrapper:hover .about-text {
   visibility: visible;
   opacity: 1;
-  font-family: 'Pacifico', cursive;
 }
 .global-projects-wrapper .main-project-wrapper:hover .about-btn {
   visibility: visible;
@@ -305,6 +307,7 @@ header {
   transition: all ease 1s;
   visibility: hidden;
   opacity: 0;
+  font-family: 'Pacifico', cursive;
 }
 .global-projects-wrapper .about-btn {
   height: 60px;
@@ -369,6 +372,14 @@ header {
   visibility: visible;
   opacity: 1;
 }
+.global-projects-wrapper .proj_number_right {
+  top: -55px;
+  right: -65px;
+}
+.global-projects-wrapper .proj_number_left {
+  top: -55px;
+  left: -65px;
+}
 .global-projects-wrapper .project-wrapper.one {
   margin: 100px auto;
 }
@@ -382,10 +393,6 @@ header {
   -ms-transform: translateX(-1000px);
   transform: translateX(-1000px);
   cursor: pointer;
-}
-.global-projects-wrapper .project-number.one {
-  top: -70px;
-  right: -55px;
 }
 .global-projects-wrapper .about-btn.one.active,
 .global-projects-wrapper .about-btn.seven.active {
@@ -424,10 +431,6 @@ header {
   transform: translateX(1000px);
   cursor: pointer;
 }
-.global-projects-wrapper .project-number.two {
-  top: -50px;
-  left: -45px;
-}
 .global-projects-wrapper .about-btn.two.active {
   -webkit-transform: translateX(120px);
   -ms-transform: translateX(120px);
@@ -444,10 +447,6 @@ header {
   transform: translateY(1000px);
   cursor: pointer;
 }
-.global-projects-wrapper .project-number.three {
-  top: -50px;
-  right: -50px;
-}
 .global-projects-wrapper .about-btn.three.active {
   -webkit-transform: translateX(120px);
   -ms-transform: translateX(120px);
@@ -462,10 +461,6 @@ header {
   -ms-transform: scale(0);
   transform: scale(0);
   cursor: pointer;
-}
-.global-projects-wrapper .project-number.four {
-  top: -50px;
-  left: -45px;
 }
 .global-projects-wrapper .about-btn.four.active {
   -webkit-transform: translateX(120px);
@@ -483,10 +478,6 @@ header {
   transform: translateY(-1000px);
   cursor: pointer;
 }
-.global-projects-wrapper .project-number.five {
-  top: -55px;
-  right: -65px;
-}
 .global-projects-wrapper .about-btn.five.active {
   -webkit-transform: translateX(120px);
   -ms-transform: translateX(120px);
@@ -502,10 +493,6 @@ header {
   -ms-transform: translate(1000px, 1000px);
   transform: translate(1000px, 1000px);
   cursor: pointer;
-}
-.global-projects-wrapper .project-number.six {
-  top: -90px;
-  left: -45px;
 }
 .global-projects-wrapper .about-btn.six.active {
   -webkit-transform: translateX(120px);
@@ -524,19 +511,15 @@ header {
   transform: translateY(-1000px);
   cursor: pointer;
 }
-.global-projects-wrapper .project-number.seven {
-  top: -55px;
-  right: -65px;
-}
 .global-projects-wrapper .about-btn.seven.active {
   -webkit-transform: translateX(120px);
   -ms-transform: translateX(120px);
   transform: translateX(120px);
 }
 .global-projects-wrapper .project-wrapper.eight.active {
-  -webkit-transform: translateX(-1000px);
-  -ms-transform: translateX(-1000px);
-  transform: translateX(-1000px);
+  -webkit-transform: translateX(1000px);
+  -ms-transform: translateX(1000px);
+  transform: translateX(1000px);
   cursor: pointer;
 }
 .global-projects-wrapper .project-overlay.eight {
@@ -544,10 +527,6 @@ header {
   -ms-transform: translateY(-1000px);
   transform: translateY(-1000px);
   cursor: pointer;
-}
-.global-projects-wrapper .project-number.eight {
-  top: -55px;
-  right: -65px;
 }
 .global-projects-wrapper .about-btn.eight.active {
   -webkit-transform: translateX(120px);

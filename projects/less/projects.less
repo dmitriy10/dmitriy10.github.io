@@ -87,7 +87,6 @@ header {
             .about-text {
                 visibility: visible;
                 opacity: 1;
-                font-family: 'Pacifico', cursive;
             }
             .about-btn {
                 visibility: visible;
@@ -156,6 +155,7 @@ header {
         .transition(@sec);
         visibility: hidden;
         opacity: 0;
+        font-family: 'Pacifico', cursive;
     }
     .about-btn {
         height: 60px;
@@ -221,7 +221,18 @@ header {
 
 
     /* ================================= */
-    /* :::::::::::::: ONE/SEVEN :::::::::::::: */
+    /* ::::::::::: ONE/SEVEN ::::::::::: */
+    /* ================================= */
+    .proj_number_right {
+        top: -55px;
+        right: -65px;
+    }
+    .proj_number_left {
+        top: -55px;
+        left: -65px;
+    }
+    /* ================================= */
+    /* :::::::::::::: ONE :::::::::::::: */
     /* ================================= */
     .project-wrapper.one {
         margin: 100px auto;
@@ -232,10 +243,6 @@ header {
     .project-overlay.one {
         .translateX_m_1000;
         cursor: pointer;
-    }
-    .project-number.one {
-        top: -70px;
-        right: -55px;
     }
     .about-btn.one.active, .about-btn.seven.active  {
         .translateX_120;
@@ -269,10 +276,6 @@ header {
         .translateX_1000;
         cursor: pointer;
     }
-    .project-number.two {
-        top: -50px;
-        left: -45px;
-    }
     .about-btn.two.active {
         .translateX_120;
     }
@@ -289,10 +292,6 @@ header {
     .project-overlay.three {
         .translateY_1000;
         cursor: pointer;
-    }
-    .project-number.three {
-        top: -50px;
-        right: -50px;
     }
     .about-btn.three.active {
         .translateX_120;
@@ -312,10 +311,6 @@ header {
         transform: scale(0);
         cursor: pointer;
     }
-    .project-number.four {
-        top: -50px;
-        left: -45px;
-    }
     .about-btn.four.active {
         .translateX_120;
     }
@@ -332,10 +327,6 @@ header {
     .project-overlay.five {
         .translateY_m_1000;
         cursor: pointer;
-    }
-    .project-number.five {
-        top: -55px;
-        right: -65px;
     }
     .about-btn.five.active {
         .translateX_120;
@@ -356,10 +347,6 @@ header {
         transform: translate(1000px, 1000px);
         cursor: pointer;
     }
-    .project-number.six {
-        top: -90px;
-        left: -45px;
-    }
     .about-btn.six.active {
         .translateX_120;
     }
@@ -376,10 +363,6 @@ header {
         .translateY_m_1000;
         cursor: pointer;
     }
-    .project-number.seven {
-        top: -55px;
-        right: -65px;
-    }
     .about-btn.seven.active {
         .translateX_120;
     }
@@ -388,17 +371,13 @@ header {
     /* ================================= */
     .project-wrapper.eight {
         &.active {
-            .translateX_m_1000;
+            .translateX_1000;
             cursor: pointer;
         }
     }
     .project-overlay.eight {
         .translateY_m_1000;
         cursor: pointer;
-    }
-    .project-number.eight {
-        top: -55px;
-        right: -65px;
     }
     .about-btn.eight.active {
         .translateX_120;
