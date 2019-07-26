@@ -2,14 +2,8 @@
   font-family: 'Roboto', sans-serif;
 }
 .flex-center-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .hidden {
@@ -49,10 +43,19 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
+nav {
+  height: 100vw;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
 .logo {
   position: absolute;
   top: 24px;
   left: 50px;
+}
+.logo > a > img {
+  height: 100px;
 }
 .header-content {
   height: 100%;
@@ -71,11 +74,7 @@ header {
   width: 70vw;
   top: 21vw;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .market-links > a {
@@ -128,8 +127,6 @@ header {
   width: 100%;
   height: 900px;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .how-works_left-bar {
@@ -138,14 +135,8 @@ header {
   background-image: url('../img/how-works-background.png');
   background-repeat: no-repeat;
   background-position: 25.7vw 60.5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .how-works_left-bar > img {
@@ -177,11 +168,7 @@ header {
 }
 .how-works_right-bar_links {
   margin-top: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 60px;
   width: 200px;
@@ -228,22 +215,16 @@ header {
 }
 .card img {
   display: block;
-  -o-object-fit: cover;
   object-fit: cover;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-  -webkit-transform: scale(1.12);
+  transition: all ease .3s;
   transform: scale(1.12);
 }
 .card:hover img {
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 .card:hover .card_header_about::after,
 .card:hover .card_header_about::before {
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 .card:hover .card_header_about::after {
@@ -259,7 +240,7 @@ header {
   visibility: visible;
   opacity: 1;
 }
-.card_width-booze-link {
+.card_width-xxx-link {
   position: absolute;
   top: 0;
   left: 2px;
@@ -289,19 +270,14 @@ header {
   left: 10%;
   height: 80%;
   width: 80%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
-  -webkit-transition: all ease 2s;
   transition: all ease 2s;
 }
 .card_header_about::before {
-  -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
 }
 .card_header_about::after {
-  -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
 }
 .card_plus {
@@ -310,8 +286,7 @@ header {
   position: absolute;
   top: 220px;
   left: 173px;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  transition: all ease .3s;
 }
 .card_about-place {
   visibility: hidden;
@@ -326,8 +301,7 @@ header {
   font-size: 2rem;
   line-height: 1.45;
   letter-spacing: 2.1px;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  transition: all ease .3s;
 }
 .card_footer {
   height: 90px;
@@ -383,7 +357,7 @@ footer {
   color: #ffffff;
   font-size: 1.6rem;
   margin-top: 15px;
-  letter-spacing: 0.8px;
+  letter-spacing: .8px;
 }
 .list_contacts li a:hover {
   color: #ef4b4b;
@@ -396,18 +370,12 @@ footer {
 }
 .copy {
   font-family: 'Roboto', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   font-size: 1.6rem;
   font-weight: 300;
-  letter-spacing: 0.8px;
+  letter-spacing: .8px;
   height: 48px;
   background: #000000;
   color: #616161;

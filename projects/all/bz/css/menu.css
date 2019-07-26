@@ -1,9 +1,3 @@
-nav {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-}
 .open,
 .close {
   position: absolute;
@@ -12,24 +6,19 @@ nav {
   height: 30px;
   width: 60px;
   cursor: pointer;
-  -webkit-transition: all ease 1s;
   transition: all ease 1s;
 }
 .open.active {
-  -webkit-transform: scale(0);
   transform: scale(0);
 }
 .close {
   top: 35px;
   right: 295px;
   z-index: 999;
-  -webkit-transform: none;
   transform: none;
-  -webkit-transition: all ease 2s;
   transition: all ease 2s;
 }
 .close.active {
-  -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 .close .bar1,
@@ -45,7 +34,6 @@ nav {
   background: white;
   position: absolute;
   right: 0;
-  -webkit-transition: all ease 1s;
   transition: all ease 1s;
 }
 .bar1 {
@@ -53,12 +41,11 @@ nav {
 }
 .bar1.active {
   top: 12px;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .bar2 {
   top: 12px;
-  width: 42px;
+  width: 45px;
 }
 .bar2.active {
   display: none;
@@ -68,7 +55,6 @@ nav {
 }
 .bar3.active {
   top: 12px;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 #menu {
@@ -79,13 +65,10 @@ nav {
   height: 100vh;
   width: 360px;
   background: #202020;
-  -webkit-transition: all ease 1s;
   transition: all ease 1s;
-  -webkit-transform: translateX(1000px);
   transform: translateX(1000px);
 }
 #menu.active {
-  -webkit-transform: none;
   transform: none;
 }
 .menu_list {
@@ -141,15 +124,9 @@ nav {
   margin: 0 auto;
 }
 .menu_links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 93px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .menu_links > a {
@@ -179,7 +156,7 @@ nav {
   }
   .bar2 {
     top: 12px;
-    width: 22px;
+    width: 23px;
   }
   .bar3 {
     top: 22px;
